@@ -51,11 +51,11 @@ class PvpapersModelPaper extends JModel
         if (empty($this->_data)) {
             $query = ' SELECT 
                         `n`.*,
-                        `nd`.`template_html`, 
-                        `nd`.`template_css`, 
-                        `nd`.`template_affidavit`, 
-                        `nd`.`template_instructions`, 
-                        `nd`.`template_statement`, 
+                        `nd`.`p_template_html`, 
+                        `nd`.`p_template_css`, 
+                        `nd`.`p_template_affidavit`, 
+                        `nd`.`p_template_instructions`, 
+                        `nd`.`p_template_statement`, 
                         `nd`.`election_type`,
                         `o`.`name` as `office_name` 
                        FROM 
