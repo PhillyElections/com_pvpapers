@@ -46,7 +46,7 @@
         <p class="note text-center">This Petition must be filed with the County Board of Elections on or before {FINISH_MONTH_EN} {FINISH_DAY}, {FINISH_YEAR}.
         Each signer may Sign Petitions for as many Candidates for each office as he or she can vote, and no more.<br>&nbsp;</p>
         <h2 class="text-center overline underline">COMMONWEALTH OF PENNSYLVANIA</h2>
-        <h3 class="text-center">{CANDIDATE_PARTY} PETITION</h3>
+        <h3 class="text-center">{CANDIDATE_PARTY} PAPER</h3>
         <p class="info text-center">To Have Name of Candidate Printed Upon the Official Ballot or Voting Machine Ballot Label for the General Primary Election</p>
         <p class="talics justify headroom">We, the undersigned, all of whom are qualified electors of Ward <span class="line fixed">&nbsp;{WARD}&nbsp;</span> Division <span class="line fixed">&nbsp;{DIVISION}&nbsp;</span></p>
         <p class="talics text-justify">of the City and County of Philadelphia are registered and enrolled as members</p>

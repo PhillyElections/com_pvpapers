@@ -8,7 +8,7 @@
   <copyright>(C) 2016 City of Philadelphia</copyright>
   <license>GPL</license>
   <version>1.0.1</version>
-  <description>Generate nomination petitions, store, and allow for logging of returns.</description>
+  <description>Generate nomination papers, store, and allow for logging of returns.</description>
   <install>
     <sql>
       <file driver="mysqli" charset="utf8">sql/install.sql</file>
@@ -35,7 +35,7 @@
     <language tag="es-ES">es-ES.com_pvpapers.ini</language>
   </languages>
   <administration>
-    <menu link="option=com_pvpapers">Nominations</menu>
+    <menu link="option=com_pvpapers">Nomination Papers</menu>
     <submenu>
       <menu link="option=com_pvpapers&amp;controller=papers">View Captured Forms</menu>
       <menu link="option=com_pvpapers&amp;controller=pdisplays">Configure Displays</menu>

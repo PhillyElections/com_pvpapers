@@ -47,7 +47,7 @@
         <p class="note text-center">This petition must be filed with the County Board of Elections on or before {FINISH_MONTH_EN} {FINISH_DAY}, {FINISH_YEAR}.
         Each signer may sign petitions for as many candidates for each office as he or she can vote for, and no more.<br>&nbsp;</p>
         <h2 class="text-center overline underline">COMMONWEALTH OF PENNSYLVANIA</h2>
-        <h3 class="text-center">{CANDIDATE_PARTY} PETITION</h3>
+        <h3 class="text-center">{CANDIDATE_PARTY} PAPER</h3>
         <p class="info text-center">To Have Name of Candidate Printed Upon the Official Ballot or Voting Machine Ballot Label for the General Primary Election</p>
         <table class="form">
             <tr>

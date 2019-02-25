@@ -49,7 +49,7 @@
         <h2 class="text-center">
         Commonwealth of Pennsylvania</h2>
         <h3 class="text-center">
-        COUNTY OF PHILADELPHIA PETITION</h3>
+        COUNTY OF PHILADELPHIA PAPER</h3>
         <h5 class="text-center">
         HAVE NAME OF CANDIDATE PRINTED UPON THE OFFICIAL BALLOT FOR THE {ELECTION_TYPE_EN} ELECTION {ELECTION_MONTH_EN} {ELECTION_DAY}, {ELECTION_YEAR}</h5>
         <h5 class="text-center">
