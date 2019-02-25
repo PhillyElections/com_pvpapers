@@ -31,7 +31,7 @@ class PvpapersControllerPdatum extends PvpapersController
     public function edit()
     {
         $view = $this->getView('pdatum', JRequest::getWord('format', 'html'));
-        $view->setModel($this->getModel('Ndatum'), true);
+        $view->setModel($this->getModel('Pdatum'), true);
         $view->setModel($this->getModel('Offices'), false);
 
         $view->display();

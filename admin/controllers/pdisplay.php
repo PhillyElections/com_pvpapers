@@ -31,8 +31,8 @@ class PvpapersControllerPdisplay extends PvpapersController
     public function edit()
     {
         $view = $this->getView('pdisplay', JRequest::getWord('format', 'html'));
-        $view->setModel($this->getModel('Ndisplay'), true);
-        $view->setModel($this->getModel('Ndata'), false);
+        $view->setModel($this->getModel('Pdisplay'), true);
+        $view->setModel($this->getModel('Pdata'), false);
 
         $view->display();
     }
