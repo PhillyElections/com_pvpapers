@@ -11,9 +11,9 @@ DELETE FROM `#__pv_tables` WHERE `name` LIKE "%pv_paper_displays";
 DELETE FROM `#__pv_tables` WHERE `name` LIKE "%pv_paper_data";
 
 --
--- AUTO_INCREMENT for table `jos_pv_offices`
+-- AUTO_INCREMENT for table `#__pv_offices`
 --
-ALTER TABLE `jos_pv_offices`
+ALTER TABLE `#__pv_offices`
   DROP COLUMN `p_template_html`,
   DROP COLUMN `p_template_css`,
   DROP COLUMN `p_template_affidavit`,
