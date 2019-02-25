@@ -72,11 +72,11 @@ class PvpapersModelNdisplay extends JModel
 
         $pdatum = $this->getTable('pdatum');
         $pdatum->load($data['data_id']);
-        $data['template_html'] = $pdatum->template_html;
-        $data['template_css'] = $pdatum->template_css;            
-        $data['template_affidavit'] = $pdatum->template_affidavit;
-        $data['template_instructions'] = $pdatum->template_instructions;
-        $data['template_statement'] = $pdatum->template_statement;
+        $data['p_template_html'] = $pdatum->p_template_html;
+        $data['p_template_css'] = $pdatum->p_template_css;            
+        $data['p_template_affidavit'] = $pdatum->p_template_affidavit;
+        $data['p_template_instructions'] = $pdatum->p_template_instructions;
+        $data['p_template_statement'] = $pdatum->p_template_statement;
 
         $dateIndex = $this->_id ? 'updated' : 'created';
 

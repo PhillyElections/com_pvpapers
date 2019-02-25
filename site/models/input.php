@@ -73,11 +73,11 @@ class PvpapersModelInput extends JModel
         $pdisplay = $this->getTable('pdisplay');
         $pdisplay->load($data['display_id']);
         $data['published'] = 1;
-        $data['template_html'] = $pdisplay->template_html;
-        $data['template_css'] = $pdisplay->template_css;
-        $data['template_affidavit'] = $pdisplay->template_affidavit;
-        $data['template_instructions'] = $pdisplay->template_instructions;
-        $data['template_statement'] = $pdisplay->template_statement;
+        $data['p_template_html'] = $pdisplay->p_template_html;
+        $data['p_template_css'] = $pdisplay->p_template_css;
+        $data['p_template_affidavit'] = $pdisplay->p_template_affidavit;
+        $data['p_template_instructions'] = $pdisplay->p_template_instructions;
+        $data['p_template_statement'] = $pdisplay->p_template_statement;
 
         // just in case...
         foreach ($data as $key => $value) {

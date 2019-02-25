@@ -72,11 +72,11 @@ class PvpapersModelNdatum extends JModel
 
         $office = $this->getTable('office');
         $office->load($data['office_id']);
-        $data['template_html'] = $office->template_html;
-        $data['template_css'] = $office->template_css;            
-        $data['template_affidavit'] = $office->template_affidavit;
-        $data['template_instructions'] = $office->template_instructions;            
-        $data['template_statement'] = $office->template_statement;
+        $data['p_template_html'] = $office->p_template_html;
+        $data['p_template_css'] = $office->p_template_css;            
+        $data['p_template_affidavit'] = $office->p_template_affidavit;
+        $data['p_template_instructions'] = $office->p_template_instructions;            
+        $data['p_template_statement'] = $office->p_template_statement;
 
         $dateIndex = $this->_id ? 'updated' : 'created';
 

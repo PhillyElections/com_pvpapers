@@ -888,8 +888,8 @@ class PvpapersModelOutput extends JModel
             $this->_data = $this->_db->loadObject();
 
             // now that we have a result, populate the template related properties
-            $this->_css = $this->_data->template_css;
-            $this->_template = $this->_data->template_html;
+            $this->_css = $this->_data->p_template_css;
+            $this->_template = $this->_data->p_template_html;
         }
 
         return $this->_data;

@@ -49,9 +49,9 @@ CREATE TABLE `#__pv_papers` (
   `user_ip` varchar(16) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `published` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `checked_out` int(11) UNSIGNED NOT NULL DEFAULT '0',
-  `checked_out_time` datetime NOT NULL DEFAULT @tnl,
-  `created` datetime NOT NULL DEFAULT @tnl,
-  `updated` datetime NOT NULL DEFAULT @tnl
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 
@@ -75,9 +75,9 @@ CREATE TABLE `#__pv_paper_data` (
   `published` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `checked_out` int(11) UNSIGNED NOT NULL DEFAULT '0',
-  `checked_out_time` datetime NOT NULL DEFAULT @tnl,
-  `created` datetime NOT NULL DEFAULT @tnl,
-  `updated` datetime NOT NULL DEFAULT @tnl
+  `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -139,9 +139,9 @@ CREATE TABLE `#__pv_paper_displays` (
   `description` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `published` tinyint(1) UNSIGNED NOT NULL DEFAULT '0',
   `checked_out` int(11) UNSIGNED NOT NULL DEFAULT '0',
-  `checked_out_time` datetime NOT NULL DEFAULT @tnl,
-  `created` datetime NOT NULL DEFAULT @tnl,
-  `updated` datetime NOT NULL DEFAULT @tnl
+  `checked_out_time` datetime NOT NULL DEFAULT'0000-00-00 00:00:00',
+  `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --

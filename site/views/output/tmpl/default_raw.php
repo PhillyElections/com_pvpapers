@@ -19,11 +19,11 @@ $mpdf->WriteHTML($this->css, 1);
 $mpdf->WriteHTML($this->html, 2);
 
 // only show additional pages based on presence of filenames
-if ( $this->data->template_affidavit || $this->data->template_instructions || $this->data->template_statement ) {
+if ( $this->data->p_template_affidavit || $this->data->p_template_instructions || $this->data->p_template_statement ) {
 	$mpdf->SetImportUse();
 }
-if ( $this->data->template_affidavit ) {
-	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->template_affidavit);
+if ( $this->data->p_template_affidavit ) {
+	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_affidavit);
 	$tplId = $mpdf->ImportPage(1);
 	$mpdf->UseTemplate($tplId);
 	// add a page back
@@ -33,9 +33,9 @@ if ( $this->data->template_affidavit ) {
 	$mpdf->UseTemplate($tplId);
 }
 
-if ( $this->data->template_instructions ) {
+if ( $this->data->p_template_instructions ) {
 	$mpdf->addPage();
-	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->template_instructions);
+	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_instructions);
 	$tplId = $mpdf->ImportPage(1);
 	$mpdf->UseTemplate($tplId);
 	$mpdf->addPage();
@@ -48,9 +48,9 @@ if ( $this->data->template_instructions ) {
 	$tplId = $mpdf->ImportPage(4);
 	$mpdf->UseTemplate($tplId);
 }
-if ( $this->data->template_statement ) {
+if ( $this->data->p_template_statement ) {
 	$mpdf->addPage();
-	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->template_statement);
+	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_statement);
 	$tplId = $mpdf->ImportPage(1);
 	$mpdf->UseTemplate($tplId);
 	$mpdf->addPage();

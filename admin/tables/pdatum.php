@@ -13,11 +13,11 @@ class TablePdatum extends JTable
 {
     public $id;
     public $office_id;
-    public $template_html;
-    public $template_css;
-    public $template_affidavit;
-    public $template_instructions;
-    public $template_statement;
+    public $p_template_html;
+    public $p_template_css;
+    public $p_template_affidavit;
+    public $p_template_instructions;
+    public $p_template_statement;
     public $signatures;
     public $fees;
     public $description;

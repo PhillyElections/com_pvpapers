@@ -77,10 +77,10 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                         <?=money_format('%(#10n', $row->fees);?>
                     </td>
                     <td>
-                        <?=$row->template_html;?>
+                        <?=$row->p_template_html;?>
                     </td>
                     <td>
-                        <?=$row->template_css;?>
+                        <?=$row->p_template_css;?>
                     </td>
                     <td>
                         <?=$row->created;?>

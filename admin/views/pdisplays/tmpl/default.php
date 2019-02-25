@@ -101,10 +101,10 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                         <?=$row->display_stop;?>
                     </td>
                     <td>
-                        <?=$row->template_html;?>
+                        <?=$row->p_template_html;?>
                     </td>
                     <td>
-                        <?=$row->template_css;?>
+                        <?=$row->p_template_css;?>
                     </td>
                     <td>
                         <?=$row->created;?>

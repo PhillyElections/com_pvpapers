@@ -13,11 +13,11 @@ class TablePdisplay extends JTable
 {
     public $id;
     public $data_id;
-    public $template_html;
-    public $template_css;
-    public $template_affidavit;
-    public $template_instructions;
-    public $template_statement;
+    public $p_template_html;
+    public $p_template_css;
+    public $p_template_affidavit;
+    public $p_template_instructions;
+    public $p_template_statement;
     public $signing_start;
     public $signing_stop;
     public $display_start;
