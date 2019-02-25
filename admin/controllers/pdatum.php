@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersControllerNdatum extends PvpapersController
+class PvpapersControllerPdatum extends PvpapersController
 {
     /**
      * Bind tasks to methods

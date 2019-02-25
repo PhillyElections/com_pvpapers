@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersControllerNdata extends PvpapersController
+class PvpapersControllerPdata extends PvpapersController
 {
     /**
      * the Ndata View

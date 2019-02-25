@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersControllerNominations extends PvpapersController
+class PvpapersControllerPapers extends PvpapersController
 {
     /**
      * Ndisplay the Nominations View
