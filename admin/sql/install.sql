@@ -54,6 +54,8 @@ CREATE TABLE `#__pv_papers` (
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+ALTER TABLE `#__pv_papers`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 -- --------------------------------------------------------
 
@@ -79,6 +81,8 @@ CREATE TABLE `#__pv_paper_data` (
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+ALTER TABLE `#__pv_paper_data`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- Dumping data for table `#__pv_paper_data`
@@ -144,6 +148,9 @@ CREATE TABLE `#__pv_paper_displays` (
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+ALTER TABLE `#__pv_paper_displays`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+
 --
 -- Indexes for table `#__pv_papers`
 --
@@ -165,21 +172,6 @@ ALTER TABLE `#__pv_paper_data`
 ALTER TABLE `#__pv_paper_displays`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pv_papers_display_data_id` (`data_id`);
-
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `#__pv_paper_data`
---
-ALTER TABLE `#__pv_papers`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-ALTER TABLE `#__pv_paper_displays`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-ALTER TABLE `#__pv_paper_data`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
 -- AUTO_INCREMENT for table `#__pv_offices`
