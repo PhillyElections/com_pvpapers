@@ -186,5 +186,3 @@ ALTER TABLE `#__pv_offices`
   ADD `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   ADD `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   ADD `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '';
-
-UPDATE `#__pv_offices` SET `p_template_html` = "default.tpl", `p_template_css` = "default.css", `p_template_affdidavit` = "", `p_template_instructions` = "", `p_template_statement` = "";
