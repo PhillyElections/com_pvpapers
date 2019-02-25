@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersViewNdisplay extends JView
+class PvpapersViewPdisplay extends JView 
 {
     /**
      * display method of Nomination view
@@ -25,7 +25,7 @@ class PvpapersViewNdisplay extends JView
         $pdata = $model->getPublished();
 
         $text = $isNew ? JText::_('New') : JText::_('Edit');
-        JToolBarHelper::title(JText::_('Nomination Display') . ': <small><small>[ ' . $text . ' ]</small></small>');
+        JToolBarHelper::title(JText::_('Nomination Paper Display') . ': <small><small>[ ' . $text . ' ]</small></small>');
         if ($isNew) {
             JToolBarHelper::save('save', 'Register');
             JToolBarHelper::cancel('cancel', 'Close');

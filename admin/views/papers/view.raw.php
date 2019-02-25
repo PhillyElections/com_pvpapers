@@ -9,7 +9,7 @@
  */
 
 // No direct access
-defined('_JEXEC') or die('Restricted access');
+defined('_JEXEC') or die('Restricted access'); 
 
 /**
  * Pvpapers View
@@ -17,7 +17,7 @@ defined('_JEXEC') or die('Restricted access');
  * @package    Joomla.Tutorials
  * @subpackage Components
  */
-class PvpapersViewNominations extends JView
+class PvpapersViewPapers extends JView
 {
     /**
      * Pvpapers view display method

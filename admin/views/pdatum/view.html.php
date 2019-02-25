@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersViewNdatum extends JView
+class PvpapersViewPdatum extends JView 
 {
     /**
      * display method of Nomination view
@@ -25,7 +25,7 @@ class PvpapersViewNdatum extends JView
         $offices = $model->getData();
 
         $text = $isNew ? JText::_('New') : JText::_('Edit');
-        JToolBarHelper::title(JText::_('Nomination Datum') . ': <small><small>[ ' . $text . ' ]</small></small>');
+        JToolBarHelper::title(JText::_('Nomination Paper Datum') . ': <small><small>[ ' . $text . ' ]</small></small>');
         if ($isNew) {
             JToolBarHelper::save('save', 'Register');
             JToolBarHelper::cancel('cancel', 'Close');

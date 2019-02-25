@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersViewNdata extends JView
+class PvpapersViewPdata extends JView 
 {
     /**
      * Ndata view display method
@@ -17,7 +17,7 @@ class PvpapersViewNdata extends JView
      **/
     public function display($tpl = null)
     {
-        JToolBarHelper::title(JText::_('Nomination Data'), 'generic.png');
+        JToolBarHelper::title(JText::_('Nomination Paper Data'), 'generic.png');
         JToolBarHelper::deleteList();
         JToolBarHelper::editListX();
         JToolBarHelper::addNewX();
