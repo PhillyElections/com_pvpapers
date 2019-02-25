@@ -2,23 +2,23 @@ SET FOREIGN_KEY_CHECKS=0;
 
 /* ==================== constants ==================== */
 SET @tnow = NOW();
-SET @tnl  = @tnl;
+SET @tnl  = '0000-00-00 00:00:00';
 SET @tns  = '0000-00-00';
 SET @db   = DATABASE();
 
 /* ==================== tables ==================== */
 
-DROP TABLE IF EXISTS `#__pv_paper_data`;
-DROP TABLE IF EXISTS `#__pv_paper_displays`;
-DROP TABLE IF EXISTS `#__pv_papers`;
+DROP TABLE IF EXISTS `jos_pv_paper_data`;
+DROP TABLE IF EXISTS `jos_pv_paper_displays`;
+DROP TABLE IF EXISTS `jos_pv_papers`;
 
 
 --
--- Table structure for table `#__pv_papers`
+-- Table structure for table `jos_pv_papers`
 --
 
-DROP TABLE IF EXISTS `#__pv_papers`;
-CREATE TABLE `#__pv_papers` (
+DROP TABLE IF EXISTS `jos_pv_papers`;
+CREATE TABLE `jos_pv_papers` (
   `id` int(11) UNSIGNED NOT NULL,
   `hash` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `display_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
@@ -58,11 +58,11 @@ CREATE TABLE `#__pv_papers` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `#__pv_paper_data`
+-- Table structure for table `jos_pv_paper_data`
 --
 
-DROP TABLE IF EXISTS `#__pv_paper_data`;
-CREATE TABLE `#__pv_paper_data` (
+DROP TABLE IF EXISTS `jos_pv_paper_data`;
+CREATE TABLE `jos_pv_paper_data` (
   `id` int(11) UNSIGNED NOT NULL,
   `office_id` int(11) NOT NULL DEFAULT '0',
   `signatures` int(5) NOT NULL DEFAULT '0',
@@ -81,10 +81,10 @@ CREATE TABLE `#__pv_paper_data` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Dumping data for table `#__pv_paper_data`
+-- Dumping data for table `jos_pv_paper_data`
 --
 
-INSERT INTO `#__pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_template_html`, `p_template_css`, `p_template_affidavit`, `p_template_instructions`, `p_template_statement`, `published`, `description`, `checked_out`, `checked_out_time`, `created`, `updated`) VALUES
+INSERT INTO `jos_pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_template_html`, `p_template_css`, `p_template_affidavit`, `p_template_instructions`, `p_template_statement`, `published`, `description`, `checked_out`, `checked_out_time`, `created`, `updated`) VALUES
 (1, 19, 10, 0.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
 (2, 22, 5, 0.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
 (3, 29, 10, 0.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
@@ -118,11 +118,11 @@ INSERT INTO `#__pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_temp
 -- --------------------------------------------------------
 
 --
--- Table structure for table `#__pv_paper_displays`
+-- Table structure for table `jos_pv_paper_displays`
 --
 
-DROP TABLE IF EXISTS `#__pv_paper_displays`;
-CREATE TABLE `#__pv_paper_displays` (
+DROP TABLE IF EXISTS `jos_pv_paper_displays`;
+CREATE TABLE `jos_pv_paper_displays` (
   `id` int(11) UNSIGNED NOT NULL,
   `data_id` int(11) NOT NULL DEFAULT '0',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -145,31 +145,31 @@ CREATE TABLE `#__pv_paper_displays` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Indexes for table `#__pv_papers`
+-- Indexes for table `jos_pv_papers`
 --
-ALTER TABLE `#__pv_papers`
+ALTER TABLE `jos_pv_papers`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `pv_papers_hash` (`hash`),
   ADD KEY `pv_papers_display_id` (`display_id`);
 
 --
--- Indexes for table `#__pv_paper_data`
+-- Indexes for table `jos_pv_paper_data`
 --
-ALTER TABLE `#__pv_paper_data`
+ALTER TABLE `jos_pv_paper_data`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pv_papers_data_office_id` (`office_id`);
 
 --
--- Indexes for table `#__pv_paper_displays`
+-- Indexes for table `jos_pv_paper_displays`
 --
-ALTER TABLE `#__pv_paper_displays`
+ALTER TABLE `jos_pv_paper_displays`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pv_papers_display_data_id` (`data_id`);
 
 --
--- Indexes for table `#__pv_offices`
+-- Indexes for table `jos_pv_offices`
 --
-ALTER TABLE `#__pv_offices`
+ALTER TABLE `jos_pv_offices`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pv_offices_level` (`level`);
 
@@ -178,19 +178,19 @@ ALTER TABLE `#__pv_offices`
 --
 
 --
--- AUTO_INCREMENT for table `#__pv_paper_data`
+-- AUTO_INCREMENT for table `jos_pv_paper_data`
 --
-ALTER TABLE `#__pv_paper_data`
+ALTER TABLE `jos_pv_paper_data`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
 --
--- AUTO_INCREMENT for table `#__pv_offices`
+-- AUTO_INCREMENT for table `jos_pv_offices`
 --
-ALTER TABLE `#__pv_offices`
+ALTER TABLE `jos_pv_offices`
   ADD `p_template_html` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   ADD `p_template_css` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   ADD `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   ADD `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   ADD `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '';
 
-UPDATE `#__pv_offices` SET `p_template_html` = "default.tpl", `p_template_css` = "default.css", `p_template_affdidavit` = "", `p_template_instructions` = "", `p_template_statement` = "";
+UPDATE `jos_pv_offices` SET `p_template_html` = "default.tpl", `p_template_css` = "default.css", `p_template_affdidavit` = "", `p_template_instructions` = "", `p_template_statement` = "";
