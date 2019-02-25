@@ -37,9 +37,9 @@
   <administration>
     <menu link="option=com_pvpapers">Nomination Papers</menu>
     <submenu>
-      <menu link="option=com_pvpapers&amp;controller=papers">View Captured Forms</menu>
-      <menu link="option=com_pvpapers&amp;controller=pdisplays">Configure Displays</menu>
-      <menu link="option=com_pvpapers&amp;controller=pdata">Configure Data</menu>
+      <menu link="option=com_pvpapers&amp;controller=papers">View Papers</menu>
+      <menu link="option=com_pvpapers&amp;controller=pdisplays">Configure Papers Displays</menu>
+      <menu link="option=com_pvpapers&amp;controller=pdata">Configure Papers Data</menu>
     </submenu>
     <files folder="admin">
       <filename>config.xml</filename>
