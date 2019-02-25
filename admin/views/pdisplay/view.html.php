@@ -21,7 +21,7 @@ class PvpapersViewPdisplay extends JView
         $pdisplay = &$this->get('Data');
         $isNew    = ($pdisplay->id < 1);
 
-        $model = $this->getModel('Ndata');
+        $model = $this->getModel('Pdata');
         $pdata = $model->getPublished();
 
         $text = $isNew ? JText::_('New') : JText::_('Edit');

@@ -47,7 +47,7 @@ class PvpapersControllerPdisplay extends PvpapersController
 
         JRequest::checkToken() or jexit('Invalid Token');
 
-        $model = $this->getModel('Ndisplay');
+        $model = $this->getModel('Pdisplay');
         $post  = JRequest::get('post');
 
         if ($model->store($post)) {
@@ -73,7 +73,7 @@ class PvpapersControllerPdisplay extends PvpapersController
     {
         JRequest::checkToken() or jexit('Invalid Token');
 
-        $model = $this->getModel('Ndisplay');
+        $model = $this->getModel('Pdisplay');
         if (!$model->delete()) {
             $msg = JText::_('Error: One or More Nominations Could not be Deleted');
         } else {
