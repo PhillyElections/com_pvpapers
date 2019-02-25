@@ -166,12 +166,6 @@ ALTER TABLE `#__pv_paper_displays`
   ADD PRIMARY KEY (`id`),
   ADD KEY `pv_papers_display_data_id` (`data_id`);
 
---
--- Indexes for table `#__pv_offices`
---
-ALTER TABLE `#__pv_offices`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `pv_offices_level` (`level`);
 
 --
 -- AUTO_INCREMENT for dumped tables
