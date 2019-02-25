@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersViewNomination extends JView
+class PvpapersViewPaper extends JView
 {
     /**
      * display method of Nomination view
@@ -22,7 +22,7 @@ class PvpapersViewNomination extends JView
         $isNew      = ($nomination->id < 1);
 
         $text = $isNew ? JText::_('New') : JText::_('Edit');
-        JToolBarHelper::title(JText::_('Nomination') . ': <small><small>[ ' . $text . ' ]</small></small>');
+        JToolBarHelper::title(JText::_('Nomination Paper') . ': <small><small>[ ' . $text . ' ]</small></small>');
 
         JToolBarHelper::cancel('cancel', 'Close');
 
