@@ -149,22 +149,22 @@ CREATE TABLE `#__pv_paper_displays` (
 --
 ALTER TABLE `#__pv_papers`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `pv_nominations_hash` (`hash`),
-  ADD KEY `pv_nominations_display_id` (`display_id`);
+  ADD UNIQUE KEY `pv_papers_hash` (`hash`),
+  ADD KEY `pv_papers_display_id` (`display_id`);
 
 --
 -- Indexes for table `#__pv_paper_data`
 --
 ALTER TABLE `#__pv_paper_data`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `pv_nomination_data_office_id` (`office_id`);
+  ADD KEY `pv_papers_data_office_id` (`office_id`);
 
 --
 -- Indexes for table `#__pv_paper_displays`
 --
 ALTER TABLE `#__pv_paper_displays`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `pv_nomination_display_data_id` (`data_id`);
+  ADD KEY `pv_papers_display_data_id` (`data_id`);
 
 --
 -- Indexes for table `#__pv_offices`
