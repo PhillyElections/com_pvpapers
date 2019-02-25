@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersModelNdisplays extends JModel
+class PvpapersModelPdisplays extends JModel
 {
     /**
      * Nominations data array

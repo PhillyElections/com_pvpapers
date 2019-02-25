@@ -9,7 +9,7 @@ defined('_JEXEC') or die('Restricted access');
  * @subpackage Components
  * @license    GNU/GPL
  */
-class PvpapersModelNdisplay extends JModel
+class PvpapersModelPdisplay extends JModel
 {
     /**
      * Constructor retrieves the ID from the request
