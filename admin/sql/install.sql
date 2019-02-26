@@ -22,8 +22,8 @@ CREATE TABLE `#__pv_papers` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `hash` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `display_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
-  `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
-  `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
+  `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
+  `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
   `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -64,8 +64,8 @@ CREATE TABLE `#__pv_paper_data` (
   `office_id` int(11) NOT NULL DEFAULT '0',
   `signatures` int(5) NOT NULL DEFAULT '0',
   `fees` float(10,4) NOT NULL DEFAULT '0.0000',
-  `p_template_html` varchar(100) COLLATE utf8_unicode_ci DEFAULT 'default.tpl',
-  `p_template_css` varchar(100) COLLATE utf8_unicode_ci DEFAULT 'default.css',
+  `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
+  `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
   `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -122,8 +122,8 @@ DROP TABLE IF EXISTS `#__pv_paper_displays`;
 CREATE TABLE `#__pv_paper_displays` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `data_id` int(11) NOT NULL DEFAULT '0',
-  `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
-  `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT ''
+  `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
+  `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
   `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
