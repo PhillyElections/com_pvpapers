@@ -52,12 +52,7 @@ CREATE TABLE `#__pv_papers` (
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `#__pv_papers`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
-
--- --------------------------------------------------------
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT;
 
 --
 -- Table structure for table `#__pv_paper_data`
@@ -80,9 +75,7 @@ CREATE TABLE `#__pv_paper_data` (
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-ALTER TABLE `#__pv_paper_data`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT;
 
 --
 -- Dumping data for table `#__pv_paper_data`
@@ -146,10 +139,7 @@ CREATE TABLE `#__pv_paper_displays` (
   `checked_out_time` datetime NOT NULL DEFAULT'0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
-ALTER TABLE `#__pv_paper_displays`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT;
 
 --
 -- Indexes for table `#__pv_papers`
