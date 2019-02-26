@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS `#__pv_papers`;
 
 DROP TABLE IF EXISTS `#__pv_papers`;
 CREATE TABLE `#__pv_papers` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `hash` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `display_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -52,7 +52,7 @@ CREATE TABLE `#__pv_papers` (
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Table structure for table `#__pv_paper_data`
@@ -60,7 +60,7 @@ CREATE TABLE `#__pv_papers` (
 
 DROP TABLE IF EXISTS `#__pv_paper_data`;
 CREATE TABLE `#__pv_paper_data` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `office_id` int(11) NOT NULL DEFAULT '0',
   `signatures` int(5) NOT NULL DEFAULT '0',
   `fees` float(10,4) NOT NULL DEFAULT '0.0000',
@@ -75,7 +75,7 @@ CREATE TABLE `#__pv_paper_data` (
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Dumping data for table `#__pv_paper_data`
@@ -120,7 +120,7 @@ INSERT INTO `#__pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_temp
 
 DROP TABLE IF EXISTS `#__pv_paper_displays`;
 CREATE TABLE `#__pv_paper_displays` (
-  `id` int(11) UNSIGNED NOT NULL,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `data_id` int(11) NOT NULL DEFAULT '0',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
   `p_template_css` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -139,7 +139,7 @@ CREATE TABLE `#__pv_paper_displays` (
   `checked_out_time` datetime NOT NULL DEFAULT'0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
 -- Indexes for table `#__pv_papers`
