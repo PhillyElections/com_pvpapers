@@ -167,8 +167,8 @@ ALTER TABLE `#__pv_paper_displays`
 -- AUTO_INCREMENT for table `#__pv_offices`
 --
 ALTER TABLE `#__pv_offices`
-  ADD `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_html`,
-  ADD `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_html`,
+  ADD `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl' AFTER `template_html`,
+  ADD `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css' AFTER `template_css`,
   ADD `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `_template_affidavit`,
   ADD `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_instructions`,
   ADD `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_statement`;
