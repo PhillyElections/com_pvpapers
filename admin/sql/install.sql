@@ -19,7 +19,7 @@ DROP TABLE IF EXISTS `#__pv_papers`;
 
 DROP TABLE IF EXISTS `#__pv_papers`;
 CREATE TABLE `#__pv_papers` (
-  `id` int(11) UNSIGNED NOT NULL PRIMARY AUTO_INCREMENT,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `hash` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `display_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
@@ -51,7 +51,8 @@ CREATE TABLE `#__pv_papers` (
   `checked_out` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -60,7 +61,7 @@ CREATE TABLE `#__pv_papers` (
 
 DROP TABLE IF EXISTS `#__pv_paper_data`;
 CREATE TABLE `#__pv_paper_data` (
-  `id` int(11) UNSIGNED NOT NULL PRIMARY AUTO_INCREMENT,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `office_id` int(11) NOT NULL DEFAULT '0',
   `signatures` int(5) NOT NULL DEFAULT '0',
   `fees` float(10,4) NOT NULL DEFAULT '0.0000',
@@ -74,7 +75,8 @@ CREATE TABLE `#__pv_paper_data` (
   `checked_out` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `checked_out_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
@@ -120,7 +122,7 @@ INSERT INTO `#__pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_temp
 
 DROP TABLE IF EXISTS `#__pv_paper_displays`;
 CREATE TABLE `#__pv_paper_displays` (
-  `id` int(11) UNSIGNED NOT NULL PRIMARY AUTO_INCREMENT,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `data_id` int(11) NOT NULL DEFAULT '0',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
   `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
@@ -138,7 +140,8 @@ CREATE TABLE `#__pv_paper_displays` (
   `checked_out` int(11) UNSIGNED NOT NULL DEFAULT '0',
   `checked_out_time` datetime NOT NULL DEFAULT'0000-00-00 00:00:00',
   `created` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+  `updated` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
