@@ -69,9 +69,9 @@ class PvpapersModelInput extends JModel
      */
     public function store($data)
     {
-dd("model inout::store beginning",$_REQUEST);
 
         $pdisplay = $this->getTable('pdisplay');
+dd("model inout::store before load",$_REQUEST);
         $pdisplay->load($data['display_id']);
         $data['published'] = 1;
         $data['p_template_form'] = $pdisplay->p_template_form;
