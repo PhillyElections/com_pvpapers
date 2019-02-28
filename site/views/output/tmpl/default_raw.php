@@ -11,9 +11,9 @@ $filename = 'Nomination_Paper.pdf';
 $mpdf = new mPDF();
 
 $mpdf->SetTitle('Nomination Paper');
-$mpdf->showWatermarkText = true;
+//$mpdf->showWatermarkText = true;
 // Add styles
-$mpdf->WriteHTML($this->css, 1);
+//$mpdf->WriteHTML($this->css, 1);
 
 // Write some HTML code:
 //$mpdf->WriteHTML($this->html, 2);
