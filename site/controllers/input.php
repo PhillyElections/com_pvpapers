@@ -35,7 +35,7 @@ class PvpapersControllerInput extends PvpapersController
      */
     public function save()
     {
-        //JRequest::checkToken() or jexit('Invalid Token');
+        JRequest::checkToken() or jexit('Invalid Token');
 dd(JRequest::checkToken(),$_REQUEST);
         $params = &JComponentHelper::getParams('com_pvpapers');
 
