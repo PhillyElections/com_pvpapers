@@ -12,6 +12,7 @@ defined('_JEXEC') or die('Restricted access');
 class TableOffice extends JTable
 {
     public $id;
+    public $p_template_form;
     public $p_template_html;
     public $p_template_css;
     public $p_template_affidavit;

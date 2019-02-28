@@ -73,6 +73,7 @@ class PvpapersModelInput extends JModel
         $pdisplay = $this->getTable('pdisplay');
         $pdisplay->load($data['display_id']);
         $data['published'] = 1;
+        $data['p_template_form'] = $pdisplay->p_template_form;
         $data['p_template_html'] = $pdisplay->p_template_html;
         $data['p_template_css'] = $pdisplay->p_template_css;
         $data['p_template_affidavit'] = $pdisplay->p_template_affidavit;

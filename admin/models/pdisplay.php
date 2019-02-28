@@ -72,6 +72,7 @@ class PvpapersModelPdisplay extends JModel
 
         $pdatum = $this->getTable('pdatum');
         $pdatum->load($data['data_id']);
+        $data['p_template_form'] = $pdatum->p_template_form;
         $data['p_template_html'] = $pdatum->p_template_html;
         $data['p_template_css'] = $pdatum->p_template_css;            
         $data['p_template_affidavit'] = $pdatum->p_template_affidavit;

@@ -3,24 +3,32 @@
 jimport('mpdf.mpdf.mpdf');
 jimport('mpdf.mpdf.vendor.autoload');
 //jimport('fpdi/src/autoload.php');
-$filename = 'Nomination_Petition.pdf';
+$filename = 'Nomination_Paper.pdf';
 
 // chars to keep in mind (in the template): á|é|í|ó|ú|ñ|ü|¡|«|»|¿
 
 //Create an instance of the class:
 $mpdf = new mPDF();
 
-$mpdf->SetTitle('Nomination Petition');
+$mpdf->SetTitle('Nomination Paper');
 $mpdf->showWatermarkText = true;
 // Add styles
 $mpdf->WriteHTML($this->css, 1);
 
 // Write some HTML code:
-$mpdf->WriteHTML($this->html, 2);
+//$mpdf->WriteHTML($this->html, 2);
 
 // only show additional pages based on presence of filenames
-if ( $this->data->p_template_affidavit || $this->data->p_template_instructions || $this->data->p_template_statement ) {
+if ( $this->data->p_template_form || $this->data->p_template_affidavit || $this->data->p_template_instructions || $this->data->p_template_statement ) {
 	$mpdf->SetImportUse();
+}
+if ( $this->data->p_template_form ) {
+	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_form);
+	$tplId = $mpdf->ImportPage(1);
+	$mpdf->UseTemplate($tplId);
+	$mpdf->addPage();
+	$tplId = $mpdf->ImportPage(2);
+	$mpdf->UseTemplate($tplId);
 }
 if ( $this->data->p_template_affidavit ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_affidavit);

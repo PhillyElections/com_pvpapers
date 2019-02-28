@@ -72,6 +72,7 @@ class PvpapersModelPdatum extends JModel
 
         $office = $this->getTable('office');
         $office->load($data['office_id']);
+        $data['p_template_form'] = $office->p_template_form;
         $data['p_template_html'] = $office->p_template_html;
         $data['p_template_css'] = $office->p_template_css;            
         $data['p_template_affidavit'] = $office->p_template_affidavit;

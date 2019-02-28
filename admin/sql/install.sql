@@ -22,6 +22,7 @@ CREATE TABLE `#__pv_papers` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `hash` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `display_id` int(11) UNSIGNED NOT NULL DEFAULT '0',
+  `p_template_form` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'blank_nomination_paper.pdf',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
   `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
   `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -65,6 +66,7 @@ CREATE TABLE `#__pv_paper_data` (
   `office_id` int(11) NOT NULL DEFAULT '0',
   `signatures` int(5) NOT NULL DEFAULT '0',
   `fees` float(10,4) NOT NULL DEFAULT '0.0000',
+  `p_template_form` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'blank_nomination_paper.pdf',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
   `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
   `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -83,36 +85,36 @@ CREATE TABLE `#__pv_paper_data` (
 -- Dumping data for table `#__pv_paper_data`
 --
 
-INSERT INTO `#__pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_template_html`, `p_template_css`, `p_template_affidavit`, `p_template_instructions`, `p_template_statement`, `published`, `description`, `checked_out`, `checked_out_time`, `created`, `updated`) VALUES
-(1, 19, 10, 0.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(2, 22, 5, 0.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(3, 29, 10, 0.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(4, 9, 1000, 100.0000, '', '', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
-(5, 8, 1000, 100.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(6, 7, 1000, 100.0000, '', '', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
-(7, 6, 750, 100.0000, '', '', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
-(8, 4, 1000, 100.0000, '', '', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
-(9, 5, 1000, 100.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(10, 10, 1000, 100.0000, '', '', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
-(11, 11, 1000, 100.0000, '', '', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
-(12, 14, 2000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(13, 15, 2000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(14, 12, 1000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(15, 13, 1000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(16, 18, 1000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(17, 16, 300, 100.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(18, 17, 500, 100.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(19, 23, 1000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(20, 24, 1000, 100.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(21, 25, 1000, 100.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(22, 26, 1000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(23, 27, 1000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(24, 28, 100, 25.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(25, 20, 250, 25.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(26, 21, 250, 25.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(27, 1, 2000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(28, 2, 1000, 150.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
-(29, 3, 2000, 200.0000, '', '', '', '', '', 0, '', 0, @tnl, @tnow, @tnl);
+INSERT INTO `#__pv_paper_data` (`id`, `office_id`, `signatures`, `fees`, `p_template_form`, `p_template_html`, `p_template_css`, `p_template_affidavit`, `p_template_instructions`, `p_template_statement`, `published`, `description`, `checked_out`, `checked_out_time`, `created`, `updated`) VALUES
+(1, 19, 10, 0.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(2, 22, 5, 0.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(3, 29, 10, 0.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(4, 9, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
+(5, 8, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(6, 7, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
+(7, 6, 750, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
+(8, 4, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
+(9, 5, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(10, 10, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
+(11, 11, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 1, '', 0, @tnl, @tnow, @tnl),
+(12, 14, 2000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(13, 15, 2000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(14, 12, 1000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(15, 13, 1000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(16, 18, 1000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(17, 16, 300, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(18, 17, 500, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(19, 23, 1000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(20, 24, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(21, 25, 1000, 100.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(22, 26, 1000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(23, 27, 1000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(24, 28, 100, 25.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(25, 20, 250, 25.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(26, 21, 250, 25.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(27, 1, 2000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(28, 2, 1000, 150.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl),
+(29, 3, 2000, 200.0000, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', 0, '', 0, @tnl, @tnow, @tnl);
 
 -- --------------------------------------------------------
 
@@ -124,6 +126,7 @@ DROP TABLE IF EXISTS `#__pv_paper_displays`;
 CREATE TABLE `#__pv_paper_displays` (
   `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
   `data_id` int(11) NOT NULL DEFAULT '0',
+  `p_template_form` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'blank_nomination_paper.pdf',
   `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl',
   `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css',
   `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
@@ -167,6 +170,7 @@ ALTER TABLE `#__pv_paper_displays`
 -- AUTO_INCREMENT for table `#__pv_offices`
 --
 ALTER TABLE `#__pv_offices`
+  ADD `p_template_form` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'blank_nomination_paper.pdf' BEFORE `template_html`,
   ADD `p_template_html` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.tpl' AFTER `template_html`,
   ADD `p_template_css` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'default.css' AFTER `template_css`,
   ADD `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_affidavit`,
