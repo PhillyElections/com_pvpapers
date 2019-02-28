@@ -17,7 +17,8 @@ $mpdf->SetTitle('Nomination Paper');
 
 // Write some HTML code:
 //$mpdf->WriteHTML($this->html, 2);
-
+$x=40;
+$x_offset=182;
 // only show additional pages based on presence of filenames
 if ( $this->data->p_template_form || $this->data->p_template_affidavit || $this->data->p_template_instructions || $this->data->p_template_statement ) {
 	$mpdf->SetImportUse();
@@ -25,10 +26,10 @@ if ( $this->data->p_template_form || $this->data->p_template_affidavit || $this-
 if ( $this->data->p_template_form ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_form);
 	$tplId = $mpdf->ImportPage(1);
-	$mpdf->UseTemplate($tplId,null,null,181);
+	$mpdf->UseTemplate($tplId, $x, null, $x_offset);
 	$mpdf->addPage();
 	$tplId = $mpdf->ImportPage(2);
-	$mpdf->UseTemplate($tplId,null,null,181);
+	$mpdf->UseTemplate($tplId, $x, null, $x_offset);
 }
 if ( $this->data->p_template_affidavit ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_affidavit);
