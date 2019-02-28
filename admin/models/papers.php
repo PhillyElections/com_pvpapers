@@ -56,22 +56,20 @@ class PvpapersModelPapers extends JModel
      */
     public function _buildQuery()
     {
-        $where = ' ';
-            $query = ' SELECT 
-                        `n`.* 
-                        , `nd`.`election_type`
-                        , `o`.`name` as `office_name` 
-                       FROM 
-                          `#__pv_papers` `n`
-                        , `#__pv_paper_displays` `nd`
-                        , `#__pv_paper_data` `na`
-                        , `#__pv_offices` `o`
-                       WHERE
-                           `n`.`display_id`=`nd`.`id` 
-                       AND `nd`.`data_id`=`na`.`id` 
-                       AND `na`.`office_id`=`o`.`id` ORDER BY `n`.`id` desc ';
-
-        return $query . $where;
+        return 
+            'SELECT 
+                `n`.* 
+                , `nd`.`election_type`
+                , `o`.`name` as `office_name` 
+                FROM 
+                    `#__pv_papers` `n`
+                , `#__pv_paper_displays` `nd`
+                , `#__pv_paper_data` `na`
+                , `#__pv_offices` `o`
+                WHERE
+                    `n`.`display_id`=`nd`.`id` 
+                AND `nd`.`data_id`=`na`.`id` 
+                AND `na`.`office_id`=`o`.`id` ORDER BY `n`.`id` desc ';
     }
 
     /**
