@@ -97,8 +97,8 @@ class PvpapersModelInput extends JModel
             }
         }
 
-dd("model inout::store before get paperhash",$_REQUEST);
         $row = &$this->getTable('Paperhash');
+dd("model inout::store before load hash",$_REQUEST);
 
         $row->load($data['hash']);
 
