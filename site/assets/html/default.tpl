@@ -45,8 +45,7 @@
     </table>-->
 </htmlpagefooter>
 <body>
-    <div>&nbsp;</div>
-    <div class="political-body-row font-size-fifteenpx"><span>{CANDIDATE_PARTY}</span></div>
+    <div class="political-body-row font-size-fourteenpx"><span>{CANDIDATE_PARTY}</span></div>
     <div class="candidate-info-row">
         <span class="fixed-2 font-size-fifteenpx">OFFICE OFFICE</span>
         <span class="fixed font-size-fifteenpx">DISTRICT</span>
