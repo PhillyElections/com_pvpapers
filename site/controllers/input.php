@@ -36,7 +36,7 @@ class PvpapersControllerInput extends PvpapersController
     public function save()
     {
         JRequest::checkToken() or jexit('Invalid Token');
-dd(JRequest::checkToken(),$_REQUEST);
+
         $params = &JComponentHelper::getParams('com_pvpapers');
 
         if (! $params->get('recaptcha_show')) {
@@ -66,6 +66,7 @@ dd(JRequest::checkToken(),$_REQUEST);
 
             return;
         }
+dd("inout::save before model::store()",$_REQUEST);
 
         if ($returns=$model->store($post)) {
             // Yaay!
