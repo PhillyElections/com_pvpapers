@@ -72,7 +72,6 @@ class PvpapersModelInput extends JModel
 
         $pdisplay = $this->getTable('pdisplay');
         $pdisplay->load($data['display_id']);
-dd("model inout::store after load",$_REQUEST);
         $data['published'] = 1;
         $data['p_template_form'] = $pdisplay->p_template_form;
         $data['p_template_html'] = $pdisplay->p_template_html;
@@ -98,6 +97,7 @@ dd("model inout::store after load",$_REQUEST);
             }
         }
 
+dd("model inout::store before get paperhash",$_REQUEST);
         $row = &$this->getTable('Paperhash');
 
         $row->load($data['hash']);
