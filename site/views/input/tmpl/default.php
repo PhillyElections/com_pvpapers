@@ -341,4 +341,4 @@ if ($params->get('recaptcha_show')) {
 ?>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script type="text/javascript" src="components/com_pvpapers/assets/js/main1.js"></script>
+<script type="text/javascript" src="components/com_pvpapers/assets/js/main.js"></script>
