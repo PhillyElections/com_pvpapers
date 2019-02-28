@@ -18,8 +18,8 @@ class PvpapersViewPaper extends JView
     public function display($tpl = null)
     {
 
-        $nomination = &$this->get('Data');
-        $isNew      = ($nomination->id < 1);
+        $paper = &$this->get('Data');
+        $isNew      = ($paper->id < 1);
 
         $text = $isNew ? JText::_('New') : JText::_('Edit');
         JToolBarHelper::title(JText::_('Nomination Paper') . ': <small><small>[ ' . $text . ' ]</small></small>');
@@ -28,7 +28,7 @@ class PvpapersViewPaper extends JView
 
         JToolBarHelper::preferences( 'com_pvpapers' );
 
-        $this->assignRef('paper', $nomination);
+        $this->assignRef('paper', $paper);
         $this->assignRef('isNew', $isNew);
 
         parent::display($tpl);

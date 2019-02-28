@@ -2,7 +2,7 @@
 
 //      JToolBarHelper::back();
 
-$exportFilename = date('Y-m-d') . '_nominations_export' . '.csv';
+$exportFilename = date('Y-m-d') . '_papers_export' . '.csv';
 
 JResponse::clearHeaders();
 

@@ -8,7 +8,7 @@ if (count(JRequest::getVar('msg', null, 'post'))) {
     }
 }
 // try to cast to object next
-$row = ! $this->isNew ? $this->nomination : (object) JRequest::get('post');
+$row = ! $this->isNew ? $this->paper : (object) JRequest::get('post');
 
 ?>
 <table width="100%">
@@ -193,7 +193,7 @@ $row = ! $this->isNew ? $this->nomination : (object) JRequest::get('post');
             </td>
             <td>
               <input type="hidden" name="task" value="<?=$this->isNew ? 'save' : 'update';?>" />
-              <input type="hidden" name="controller" value="nomination" />
+              <input type="hidden" name="controller" value="paper" />
               <input type="hidden" name="id" value="<?=$row->id;?>" />
               <?=JHTML::_('form.token');?>
             </td>

@@ -2,7 +2,7 @@
 defined('_JEXEC') or die('Restricted access');
 
 $pagination = &$this->pagination;
-$rows = $this->nominations;
+$rows = $this->papers;
 
 ?>
 <form action="<?=JRoute::_('index.php?option=com_pvpapers');?>" method="post" name="adminForm" id="adminForm">
@@ -104,6 +104,6 @@ $k = 1 - $k;
     <?=JHTML::_('form.token');?>
     <input type="hidden" name="task" value="" />
     <input type="hidden" name="boxchecked" value="0" />
-    <input type="hidden" name="controller" value="nominations" />
+    <input type="hidden" name="controller" value="papers" />
     <?=JHTML::_('form.token');?>
 </form>
