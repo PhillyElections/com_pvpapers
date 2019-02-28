@@ -368,24 +368,11 @@ section.form {
 .boxes {
     padding-left: 62px;
 }
-.affidavit-name {
-    padding-top: 126px;
+.political-body-row {
+    margin-top: 126px;
+    margin-left: 62px;
 }
-.affidavit-address {
-    padding-top: 28px;
-}
-.affidavit-city-state-zip {
-    padding-top: 28px;   
-}
-.affidavit-ward-division-party {
-    padding-top: 30px;   
-}
-.affidavit-office-district {
-    padding-top: 18px;   
-}
-.affidavit-phone {
-    padding-top: 278px;   
-}
-.affidavit-office-only {
-    padding-top: 194px;   
+.candidate-info-row {
+    margin-top: 126px;
+    margin-left: 62px;
 }
