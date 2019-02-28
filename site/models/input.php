@@ -98,7 +98,6 @@ class PvpapersModelInput extends JModel
         }
 
         $row = &$this->getTable('Paperhash');
-dd("model inout::store before load hash",$_REQUEST);
 
         $row->load($data['hash']);
 
@@ -124,7 +123,7 @@ dd("model inout::store before load hash",$_REQUEST);
         }
 
         // we didn't match on enough points, so let's start writing a new road
-        $row = &$this->getTable('Nomination');
+        $row = &$this->getTable('Paper');
 
         $data['candidate_phone']    = $data['candidate_phone'] ? preg_replace('/^1|\D/', '', $data['candidate_phone']) : '';
         $temp = json_encode($data);
