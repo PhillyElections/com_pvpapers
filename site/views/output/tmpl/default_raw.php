@@ -17,7 +17,7 @@ $mpdf->SetTitle('Nomination Paper');
 
 // Write some HTML code:
 //$mpdf->WriteHTML($this->html, 2);
-$x=40;
+$x=17;
 $x_offset=182;
 // only show additional pages based on presence of filenames
 if ( $this->data->p_template_form || $this->data->p_template_affidavit || $this->data->p_template_instructions || $this->data->p_template_statement ) {
