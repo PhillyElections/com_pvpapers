@@ -369,10 +369,10 @@ section.form {
     padding-left: 62px;
 }
 .political-body-row {
-    margin-top: 126px;
-    margin-left: 62px;
+    padding-top: 100px;
+    padding-left: 100px;
 }
 .candidate-info-row {
-    margin-top: 126px;
-    margin-left: 22px;
+    padding-top: 126px;
+    padding-left: 22px;
 }
