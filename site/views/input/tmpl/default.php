@@ -108,7 +108,7 @@ if (! count($pdisplays) ) {
                         </td>
                         <td width="250">
                             <label id="party_msg" for="candidate_party"><?=JText::_('CANDIDATE PARTY'); ?>:&nbsp;</label>
-                            <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="25%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
+                            <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="23%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
                         </td>
                     </tr>
                 </table>
