@@ -12,11 +12,6 @@ $mpdf = new mPDF();
 
 $mpdf->SetTitle('Nomination Paper');
 //$mpdf->showWatermarkText = true;
-// Add styles
-//$mpdf->WriteHTML($this->css, 1);
-
-// Write some HTML code:
-//$mpdf->WriteHTML($this->html, 2);
 $x=14;
 $x_offset=181.5;
 // only show additional pages based on presence of filenames
@@ -27,6 +22,12 @@ if ( $this->data->p_template_form ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_form);
 	$tplId = $mpdf->ImportPage(1);
 	$mpdf->UseTemplate($tplId, $x, null, $x_offset);
+	// Add styles
+	$mpdf->WriteHTML($this->css, 1);
+
+	// Write some HTML code:
+	$mpdf->WriteHTML($this->html, 2);
+
 	$mpdf->addPage();
 	$tplId = $mpdf->ImportPage(2);
 	$mpdf->UseTemplate($tplId, $x, null, $x_offset);
