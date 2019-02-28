@@ -25,10 +25,10 @@ if ( $this->data->p_template_form || $this->data->p_template_affidavit || $this-
 if ( $this->data->p_template_form ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_form);
 	$tplId = $mpdf->ImportPage(1);
-	$mpdf->UseTemplate($tplId,null,null,180);
+	$mpdf->UseTemplate($tplId,null,null,181);
 	$mpdf->addPage();
 	$tplId = $mpdf->ImportPage(2);
-	$mpdf->UseTemplate($tplId,null,null,180);
+	$mpdf->UseTemplate($tplId,null,null,181);
 }
 if ( $this->data->p_template_affidavit ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_affidavit);
