@@ -47,10 +47,10 @@
 <body>
     <div class="political-body-row font-size-thirteenpx"><span>{CANDIDATE_PARTY}</span></div>
     <div class="candidate-info-row">
-        <span class="fixed-2 font-size-thirteenpx">OFFICE OFFICE</span>
-        <span class="fixed font-size-thirteenpx">DISTRICT</span>
-        <span class="fixed-3 font-size-thirteenpx">NAME OF CANDIDATE</span>
-        <span class="fixed-4 font-size-thirteenpx">### SOME STREET #####</span>
-        <span class="fixed-2 font-size-thirteenpx">SOME JOB</span>
+        <span class="fixed-2 font-size-elevenpx">OFFICE OFFICE</span>
+        <span class="fixed font-size-elevenpx">DISTRICT</span>
+        <span class="fixed-3 font-size-elevenpx">NAME OF CANDIDATE</span>
+        <span class="fixed-4 font-size-elevenpx">### SOME STREET #####</span>
+        <span class="fixed-2 font-size-elevenpx">SOME JOB</span>
     </div>
 </body>
