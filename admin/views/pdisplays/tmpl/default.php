@@ -19,29 +19,32 @@ $rows = &$this->pdisplays;
                     <th width="1px">
                         <?=JText::_('P');?>
                     </th>
-                    <th width="20%">
+                    <th width="12%">
                         <?=JText::_('OFFICE');?>
                     </th>
-                    <th width="10%">
+                    <th width="5%">
                         <?=JText::_('ELECTION TYPE');?>
                     </th>
-                    <th width="10%">
+                    <th width="5%">
                         <?=JText::_('ELECTION DATE');?>
                     </th>
-                    <th >
+                    <th width="5%">
                         <?=JText::_('DESCRIPTION');?>
                     </th>
-                    <th width="7%">
+                    <th width="5%">
                         <?=JText::_('SIGNING START');?>
                     </th>
-                    <th width="7%">
+                    <th width="5%">
                         <?=JText::_('SIGNING STOP');?>
                     </th>
-                    <th width="7%">
+                    <th width="5%">
                         <?=JText::_('DISPLAY START');?>
                     </th>
-                    <th width="7%">
+                    <th width="5%">
                         <?=JText::_('DISPLAY STOP');?>
+                    </th>
+                    <th width="10%">
+                        <?=JText::_('FORM');?>
                     </th>
                     <th width="10%">
                         <?=JText::_('TPL');?>
@@ -101,6 +104,9 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                         <?=$row->display_stop;?>
                     </td>
                     <td>
+                        <?=$row->p_template_form;?>
+                    </td>
+                    <td>
                         <?=$row->p_template_html;?>
                     </td>
                     <td>
@@ -120,7 +126,7 @@ $k = 1 - $k;
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="15"><?php echo $pagination->getListFooter(); ?></td>
+                    <td colspan="16"><?php echo $pagination->getListFooter(); ?></td>
                 </tr>
             </tfoot>
         </table>

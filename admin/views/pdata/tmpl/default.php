@@ -19,17 +19,20 @@ $rows      = $this->pdata;
                     <th width="1px">
                       P
                     </th>
-                    <th width="20%">
+                    <th width="22%">
                         <?=JText::_('OFFICE');?>
                     </th>
                     <th >
                         <?=JText::_('DESCRIPTION');?>
                     </th>
-                    <th width="10%">
+                    <th width="15%">
                         <?=JText::_('SIGNATURES');?>
                     </th>
                     <th width="10%">
                         <?=JText::_('FEES');?>
+                    </th>
+                    <th width="10%">
+                        <?=JText::_('FORM');?>
                     </th>
                     <th width="10%">
                         <?=JText::_('TPL');?>
@@ -75,6 +78,9 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                     </td>
                     <td>
                         <?=money_format('%(#10n', $row->fees);?>
+                    </td>
+                    <td>
+                        <?=$row->p_template_form;?>
                     </td>
                     <td>
                         <?=$row->p_template_html;?>
