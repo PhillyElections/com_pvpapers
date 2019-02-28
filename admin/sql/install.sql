@@ -176,3 +176,15 @@ ALTER TABLE `#__pv_offices`
   ADD `p_template_affidavit` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_affidavit`,
   ADD `p_template_instructions` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_instructions`,
   ADD `p_template_statement` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '' AFTER `template_statement`;
+
+-- 
+-- dates *must* change for production
+--
+
+INSERT INTO `jos_pv_paper_displays` (`id`, `data_id`, `p_template_form`, `p_template_html`, `p_template_css`, `p_template_affidavit`, `p_template_instructions`, `p_template_statement`, `signing_start`, `signing_stop`, `display_start`, `display_stop`, `election_type`, `election_date`, `description`, `published`, `checked_out`, `checked_out_time`, `created`, `updated`) VALUES
+(1, 4, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', '2019-02-19', '2019-03-26', '2019-02-19', '2019-03-26', 'general', '2019-11-05', '', 0, 0, '0000-00-00 00:00:00', '2019-02-28 14:25:29', '0000-00-00 00:00:00'),
+(2, 6, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', '2019-02-19', '2019-03-26', '2019-02-19', '2019-03-26', 'general', '2019-11-05', '', 0, 0, '0000-00-00 00:00:00', '2019-02-28 14:25:34', '0000-00-00 00:00:00'),
+(3, 7, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', '2019-02-19', '2019-03-26', '2019-02-19', '2019-03-26', 'general', '2019-11-05', '', 0, 0, '0000-00-00 00:00:00', '2019-02-28 14:25:39', '0000-00-00 00:00:00'),
+(4, 8, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', '2019-02-19', '2019-03-26', '2019-02-19', '2019-03-26', 'general', '2019-11-05', '', 0, 0, '0000-00-00 00:00:00', '2019-02-28 14:25:43', '0000-00-00 00:00:00'),
+(5, 10, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', '2019-02-19', '2019-03-26', '2019-02-19', '2019-03-26', 'general', '2019-11-05', '', 0, 0, '0000-00-00 00:00:00', '2019-02-28 14:25:47', '0000-00-00 00:00:00'),
+(6, 11, 'blank_nomination_paper.pdf', 'default.tpl', 'default.css', '', '', '', '2019-02-19', '2019-03-26', '2019-02-19', '2019-03-26', 'general', '2019-11-05', '', 0, 0, '0000-00-00 00:00:00', '2019-02-28 14:25:51', '0000-00-00 00:00:00');
