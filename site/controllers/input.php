@@ -66,7 +66,6 @@ class PvpapersControllerInput extends PvpapersController
 
             return;
         }
-dd("inout::save before model::store()",$_REQUEST);
 
         if ($returns=$model->store($post)) {
             // Yaay!
