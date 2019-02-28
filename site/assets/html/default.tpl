@@ -45,12 +45,12 @@
     </table>-->
 </htmlpagefooter>
 <body>
-    <div class="political-body-row">{CANDIDATE_PARTY}</div>
+    <div class="political-body-row font-size-fifteenpx">{CANDIDATE_PARTY}</div>
     <div class="candidate-info-row">
-        <div class="fixed-2">OFFICE OFFICE</div>
-        <div class="fixed">DISTRICT</div>
-        <div class="fixed-3">NAME OF CANDIDATE</div>
-        <div class="fixed-4">### SOME STREET #####</div>
-        <div class="fixed-2">SOME JOB</div>
+        <span class="fixed-2 font-size-fifteenpx">OFFICE OFFICE</span>
+        <span class="fixed font-size-fifteenpx">DISTRICT</span>
+        <span class="fixed-3 font-size-fifteenpx">NAME OF CANDIDATE</span>
+        <span class="fixed-4 font-size-fifteenpx">### SOME STREET #####</span>
+        <span class="fixed-2 font-size-fifteenpx">SOME JOB</span>
     </div>
 </body>
