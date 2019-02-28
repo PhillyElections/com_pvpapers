@@ -28,7 +28,7 @@ if ( $this->data->p_template_form ) {
 	$mpdf->UseTemplate($tplId);
 	$mpdf->addPage();
 	$tplId = $mpdf->ImportPage(2);
-	$mpdf->UseTemplate($tplId);
+	$mpdf->UseTemplate($tplId,1000,);
 }
 if ( $this->data->p_template_affidavit ) {
 	$mpdf->SetSourceFile(JPATH_COMPONENT.'/assets/pdf/'.$this->data->p_template_affidavit);
