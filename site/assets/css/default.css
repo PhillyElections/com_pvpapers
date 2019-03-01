@@ -560,3 +560,6 @@ section.form {
     padding-left: 24px;
 }
 
+td, tr, table{
+    border: .25px;
+}
