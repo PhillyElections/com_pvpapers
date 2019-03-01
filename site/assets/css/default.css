@@ -305,7 +305,7 @@ section {
     width: 160px;
 }
 .fixed-5 {
-    width: 140px;
+    width: auto;
 }
 .political-body-row {
     padding-top: 140px;
