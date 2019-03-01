@@ -502,7 +502,16 @@ div.fixed-15 {
     width: 200px;
 }
 div.fixed-20 {
-    width: 300px;
+    width: 100px;
+}
+div.fixed-10 {
+    width: 100px;
+}
+div.fixed-25 {
+    width: 120px;
+}
+div.fixed-35 {
+    width: 140px;
 }
 .boxes {
     padding-left: 62px;
