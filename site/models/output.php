@@ -892,11 +892,6 @@ class PvpapersModelOutput extends JModel
         $this->_values['I13']['value'] = "";
         $this->_values['I14']['value'] = "";
         $this->_values['I15']['value'] = "";
-        $this->_values['I16']['value'] = "";
-        $this->_values['I17']['value'] = "";
-        $this->_values['I18']['value'] = "";
-        $this->_values['I19']['value'] = "";
-        $this->_values['I20']['value'] = "";
         if ($data->candidate_district) {
             $this->_values['I01']['value'] = sprintf('%02d', $data->candidate_district)[0];
             $this->_values['I02']['value'] = sprintf('%02d', $data->candidate_district)[1];
@@ -926,6 +921,21 @@ class PvpapersModelOutput extends JModel
         $this->_values['P23']['value'] = $data->candidate_party[22];
         $this->_values['P24']['value'] = $data->candidate_party[23];
         $this->_values['P25']['value'] = $data->candidate_party[24];
+        $this->_values['O01']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][0];
+        $this->_values['O02']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][1];
+        $this->_values['O03']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][2];
+        $this->_values['O04']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][3];
+        $this->_values['O05']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][4];
+        $this->_values['O06']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][5];
+        $this->_values['O07']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][6];
+        $this->_values['O08']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][7];
+        $this->_values['O09']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][8];
+        $this->_values['O10']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][9];
+        $this->_values['O11']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][10];
+        $this->_values['O12']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][11];
+        $this->_values['O13']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][12];
+        $this->_values['O14']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][13];
+        $this->_values['O15']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][14];
 
         return $this->_values;
     }
