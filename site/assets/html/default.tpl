@@ -4,6 +4,7 @@
     <div class="boxes candidate-info-row">
         <div class="left fixed-20 font-size-ninepx bold">{CANDIDATE_OFFICE}&nbsp;</div>
         <div class="left fixed font-size-ninepx">&nbsp;</div>
+        <div class="left fixed font-size-ninepx">&nbsp;</div>
         <div class="left fixed-10 font-size-ninepx bold">{CANDIDATE_DISTRICT}&nbsp;</div>
         <div class="left fixed font-size-ninepx">&nbsp;</div>
         <div class="left fixed-25 font-size-ninepx bold">{CANDIDATE_NAME}&nbsp;</div>
