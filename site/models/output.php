@@ -400,6 +400,41 @@ class PvpapersModelOutput extends JModel
         'P23'=>array('value'=>'&nbsp;','case'=>'u',),
         'P24'=>array('value'=>'&nbsp;','case'=>'u',),
         'P25'=>array('value'=>'&nbsp;','case'=>'u',),
+        '001'=>array('value'=>'&nbsp;','case'=>'u',),
+        '002'=>array('value'=>'&nbsp;','case'=>'u',),
+        '003'=>array('value'=>'&nbsp;','case'=>'u',),
+        '004'=>array('value'=>'&nbsp;','case'=>'u',),
+        '005'=>array('value'=>'&nbsp;','case'=>'u',),
+        '006'=>array('value'=>'&nbsp;','case'=>'u',),
+        '007'=>array('value'=>'&nbsp;','case'=>'u',),
+        '008'=>array('value'=>'&nbsp;','case'=>'u',),
+        '009'=>array('value'=>'&nbsp;','case'=>'u',),
+        '010'=>array('value'=>'&nbsp;','case'=>'u',),
+        '011'=>array('value'=>'&nbsp;','case'=>'u',),
+        '012'=>array('value'=>'&nbsp;','case'=>'u',),
+        '013'=>array('value'=>'&nbsp;','case'=>'u',),
+        '014'=>array('value'=>'&nbsp;','case'=>'u',),
+        '015'=>array('value'=>'&nbsp;','case'=>'u',),
+        '016'=>array('value'=>'&nbsp;','case'=>'u',),
+        '017'=>array('value'=>'&nbsp;','case'=>'u',),
+        '018'=>array('value'=>'&nbsp;','case'=>'u',),
+        '019'=>array('value'=>'&nbsp;','case'=>'u',),
+        '020'=>array('value'=>'&nbsp;','case'=>'u',),
+        '021'=>array('value'=>'&nbsp;','case'=>'u',),
+        '022'=>array('value'=>'&nbsp;','case'=>'u',),
+        '023'=>array('value'=>'&nbsp;','case'=>'u',),
+        '024'=>array('value'=>'&nbsp;','case'=>'u',),
+        '025'=>array('value'=>'&nbsp;','case'=>'u',),
+        '026'=>array('value'=>'&nbsp;','case'=>'u',),
+        '027'=>array('value'=>'&nbsp;','case'=>'u',),
+        '028'=>array('value'=>'&nbsp;','case'=>'u',),
+        '029'=>array('value'=>'&nbsp;','case'=>'u',),
+        '030'=>array('value'=>'&nbsp;','case'=>'u',),
+        '031'=>array('value'=>'&nbsp;','case'=>'u',),
+        '032'=>array('value'=>'&nbsp;','case'=>'u',),
+        '033'=>array('value'=>'&nbsp;','case'=>'u',),
+        '034'=>array('value'=>'&nbsp;','case'=>'u',),
+        '035'=>array('value'=>'&nbsp;','case'=>'u',),
     );
 
     /**
@@ -729,6 +764,41 @@ class PvpapersModelOutput extends JModel
         $this->_values['A33']['value'] = $data->sigform_address[32];
         $this->_values['A34']['value'] = $data->sigform_address[33];
         $this->_values['A35']['value'] = $data->sigform_address[34];
+        $this->_values['CO01']['value'] = $data->candidate_occupation[0];
+        $this->_values['CO02']['value'] = $data->candidate_occupation[1];
+        $this->_values['CO03']['value'] = $data->candidate_occupation[2];
+        $this->_values['CO04']['value'] = $data->candidate_occupation[3];
+        $this->_values['CO05']['value'] = $data->candidate_occupation[4];
+        $this->_values['CO06']['value'] = $data->candidate_occupation[5];
+        $this->_values['CO07']['value'] = $data->candidate_occupation[6];
+        $this->_values['CO08']['value'] = $data->candidate_occupation[7];
+        $this->_values['CO09']['value'] = $data->candidate_occupation[8];
+        $this->_values['CO10']['value'] = $data->candidate_occupation[9];
+        $this->_values['CO11']['value'] = $data->candidate_occupation[10];
+        $this->_values['CO12']['value'] = $data->candidate_occupation[11];
+        $this->_values['CO13']['value'] = $data->candidate_occupation[12];
+        $this->_values['CO14']['value'] = $data->candidate_occupation[13];
+        $this->_values['CO15']['value'] = $data->candidate_occupation[14];
+        $this->_values['CO16']['value'] = $data->candidate_occupation[15];
+        $this->_values['CO17']['value'] = $data->candidate_occupation[16];
+        $this->_values['CO18']['value'] = $data->candidate_occupation[17];
+        $this->_values['CO19']['value'] = $data->candidate_occupation[18];
+        $this->_values['CO20']['value'] = $data->candidate_occupation[19];
+        $this->_values['CO21']['value'] = $data->candidate_occupation[20];
+        $this->_values['CO22']['value'] = $data->candidate_occupation[21];
+        $this->_values['CO23']['value'] = $data->candidate_occupation[22];
+        $this->_values['CO24']['value'] = $data->candidate_occupation[23];
+        $this->_values['CO25']['value'] = $data->candidate_occupation[24];
+        $this->_values['CO26']['value'] = $data->candidate_occupation[25];
+        $this->_values['CO27']['value'] = $data->candidate_occupation[26];
+        $this->_values['CO28']['value'] = $data->candidate_occupation[27];
+        $this->_values['CO29']['value'] = $data->candidate_occupation[28];
+        $this->_values['CO30']['value'] = $data->candidate_occupation[29];
+        $this->_values['CO31']['value'] = $data->candidate_occupation[30];
+        $this->_values['CO32']['value'] = $data->candidate_occupation[31];
+        $this->_values['CO33']['value'] = $data->candidate_occupation[32];
+        $this->_values['CO34']['value'] = $data->candidate_occupation[33];
+        $this->_values['CO35']['value'] = $data->candidate_occupation[34];
         $this->_values['C01']['value'] = "PHILADELPHIA"[0];
         $this->_values['C02']['value'] = "PHILADELPHIA"[1];
         $this->_values['C03']['value'] = "PHILADELPHIA"[2];
@@ -760,13 +830,29 @@ class PvpapersModelOutput extends JModel
         $this->_values['W02']['value'] = sprintf('%02d', $data->candidate_ward)[1];
         $this->_values['D01']['value'] = sprintf('%02d', $data->candidate_division)[0];
         $this->_values['D02']['value'] = sprintf('%02d', $data->candidate_division)[1];
-        $this->_values['I01']['value'] = "-";
-        $this->_values['I02']['value'] = "-";
-        $this->_values['I03']['value'] = "-";
+        $this->_values['I01']['value'] = "";
+        $this->_values['I02']['value'] = "";
+        $this->_values['I03']['value'] = "";
+        $this->_values['I04']['value'] = "";
+        $this->_values['I05']['value'] = "";
+        $this->_values['I06']['value'] = "";
+        $this->_values['I07']['value'] = "";
+        $this->_values['I08']['value'] = "";
+        $this->_values['I09']['value'] = "";
+        $this->_values['I10']['value'] = "";
+        $this->_values['I11']['value'] = "";
+        $this->_values['I12']['value'] = "";
+        $this->_values['I13']['value'] = "";
+        $this->_values['I14']['value'] = "";
+        $this->_values['I15']['value'] = "";
+        $this->_values['I16']['value'] = "";
+        $this->_values['I17']['value'] = "";
+        $this->_values['I18']['value'] = "";
+        $this->_values['I19']['value'] = "";
+        $this->_values['I20']['value'] = "";
         if ($data->candidate_district) {
-            $this->_values['I01']['value'] = sprintf('%03d', $data->candidate_district)[0];
-            $this->_values['I02']['value'] = sprintf('%03d', $data->candidate_district)[1];
-            $this->_values['I03']['value'] = sprintf('%03d', $data->candidate_district)[2];
+            $this->_values['I01']['value'] = sprintf('%02d', $data->candidate_district)[0];
+            $this->_values['I02']['value'] = sprintf('%02d', $data->candidate_district)[1];
         }
         $this->_values['P01']['value'] = $data->candidate_party[0];
         $this->_values['P02']['value'] = $data->candidate_party[1];
