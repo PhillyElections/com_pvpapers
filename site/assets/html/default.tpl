@@ -1,6 +1,6 @@
 <body>
     <div class="political-body-row font-size-twelvepx bold"><span>{CANDIDATE_PARTY}</span></div>
-    <div class="candidate-info-row">
+    <div class="boxes candidate-info-row">
         <div class="fixed font-size-ninepx">{O01}</div>
         <div class="fixed font-size-ninepx">{O02}</div>
         <div class="fixed font-size-ninepx">{O03}</div>
