@@ -8,7 +8,7 @@ $filename = 'Nomination_Paper.pdf';
 // chars to keep in mind (in the template): á|é|í|ó|ú|ñ|ü|¡|«|»|¿
 
 //Create an instance of the class:
-$mpdf = new mPDF();
+$mpdf = new mPDF(['format' => 'Legal']);
 
 $mpdf->SetTitle('Nomination Paper');
 
