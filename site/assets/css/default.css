@@ -307,6 +307,26 @@ section {
 .fixed-5 {
     width: auto;
 }
+div.fixed, div.fixed-2, div.fixed-15, div.fixed-20, div.fixed-auto, div.fixed-one-point-two-five {
+    float:left;
+    height: 20px;
+    font-family: Courier!important;
+}
+div.fixed-one-point-two-five{
+    width: 15px;
+}
+div.fixed {
+    width: 17.60px;
+}
+div.fixed-2 {
+    width: 35.20px;
+}
+div.fixed-15 {
+    width: 200px;
+}
+div.fixed-20 {
+    width: 300px;
+}
 .political-body-row {
     padding-top: 140px;
     padding-left: 130px;
