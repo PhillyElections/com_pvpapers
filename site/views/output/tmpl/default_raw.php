@@ -8,11 +8,12 @@ $filename = 'Nomination_Paper.pdf';
 // chars to keep in mind (in the template): á|é|í|ó|ú|ñ|ü|¡|«|»|¿
 
 //Create an instance of the class:
-$mpdf = new mPDF(['format' => 'Legal']);
+$mpdf = new mPDF();
 
 $mpdf->SetTitle('Nomination Paper');
 
 	// Add styles
+	$mpdf->addPageByArray(array('sheet-size'=>'Legal'));
 	$mpdf->WriteHTML($this->css, 1);
 $x=14;
 $x_offset=181.5;
