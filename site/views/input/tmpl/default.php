@@ -119,7 +119,7 @@ if (! count($pdisplays) ) {
                 <label id="candidate_name_msg" for="candidate_name"><?=JText::_('CANDIDATE NAME'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
-                <input type="text" autocomplete="off" id="candidate_name" name="candidate_name" size="60%" value="<?=$row->candidate_name; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_name" name="candidate_name" size="60%" value="<?=$row->candidate_name; ?>" class="inputbox required" maxlength="40" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_occupation_tr">
@@ -127,15 +127,15 @@ if (! count($pdisplays) ) {
                 <label id="candidate_occupation_msg" for="candidate_occupation"><?=JText::_('CANDIDATE OCCUPATION'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
-                <input type="text" autocomplete="off" id="candidate_occupation" name="candidate_occupation" size="60%" value="<?=$row->candidate_occupation; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation" name="candidate_occupation" size="60%" value="<?=$row->candidate_occupation; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_address_tr">
-            <td height="40" class="right">
+            <td height="35" class="right">
                 <label id="candidate_address_msg" for="candidate_address"><?=JText::_('CANDIDATE ADDRESS'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
-                <input type="text" autocomplete="off" id="candidate_address" name="candidate_address" size="60%" value="<?=$row->candidate_address; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_address" name="candidate_address" size="60%" value="<?=$row->candidate_address; ?>" class="inputbox required" maxlength="40" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_address2_tr">
