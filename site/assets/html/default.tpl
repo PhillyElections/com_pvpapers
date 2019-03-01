@@ -49,11 +49,11 @@
     <div class="candidate-info-row">
         <table>
             <tr>
-                <td class="fixed-1 font-size-ninepx">12345</td>
-                <td class="fixed-2 font-size-ninepx">12345</td>
-                <td class="fixed-3 font-size-ninepx">12345</td>
-                <td class="fixed-4 font-size-ninepx">12345</td>
-                <td class="fixed-5 font-size-ninepx">12345</td>
+                <td class="fixed-1 font-size-ninepx">{CANDIDATE_OFFICE}</td>
+                <td class="fixed-2 font-size-ninepx">{CANDIDATE_DISTRICT}</td>
+                <td class="fixed-3 font-size-ninepx">{CANDIDATE_NAME}</td>
+                <td class="fixed-4 font-size-ninepx">{CANDIDATE_ADDRESS}</td>
+                <td class="fixed-5 font-size-ninepx">{CANDIDATE_OCCUPATION}</td>
             </tr>
         </table>
     </div>
