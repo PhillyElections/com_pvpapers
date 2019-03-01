@@ -486,7 +486,7 @@ table.boxes td {
 }
 div.fixed, div.fixed-2, div.fixed-15, div.fixed-20, div.fixed-auto, div.fixed-one-point-two-five {
     float:left;
-    height: 20px;
+    height: 12px;
     font-family: Courier!important;
 }
 div.fixed-one-point-two-five{
