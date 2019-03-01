@@ -302,6 +302,7 @@ section {
 .fixed-50 {
 }
 .bold {
+    font-family: helvetica;
     font-weight: bold;
 }
 .fixed-1 {
