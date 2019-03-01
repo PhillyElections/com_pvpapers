@@ -48,7 +48,7 @@
     <div class="political-body-row font-size-thirteenpx"><span>{CANDIDATE_PARTY}</span></div>
     <div class="candidate-info-row">
         <span class="fixed-20 font-size-ninepx">12345678901234567890</span>
-        <span class="fixed-12 font-size-ninepx">123456789012</span>
+        <span class="fixed-11 font-size-ninepx">12345678901</span>
         <span class="fixed-24 font-size-ninepx">123456789012345678901234</span>
         <span class="fixed-42 font-size-ninepx">123456789012345678901234567890123456789012</span>
         <span class="fixed-20 font-size-ninepx">12345678901234567890</span>
