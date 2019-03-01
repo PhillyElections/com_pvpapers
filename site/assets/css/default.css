@@ -300,6 +300,7 @@ section {
 .fixed-48, 
 .fixed-49, 
 .fixed-50 {
+font-weight: bold;
 }
 .fixed-1 {
     width: 17.5%;
