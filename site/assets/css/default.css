@@ -313,5 +313,5 @@ section {
 }
 .candidate-info-row {
     padding-top: 124px;
-    padding-left: 8px;
+    padding-left: -8px;
 }
