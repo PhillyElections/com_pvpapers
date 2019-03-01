@@ -51,11 +51,8 @@
         <div class="fixed font-size-ninepx">{I13}</div>
         <div class="fixed font-size-ninepx">{I14}</div>
         <div class="fixed font-size-ninepx">{I15}</div>
-        <div class="fixed font-size-ninepx">{I16}</div>
-        <div class="fixed font-size-ninepx">{I17}</div>
-        <div class="fixed font-size-ninepx">{I18}</div>
-        <div class="fixed font-size-ninepx">{I19}</div>
-        <div class="fixed font-size-ninepx">{I20}</div>
+</div>
+<div>
         <div class="fixed font-size-ninepx">{SN01}</div>
         <div class="fixed font-size-ninepx">{SN02}</div>
         <div class="fixed font-size-ninepx">{SN03}</div>
@@ -126,6 +123,8 @@
         <div class="fixed font-size-ninepx">{SA33}</div>
         <div class="fixed font-size-ninepx">{SA34}</div>
         <div class="fixed font-size-ninepx">{SA35}</div>
+</div>
+<div>
         <div class="fixed font-size-ninepx">{CO01}</div>
         <div class="fixed font-size-ninepx">{CO02}</div>
         <div class="fixed font-size-ninepx">{CO03}</div>
