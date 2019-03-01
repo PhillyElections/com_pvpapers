@@ -429,3 +429,11 @@ td {
     border-right: .25px red;
     border-left: .25px red;
 }
+table {
+    border-right: .25px red;
+    border-left: .25px red;
+}
+tr {
+    border-top: .25px red;
+    border-left: .25px red;
+}
