@@ -226,7 +226,7 @@ jQuery.noConflict()
     $(D).on('keyup', '#candidate_name', function() {
         var parts = (this.value.replace(/[^A-Za-z -]/gi, '').replace(/ +/gi, ' ')),
             $sigformFirstMiddle = getElement('sigform_first_middle')
-            $sigformFirstMiddle.val(parts[0])
+            $sigformFirstMiddle.val(parts)
         getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
     })
 
