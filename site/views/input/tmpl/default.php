@@ -131,7 +131,7 @@ if (! count($pdisplays) ) {
             </td>
         </tr>
         <tr id="candidate_address_tr">
-            <td height="30" class="right">
+            <td height="35" class="right">
                 <label id="candidate_address_msg" for="candidate_address"><?=JText::_('CANDIDATE ADDRESS'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
