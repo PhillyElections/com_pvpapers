@@ -193,101 +193,6 @@ table {
 section {
     width: 100%;
 }
-.text-center {
-    text-align: center
-}
-.full {
-    display: inline-block;
-    border-bottom: .5px solid #000;
-    height: 2em
-}
-h4.space-after {
-    line-height: 1.6em;
-}
-table.form td.first {
-    width: fit-content
-}
-table.form td.number {
-    width: 1.33em
-}
-table.form {
-    margin-top: 1.25em;
-    padding-top: 0
-}
-div.ninty {
-    width: 90%
-}
-div.eighty-five {
-    width: 85%
-}
-div.seventy {
-    width: 70%
-}
-div.fifteen {
-    width: 15%
-}
-div.ten {
-    width: 10%
-}
-div.five {
-    width: 1%
-}
-div.right {
-    display: inline-block;
-    float: right
-}
-div.left {
-    display: inline-block;
-    float: left
-}
-div.center {
-    display: inline-block;
-    float: center
-}
-div.line {
-    width: 100%
-}
-.twenty-five {
-    vertical-align: top;
-    width: 35%;
-}
-.thirty-tree {
-    vertical-align: top;
-    width: 42%;
-}
-.forty-five {
-    vertical-align: top;
-    width: 42%;
-    padding-left: .33em;
-}
-.fifty {
-    vertical-align: top;
-    width: 48.5%;
-    padding-left: .33em;
-}
-.fifty-five {
-    vertical-align: top;
-    width: 54.5%;
-    padding-left: .33em;
-}
-.sixty-seven {
-    vertical-align: top;
-    width: 56%;
-    padding-right: .33em;
-}
-.seventy-five {
-    vertical-align: top;
-    width: 65%;
-}
-.eighty {
-    width: 75% !important;
-}
-section.block {
-    margin-top: .25em
-}
-section.form {
-    padding-left: .25em;
-}
 .font-size-sixteenpx {
     font-size: 16px!important
 }
@@ -395,7 +300,6 @@ section.form {
 .fixed-48, 
 .fixed-49, 
 .fixed-50 {
-    float:left;
     font-family: Courier!important;
 }
 .fixed-1 {
@@ -413,9 +317,6 @@ section.form {
 .fixed-5 {
     width: 17.6%;
 }
-.boxes {
-    padding-left: 62px;
-}
 .political-body-row {
     padding-top: 104px;
     padding-left: 160px;
@@ -423,17 +324,4 @@ section.form {
 .candidate-info-row {
     padding-top: 102px;
     padding-left: 24px;
-}
-
-td {
-    border-right: .25px red;
-    border-left: .25px red;
-}
-table {
-    border-right: .25px red;
-    border-left: .25px red;
-}
-tr {
-    border-top: .25px red;
-    border-left: .25px red;
 }
