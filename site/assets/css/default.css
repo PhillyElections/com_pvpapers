@@ -397,13 +397,12 @@ section.form {
 .fixed-50 {
     float:left;
     font-family: Courier!important;
-    padding-right: 2em
 }
 .fixed-1 {
-    width: 1em;
+    width: 40px;
 }
 .fixed-2 {
-    width: 2em;
+    width: 30px;
 }
 .fixed-3 {
     width: 3em;
