@@ -223,8 +223,8 @@ if (! count($pdisplays) ) {
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="25%" value="<?=$row->sigform_first_middle; ?>" maxlength="15" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
-                        <td><input type="text" autocomplete="off" id="sigform_last" name="sigform_last" size="25%" value="<?=$row->sigform_last; ?>" maxlength="19" placeholder="<?=JText::_('SIGFORM LAST PLACEHOLDER'); ?>" /> (<span id="l_current_length">0</span>)</td>
+                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="25%" value="<?=$row->sigform_first_middle; ?>" maxlength="10" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
+                        <td><input type="text" autocomplete="off" id="sigform_last" name="sigform_last" size="25%" value="<?=$row->sigform_last; ?>" maxlength="14" placeholder="<?=JText::_('SIGFORM LAST PLACEHOLDER'); ?>" /> (<span id="l_current_length">0</span>)</td>
                     </tr>
                     <tr>
                         <td><?=JText::_('SIGFORM FIRST MIDDLE LABEL'); ?></td><td><?=JText::_('SIGFORM LAST LABEL'); ?></td>
