@@ -51,8 +51,6 @@
         <div class="fixed font-size-ninepx">{I13}</div>
         <div class="fixed font-size-ninepx">{I14}</div>
         <div class="fixed font-size-ninepx">{I15}</div>
-</div>
-<div>
         <div class="fixed font-size-ninepx">{SN01}</div>
         <div class="fixed font-size-ninepx">{SN02}</div>
         <div class="fixed font-size-ninepx">{SN03}</div>
