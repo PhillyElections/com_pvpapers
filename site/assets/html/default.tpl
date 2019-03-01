@@ -121,8 +121,6 @@
         <div class="fixed font-size-ninepx">{SA33}</div>
         <div class="fixed font-size-ninepx">{SA34}</div>
         <div class="fixed font-size-ninepx">{SA35}</div>
-</div>
-<div>
         <div class="fixed font-size-ninepx">{CO01}</div>
         <div class="fixed font-size-ninepx">{CO02}</div>
         <div class="fixed font-size-ninepx">{CO03}</div>
