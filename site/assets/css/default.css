@@ -1,22 +1,9 @@
 @page {
-    sheet-size: legal;
-/*    margin-footer: .25in;
-    odd-footer-name: html_MyFooter1;*/
+    sheet-size: Legal;
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
     margin-bottom: 0;
-}
-@page page2 {
-/*    odd-footer-name: html_MyFooter2*/
-}
-section.page2 {
-    page: page2;
-    page-break-before: always
-}
-section.page3 {
-    page: page3;
-    page-break-before: always
 }
 a,
 abbr,
