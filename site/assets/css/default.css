@@ -300,7 +300,9 @@ section {
 .fixed-48, 
 .fixed-49, 
 .fixed-50 {
-font-weight: bold;
+}
+.bold {
+    font-weight: bold;
 }
 .fixed-1 {
     width: 17.5%;
@@ -318,6 +320,10 @@ font-weight: bold;
     width: 25%;
 }
 .political-body-row {
+    padding-top: 104px;
+    padding-left: 160px;
+}
+.political-body-row span {
     padding-top: 104px;
     padding-left: 160px;
 }
