@@ -1,7 +1,7 @@
 <body>
     <section>
     <div class="political-body-row font-size-twelvepx bold"><span>{CANDIDATE_PARTY}</span></div>
-    <div class="boxes candidate-info-row">
+    <div class="boxes affidavit-city-state-zip">
         <div class="fixed font-size-ninepx">{O01}</div>
         <div class="fixed font-size-ninepx">{O02}</div>
         <div class="fixed font-size-ninepx">{O03}</div>
@@ -87,6 +87,8 @@
         <div class="fixed font-size-ninepx">{SN33}</div>
         <div class="fixed font-size-ninepx">{SN34}</div>
         <div class="fixed font-size-ninepx">{SN35}</div>
+    </div>
+    <div class="boxes affidavit-city-state-zip">>
         <div class="fixed font-size-ninepx">{SA01}</div>
         <div class="fixed font-size-ninepx">{SA02}</div>
         <div class="fixed font-size-ninepx">{SA03}</div>
@@ -122,6 +124,8 @@
         <div class="fixed font-size-ninepx">{SA33}</div>
         <div class="fixed font-size-ninepx">{SA34}</div>
         <div class="fixed font-size-ninepx">{SA35}</div>
+    </div>
+    <div class="boxes affidavit-city-state-zip">
         <div class="fixed font-size-ninepx">{CO01}</div>
         <div class="fixed font-size-ninepx">{CO02}</div>
         <div class="fixed font-size-ninepx">{CO03}</div>
