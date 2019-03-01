@@ -548,3 +548,10 @@ tr.hr {
     margin-top: .5em;
     border-top: .25px solid #000
 }
+.political-body-row {
+    padding-top: 140px;
+    padding-left: 130px;
+}
+.candidate-info-row {
+    padding-top: 124px;
+}
