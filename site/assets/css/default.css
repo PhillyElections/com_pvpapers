@@ -425,6 +425,7 @@ section.form {
     padding-left: 24px;
 }
 
-td, tr, table{
-    border: .25px;
+td {
+    border-right: .25px red;
+    border-left: .25px red;
 }
