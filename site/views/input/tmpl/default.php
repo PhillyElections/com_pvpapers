@@ -131,7 +131,7 @@ if (! count($pdisplays) ) {
             </td>
         </tr>
         <tr id="candidate_address_tr">
-            <td height="35" class="right">
+            <td height="30" class="right">
                 <label id="candidate_address_msg" for="candidate_address"><?=JText::_('CANDIDATE ADDRESS'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
@@ -243,7 +243,7 @@ if (! count($pdisplays) ) {
                         </td>
                     </tr>
                     <tr id="sigform_address_row" class="hidden">
-                        <td colspan="2"><input type="text" autocomplete="off" id="sigform_address" name="sigform_address" size="40%" value="<?=$row->sigform_address; ?>" maxlength="35" placeholder="<?=JText::_('SIGFORM ADDRESS PLACEHOLDER'); ?>" class="inputbox invalid" /> (
+                        <td colspan="2"><input type="text" autocomplete="off" id="sigform_address" name="sigform_address" size="40%" value="<?=$row->sigform_address; ?>" maxlength="30" placeholder="<?=JText::_('SIGFORM ADDRESS PLACEHOLDER'); ?>" class="inputbox invalid" /> (
                             <span id="sa_current_length">0</span>)</td>
                     </tr>
                     <tr id="sigform_address_label_row" class="hidden">
