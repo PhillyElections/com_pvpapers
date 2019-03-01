@@ -293,19 +293,19 @@ section {
     font-weight: bold;
 }
 .fixed-1 {
-    width: 19%;
+    width: 100px;
 }
 .fixed-2 {
-    width: 11%;
+    width: 70px;
 }
 .fixed-3 {
-    width: 22%;
+    width: 120px;
 }
 .fixed-4 {
-    width: 29.5%;
+    width: 150px;
 }
 .fixed-5 {
-    width: 18.5%;
+    width: 120px;
 }
 .political-body-row {
     padding-top: 140px;
