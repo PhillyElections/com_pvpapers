@@ -399,19 +399,19 @@ section.form {
     font-family: Courier!important;
 }
 .fixed-1 {
-    width: 40px;
+    width: 20%;
 }
 .fixed-2 {
-    width: 30px;
+    width: 10%;
 }
 .fixed-3 {
-    width: 3em;
+    width: 25%;
 }
 .fixed-4 {
-    width: 4em;
+    width: 35%;
 }
 .fixed-5 {
-    width: 5em;
+    width: 10%;
 }
 .fixed-6 {
     width: 6em;

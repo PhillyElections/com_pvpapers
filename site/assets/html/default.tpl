@@ -47,10 +47,14 @@
 <body>
     <div class="political-body-row font-size-thirteenpx"><span>{CANDIDATE_PARTY}</span></div>
     <div class="candidate-info-row">
-        <div class="fixed-20 font-size-ninepx">12345</div>
-        <div class="fixed-11 font-size-ninepx">12345</div>
-        <div class="fixed-24 font-size-ninepx">12345</div>
-        <div class="fixed-42 font-size-ninepx">12345</div>
-        <div class="fixed-20 font-size-ninepx">12345</div>
+        <table>
+            <tr>
+                <td class="fixed-1 font-size-ninepx">12345</td>
+                <td class="fixed-2 font-size-ninepx">12345</td>
+                <td class="fixed-3 font-size-ninepx">12345</td>
+                <td class="fixed-4 font-size-ninepx">12345</td>
+                <td class="fixed-5 font-size-ninepx">12345</td>
+            </tr>
+        </table>
     </div>
 </body>
