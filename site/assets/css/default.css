@@ -226,3 +226,6 @@ div.fixed-5 {
 .candidate-info-row {
     padding-top: 124px;
 }
+.bold {
+    font-weight: bold;
+}
