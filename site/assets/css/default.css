@@ -2,9 +2,9 @@
     sheet-size: Legal;
 /*    margin-footer: .25in;
     odd-footer-name: html_MyFooter1;*/
-    margin-left: .28in;
-    margin-right: .28in;
-    margin-top: .23in;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 @page page2 {
@@ -134,8 +134,7 @@ table {
     border-spacing: 0
 }
 body {
-    font-size: 11px;
-    font-family: calibri
+    width: 8.5in;
 }
 .font-size-sixteenpx {
     font-size: 16px!important
@@ -201,19 +200,20 @@ div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.
     border: .5px solid black;
 }
 div.fixed-1 {
-    width: 120px;
+    width: 1.373333333in;
+    padding-left: .33in;
 }
 div.fixed-2 {
-    width: 80px;
+    width: 0.526666667in;
 }
 div.fixed-3 {
-    width: 120px;
+    width: 1.95in;
 }
 div.fixed-4 {
-    width: 120px;
+    width: 2.183333333in;
 }
 div.fixed-5 {
-    width: 120px;
+    width: 2.133333333in;
 }
 .political-body-row {
     padding-top: 140px;
