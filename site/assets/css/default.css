@@ -499,63 +499,19 @@ div.fixed-2 {
     width: 140px;
 }
 div.fixed-15 {
-    width: 200px;
+    width: 135px;
 }
 div.fixed-20 {
-    width: 124px;
+    width: 180px;
 }
 div.fixed-10 {
-    width: 70px;
+    width: 81px;
 }
 div.fixed-25 {
-    width: 150px;
+    width: 160px;
 }
 div.fixed-35 {
     width: 140px;
-}
-.boxes {
-    padding-left: 62px;
-}
-.affidavit-name {
-    padding-top: 126px;
-}
-.affidavit-address {
-    padding-top: 28px;
-}
-.affidavit-city-state-zip {
-    padding-top: 28px;   
-}
-.affidavit-ward-division-party {
-    padding-top: 30px;   
-}
-.affidavit-office-district {
-    padding-top: 18px;   
-}
-.affidavit-phone {
-    padding-top: 278px;   
-}
-.affidavit-office-only {
-    padding-top: 194px;   
-}
-section.footer {
-    position: fixed;
-    overflow: visible;
-    top: 10.28in;
-    left: 0;
-    right: 0;
-    width: 100%;   /* you must specify a width */
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-section.footer table  {
-    padding-top: -15px
-}
-tr.hr {
-    margin-top: .5em;
-    border-top: .25px solid #000
 }
 .political-body-row {
     padding-top: 140px;
@@ -563,5 +519,5 @@ tr.hr {
 }
 .candidate-info-row {
     padding-top: 124px;
-    padding-left: -20px;
+    padding-left: 40px;
 }
