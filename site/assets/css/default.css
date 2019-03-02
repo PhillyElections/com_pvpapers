@@ -488,6 +488,7 @@ div.fixed, div.fixed-2, div.fixed-15, div.fixed-20, div.fixed-auto, div.fixed-on
     float:left;
     height: 12px;
     font-family: Courier!important;
+    border: .25px black;
 }
 div.fixed-one-point-two-five{
     width: 15px;
@@ -499,13 +500,13 @@ div.fixed-2 {
     width: 140px;
 }
 div.fixed-15 {
-    width: 135px;
-}
-div.fixed-20 {
     width: 180px;
 }
+div.fixed-20 {
+    width: 200px;
+}
 div.fixed-10 {
-    width: 81px;
+    width: 80px;
 }
 div.fixed-25 {
     width: 160px;
