@@ -198,7 +198,7 @@ section {
     font-size: 1px!important
 }
 div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.fixed-auto, div.fixed-one-point-two-five {
-    margin-left: .05in;
+    padding-left: .025in;
     float:left;
     height: 12px;
     font-family: Courier!important;
@@ -206,7 +206,7 @@ div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.
 }
 div.fixed-1 {
     width: 1.37333in;
-    padding-left: .33in;
+    margin-left: .33in;
 }
 div.fixed-2 {
     width: 0.52666in;
