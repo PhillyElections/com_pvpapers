@@ -488,7 +488,7 @@ div.fixed, div.fixed-2, div.fixed-15, div.fixed-20, div.fixed-auto, div.fixed-on
     float:left;
     height: 12px;
     font-family: Courier!important;
-    border: .25px black;
+    border-right: .5px black;
 }
 div.fixed-one-point-two-five{
     width: 15px;
