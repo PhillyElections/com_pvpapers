@@ -478,26 +478,14 @@ div.notary-use {
 .font-size-onepx {
     font-size: 1px!important
 }
-table.boxes tr {
-    /*border: .25px solid black;*/
-}
-table.boxes td {
-    /*border-left: .25px solid black;*/
-}
+
 div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.fixed-auto, div.fixed-one-point-two-five {
     float:left;
     height: 12px;
     font-family: Courier!important;
-    border-right: .5px black;
-}
-div.fixed-one-point-two-five{
-    width: 15px;
-}
-div.fixed {
-    width: 9px;
 }
 div.fixed-1 {
-    width: 16.156862745098%;
+    width: 120px;
     background-color: grey;
 }
 div.fixed-2 {
