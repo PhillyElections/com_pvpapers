@@ -202,19 +202,18 @@ border: .5px solid black;
 }
 div.fixed-1 {
     width: 120px;
-    background-color: grey;
 }
 div.fixed-2 {
-    background-color: red;
+    width: 80px;
 }
 div.fixed-3 {
-    background-color: blue;
+    width: 120px;
 }
 div.fixed-4 {
-    background-color: yellow;
+    width: 120px;
 }
 div.fixed-5 {
-    background-color: green;
+    width: 120px;
 }
 .political-body-row {
     padding-top: 140px;
