@@ -119,11 +119,6 @@ nav,
 section {
     display: block
 }
-body {
-    line-height: 1
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
-}
 blockquote,
 q {
     quotes: none
@@ -135,11 +130,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0
 }
-section, div {
+section {
     margin: 0 0 0 0;
     padding: 0 0 0 0;
     width: 100%;
-    border: 2px solid black;
+    border: .25px solid green;
 }
 .font-size-sixteenpx {
     font-size: 16px!important

@@ -18,6 +18,8 @@ $mpdf->SetTitle('Nomination Paper');
 				'sheet-size'=>'Legal',
 				'margin-left'=>0,
 				'margin-right'=>0,
+				'margin-top'=>0,
+				'margin-bottom'=>0,
 			)
 	);
 	$mpdf->WriteHTML($this->css, 1);
