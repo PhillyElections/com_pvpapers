@@ -121,7 +121,6 @@ section {
 }
 body {
     line-height: 1
-    border: 2px solid black;
 }
 blockquote,
 q {
@@ -273,6 +272,7 @@ table.grid2 td:nth-child(5) {
 }
 section {
     width: 100%;
+    border: 2px solid black;
 }
 .text-center {
     text-align: center
