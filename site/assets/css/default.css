@@ -198,7 +198,7 @@ div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.
     float:left;
     height: 12px;
     font-family: Courier!important;
-border: .5px solid black;
+    border: .5px solid black;
 }
 div.fixed-1 {
     width: 120px;
@@ -221,5 +221,4 @@ div.fixed-5 {
 }
 .candidate-info-row {
     padding-top: 124px;
-    padding-left: 40px;
 }
