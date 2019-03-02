@@ -498,18 +498,19 @@ div.fixed {
 }
 div.fixed-1 {
     width: 16.156862745098%;
+    background-color: grey;
 }
 div.fixed-2 {
-    width: 6.19607843137255%;
+    background-color: red;
 }
 div.fixed-3 {
-    width: 22.9411764705882%;
+    background-color: blue;
 }
 div.fixed-4 {
-    width: 25.6862745098039%;
+    background-color: yellow;
 }
 div.fixed-5 {
-    width: 25.0980392156863%;
+    background-color: green;
 }
 .political-body-row {
     padding-top: 140px;
