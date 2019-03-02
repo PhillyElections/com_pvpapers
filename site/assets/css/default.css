@@ -2,9 +2,9 @@
     sheet-size: Legal;
 /*    margin-footer: .25in;
     odd-footer-name: html_MyFooter1;*/
-    margin-left: .28in;
-    margin-right: .28in;
-    margin-top: .23in;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 @page page2 {
