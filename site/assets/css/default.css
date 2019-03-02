@@ -484,7 +484,7 @@ table.boxes tr {
 table.boxes td {
     /*border-left: .25px solid black;*/
 }
-div.fixed, div.fixed-15, div.fixed-20, div.fixed-25, div.fixed-35, div.fixed-auto, div.fixed-one-point-two-five {
+div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.fixed-auto, div.fixed-one-point-two-five {
     float:left;
     height: 12px;
     font-family: Courier!important;
