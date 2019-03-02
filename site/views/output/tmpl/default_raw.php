@@ -13,7 +13,13 @@ $mpdf = new mPDF();
 $mpdf->SetTitle('Nomination Paper');
 
 	// Add styles
-	$mpdf->addPageByArray(array('sheet-size'=>'Legal'));
+	$mpdf->addPageByArray(
+		array(
+				'sheet-size'=>'Legal',
+				'margin-left'=>0,
+				'margin-right'=>0,
+			)
+	);
 	$mpdf->WriteHTML($this->css, 1);
 $x=14;
 $x_offset=181.5;
