@@ -484,7 +484,7 @@ table.boxes tr {
 table.boxes td {
     /*border-left: .25px solid black;*/
 }
-div.fixed, div.fixed-2, div.fixed-15, div.fixed-20, div.fixed-auto, div.fixed-one-point-two-five {
+div.fixed, div.fixed-15, div.fixed-20, div.fixed-25, div.fixed-35, div.fixed-auto, div.fixed-one-point-two-five {
     float:left;
     height: 12px;
     font-family: Courier!important;
@@ -496,23 +496,20 @@ div.fixed-one-point-two-five{
 div.fixed {
     width: 9px;
 }
+div.fixed-1 {
+    width: 16.156862745098%;
+}
 div.fixed-2 {
-    width: 140px;
+    width: 6.19607843137255%;
 }
-div.fixed-15 {
-    width: 180px;
+div.fixed-3 {
+    width: 22.9411764705882%;
 }
-div.fixed-20 {
-    width: 200px;
+div.fixed-4 {
+    width: 25.6862745098039%;
 }
-div.fixed-10 {
-    width: 80px;
-}
-div.fixed-25 {
-    width: 160px;
-}
-div.fixed-35 {
-    width: 140px;
+div.fixed-5 {
+    width: 25.0980392156863%;
 }
 .political-body-row {
     padding-top: 140px;
@@ -520,5 +517,5 @@ div.fixed-35 {
 }
 .candidate-info-row {
     padding-top: 124px;
-    padding-left: 40px;
+    padding-left: 3.92156862745098%;
 }
