@@ -247,7 +247,7 @@ if (! count($pdisplays) ) {
                             <span id="sa_current_length">0</span>)</td>
                     </tr>
                     <tr id="sigform_address_label_row" class="hidden">
-                        <td colspan="2"><label id="sigform_address_msg1" for="sigform_address" class="invalid">No more than 30 characters.</label></td>
+                        <td colspan="2"><label id="sigform_address_msg1" for="sigform_address" class="invalid">No more than 35 characters.</label></td>
                     </tr>
                 </table>
             </td>
