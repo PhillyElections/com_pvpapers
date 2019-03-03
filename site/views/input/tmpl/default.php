@@ -223,10 +223,10 @@ if (! count($pdisplays) ) {
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="40%" value="<?=$row->sigform_first_middle; ?>" maxlength="30" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
+                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="40%" value="<?=$row->sigform_first_middle; ?>" maxlength="27" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
                     </tr>
                     <tr>
-                        <td>No more than 30 characters.</td>
+                        <td>No more than 27 characters.</td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -243,7 +243,7 @@ if (! count($pdisplays) ) {
                         </td>
                     </tr>
                     <tr id="sigform_address_row" class="hidden">
-                        <td colspan="2"><input type="text" autocomplete="off" id="sigform_address" name="sigform_address" size="40%" value="<?=$row->sigform_address; ?>" maxlength="30" placeholder="<?=JText::_('SIGFORM ADDRESS PLACEHOLDER'); ?>" class="inputbox invalid" /> (
+                        <td colspan="2"><input type="text" autocomplete="off" id="sigform_address" name="sigform_address" size="40%" value="<?=$row->sigform_address; ?>" maxlength="35" placeholder="<?=JText::_('SIGFORM ADDRESS PLACEHOLDER'); ?>" class="inputbox invalid" /> (
                             <span id="sa_current_length">0</span>)</td>
                     </tr>
                     <tr id="sigform_address_label_row" class="hidden">
