@@ -14,7 +14,8 @@ jQuery.noConflict()
     var GATEKEEPER_KEY = 'f2e3e82987f8a1ef78ca9d9d3cfc7f1d',
         FADETIME = 250,
         Elements = {},
-        Data
+        Data,
+        sigformLimit = 30
 
     function getElement(id) {
         if (typeof Elements[id] == 'undefined') {
@@ -90,10 +91,10 @@ jQuery.noConflict()
     }
 
     function selectAddressMessage() {
-        if (getElement('sigform_address').val().length < 31 && getElement('sigform_address_msg2').hasClass('hidden')) {
+        if (getElement('sigform_address').val().length <= sigformLimit && getElement('sigform_address_msg2').hasClass('hidden')) {
             getElement('sigform_address_msg1').addClass('hidden')
             getElement('sigform_address_msg2').removeClass('hidden')
-        } else if (getElement('sigform_address').val().length > 30 && getElement('sigform_address_msg1').hasClass('hidden')) {
+        } else if (getElement('sigform_address').val().length > sigformLimit && getElement('sigform_address_msg1').hasClass('hidden')) {
             getElement('sigform_address_msg2').addClass('hidden')
             getElement('sigform_address_msg1').removeClass('hidden')
         }
@@ -105,14 +106,14 @@ jQuery.noConflict()
     // element-event based actions
     // split 
     $(D).on('keyup', '#candidate_name', function() {
-        var parts = (this.value.replace(/[^A-Za-z -]/gi, '').replace(/ +/gi, ' ')),
+        var temp = this.value.replace(/[^A-Za-z -]/gi, '').replace(/ +/gi, ' '),
             $sigformFirstMiddle = getElement('sigform_first_middle')
-            $sigformFirstMiddle.val(parts)
+            $sigformFirstMiddle.val(temp)
         getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
     })
 
     $(D).on('keyup', '#sigform_first_middle', function() {
-        var temp = (this.value.replace(/[^A-Za-z -]/gi, '').replace(/-/gi, ' ').replace(/ +/gi, ' '))
+        var temp = this.value.replace(/[^A-Za-z -]/gi, '').replace(/-/gi, ' ').replace(/ +/gi, ' ')
         this.value=temp
         getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
     })
@@ -122,10 +123,10 @@ jQuery.noConflict()
             getElement('sigform_address').val(((getElement('candidate_address').val() + ' ' + getElement('candidate_address2').val()).trim()).replace(/[^A-Za-z0-9 ]/gi, '').replace(/ +/gi, ' '))
             getElement('sa_current_length').text(getElement('sigform_address').val().length)
 
-            if (!getElement('candidate_sigform_tr').hasClass('hidden') && getElement('sigform_address').val().length > 30 && !getElement('sigform_address').hasClass('required')) {
+            if (!getElement('candidate_sigform_tr').hasClass('hidden') && getElement('sigform_address').val().length > sigformLimit && !getElement('sigform_address').hasClass('required')) {
                 getElement('sigform_address_row, #sigform_address_label_row').fadeIn(FADETIME)
                 getElement('sigform_address').addClass('required')
-                getElement('sigform_address').addClass('required')
+//                getElement('sigform_address').addClass('required')
                 getElement('current_length').text(getElement('sigform_address').val().length)
             }
             selectAddressMessage()
