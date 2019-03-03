@@ -15,7 +15,7 @@ jQuery.noConflict()
         FADETIME = 250,
         Elements = {},
         Data,
-        sigformLimit = 30
+        sigformLimit = 35
 
     function getElement(id) {
         if (typeof Elements[id] == 'undefined') {
