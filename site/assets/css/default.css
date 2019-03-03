@@ -219,11 +219,11 @@ div.fixed-5 {
     width: auto;
 }
 .political-body-row {
-    margin-top: 2.08in;
-    margin-left: 2.08in;
+    padding-top: 2.08in;
+    padding-left: 2.08in;
 }
 .candidate-info-row {
-    margin-top: 124px;
+    padding-top: 124px;
 }
 .bold {
     font-weight: bold;
