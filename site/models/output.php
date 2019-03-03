@@ -595,6 +595,8 @@ class PvpapersModelOutput extends JModel
 
         $this->_values['BARCODE']['value'] = str_pad($data->id, 8, '0', STR_PAD_LEFT);
         $this->_values['CANDIDATE_ADDRESS']['value'] = $data->candidate_address . ($data->candidate_address2 ? ' ' . $data->candidate_address2 : '');
+        $this->_values['CANDIDATE_ADDRESS']['value'] = $data->sigform_address;
+
         $this->_values['CANDIDATE_ADDRESS_TOGGLE']['value'] = $data->candidate_self_circulating == 'yes' ? ($data->candidate_address . ($data->candidate_address2 ? ' ' . $data->candidate_address2 : '')) : '&nbsp;';
         $this->_values['CANDIDATE_DISTRICT']['value'] = $data->candidate_district ? $data->candidate_district : '&nbsp;';
         // override below
