@@ -127,7 +127,7 @@ class PvpapersModelPapers extends JModel
         $cid = JRequest::getVar('cid');
 
         foreach ($cid as $id) {
-            $row = JTable::getInstance('Nomination', 'Table');
+            $row = JTable::getInstance('Paper', 'Table');
             $row->load($id);
             $row->publish($id, 1);
         }
@@ -143,7 +143,7 @@ class PvpapersModelPapers extends JModel
         $cid = JRequest::getVar('cid');
 
         foreach ($cid as $id) {
-            $row = JTable::getInstance('Nomination', 'Table');
+            $row = JTable::getInstance('Paper', 'Table');
             $row->load($id);
             $row->publish($id, 0);
         }
@@ -159,7 +159,7 @@ class PvpapersModelPapers extends JModel
         $cid = JRequest::getVar('cid');
 
         foreach ($cid as $id) {
-            $row = JTable::getInstance('Nomination', 'Table');
+            $row = JTable::getInstance('Paper', 'Table');
             $row->delete($id);
         }
     }
