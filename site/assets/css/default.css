@@ -1,5 +1,5 @@
 @page {
-    sheet-size: Letter;
+    sheet-size: Legal;
 /*    margin-footer: .25in;
     odd-footer-name: html_MyFooter1;*/
     margin-left: 0;
@@ -119,9 +119,6 @@ nav,
 section {
     display: block
 }
-body {
-    line-height: 1
-}
 blockquote,
 q {
     quotes: none
@@ -134,159 +131,13 @@ table {
     border-spacing: 0
 }
 body {
-    font-size: 11px;
-    font-family: calibri
-}
-div,
-p {
-    line-height: 1.25em
-}
-p {
-    margin-bottom: .25em
-}
-h2,
-h3,
-ol {
-    margin-bottom: .5em
-}
-ul {
-    line-height: 1.33em
-}
-h2 {
-    text-decoration: underline
-}
-h2,
-h3 {
-    font-weight: 700;
-    font-size: 1.25em
-}
-h4 {
-    font-weight: 400;
-    line-height: 1em;
-    margin-bottom: .5em
-}
-h5 {
-    font-weight: 400;
-    line-height: 1em;
-    margin-bottom: .5em
-}
-h6 {
-    font-weight: 400;
-    line-height: 1.25em;
-    margin-bottom: .5em
-}
-ol,
-ul {
-    padding-top: .25em;
-    margin-bottom: .25em
-}
-ul {
-    margin-left: 1.333333em
-}
-ol {
-    list-style-position: inside;
-    list-style-type: decimal
-}
-table {
-    width: 100%
+    width: 100%;
+    font-family: helvetica;
 }
 section {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     width: 100%;
-}
-.text-center {
-    text-align: center
-}
-.full {
-    display: inline-block;
-    border-bottom: .5px solid #000;
-    height: 2em
-}
-h4.space-after {
-    line-height: 1.6em;
-}
-table.form td.first {
-    width: fit-content
-}
-table.form td.number {
-    width: 1.33em
-}
-table.form {
-    margin-top: 1.25em;
-    padding-top: 0
-}
-div.ninty {
-    width: 90%
-}
-div.eighty-five {
-    width: 85%
-}
-div.seventy {
-    width: 70%
-}
-div.fifteen {
-    width: 15%
-}
-div.ten {
-    width: 10%
-}
-div.five {
-    width: 1%
-}
-div.right {
-    display: inline-block;
-    float: right
-}
-div.left {
-    display: inline-block;
-    float: left
-}
-div.center {
-    display: inline-block;
-    float: center
-}
-div.line {
-    width: 100%
-}
-.twenty-five {
-    vertical-align: top;
-    width: 35%;
-}
-.thirty-tree {
-    vertical-align: top;
-    width: 42%;
-}
-.forty-five {
-    vertical-align: top;
-    width: 42%;
-    padding-left: .33em;
-}
-.fifty {
-    vertical-align: top;
-    width: 48.5%;
-    padding-left: .33em;
-}
-.fifty-five {
-    vertical-align: top;
-    width: 54.5%;
-    padding-left: .33em;
-}
-.sixty-seven {
-    vertical-align: top;
-    width: 56%;
-    padding-right: .33em;
-}
-.seventy-five {
-    vertical-align: top;
-    width: 65%;
-}
-.eighty {
-    width: 75% !important;
-}
-section.block {
-    margin-top: .25em
-}
-section.form {
-    padding-left: .25em;
 }
 .font-size-sixteenpx {
     font-size: 16px!important
@@ -345,47 +196,35 @@ section.form {
 .font-size-onepx {
     font-size: 1px!important
 }
-div.fixed, div.fixed-2, div.fixed-15, div.fixed-20, div.fixed-auto, div.fixed-one-point-two-five {
+div.fixed, div.fixed-1, div.fixed-2, div.fixed-3, div.fixed-4, div.fixed-5, div.fixed-auto, div.fixed-one-point-two-five {
+    padding-left: .025in;
     float:left;
-    height: 20px;
+    height: 12px;
     font-family: Courier!important;
 }
-div.fixed-one-point-two-five{
-    width: 15px;
-}
-div.fixed {
-    width: 17.60px;
+div.fixed-1 {
+    width: 1.37333in;
+    margin-left: .33in;
 }
 div.fixed-2 {
-    width: 35.20px;
+    width: 0.79in;
 }
-div.fixed-15 {
-    width: 200px;
+div.fixed-3 {
+    width: 1.62in;
 }
-div.fixed-20 {
-    width: 300px;
+div.fixed-4 {
+    width: 2.16333in;
 }
-.boxes {
-    padding-left: 62px;
+div.fixed-5 {
+    width: auto;
 }
-.affidavit-name {
-    padding-top: 126px;
+.political-body-row {
+    padding-top: 2.08in;
+    padding-left: 2.08in;
 }
-.affidavit-address {
-    padding-top: 28px;
+.candidate-info-row {
+    padding-top: 124px;
 }
-.affidavit-city-state-zip {
-    padding-top: 28px;   
-}
-.affidavit-ward-division-party {
-    padding-top: 30px;   
-}
-.affidavit-office-district {
-    padding-top: 18px;   
-}
-.affidavit-phone {
-    padding-top: 278px;   
-}
-.affidavit-office-only {
-    padding-top: 194px;   
+.bold {
+    font-weight: bold;
 }
