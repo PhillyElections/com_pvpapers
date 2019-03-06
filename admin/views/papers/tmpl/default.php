@@ -22,9 +22,6 @@ $rows = $this->papers;
                     <th width="15%">
                         <?=JText::_('CANDIDATE NAME');?>
                     </th>
-                    <th width="20%">
-                        <?=JText::_('CANDIDATE OFFICE');?>
-                    </th>
                     <th width="15%">
                         <?=JText::_('CANDIDATE ADDRESS');?>
                     </th>
@@ -68,9 +65,6 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                         <a href="<?=$link?>"><?=$row->candidate_name;?></a>
                     </td>
                     <td>
-                        <?=$row->office_name;?>
-                    </td>
-                    <td>
                         <?=$row->candidate_address;?>
                     </td>
                     <td>
@@ -96,7 +90,7 @@ $k = 1 - $k;
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="11"><?php echo $pagination->getListFooter(); ?></td>
+                    <td colspan="10"><?php echo $pagination->getListFooter(); ?></td>
                 </tr>
             </tfoot>
         </table>

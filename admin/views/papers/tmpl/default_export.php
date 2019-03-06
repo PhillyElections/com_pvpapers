@@ -39,7 +39,6 @@ for ($i = 0, $n = count($this->items); $i < $n; $i++) {
             array(
                 $row->id,
                 $row->candidate_party,
-                $row->office_name,
                 $row->candidate_district,
                 $row->candidate_ward,
                 $row->candidate_division,
