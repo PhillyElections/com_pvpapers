@@ -19,6 +19,9 @@ $rows = $this->papers;
                     <th width="1px">
                         P
                     </th>
+                    <th width="10%">
+                        <?=JText::_('CANDIDATE PARTY');?>
+                    </th>
                     <th width="15%">
                         <?=JText::_('CANDIDATE NAME');?>
                     </th>
@@ -27,9 +30,6 @@ $rows = $this->papers;
                     </th>
                     <th width="10%">
                         <?=JText::_('CANDIDATE OCCUPATION');?>
-                    </th>
-                    <th width="10%">
-                        <?=JText::_('CANDIDATE PARTY');?>
                     </th>
                     <th width="10%">
                         <?=JText::_('USER_IP');?>
@@ -62,6 +62,9 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                         <?=$published;?>
                     </td>
                     <td>
+                        <?=$row->candidate_party;?>
+                    </td>
+                    <td>
                         <a href="<?=$link?>"><?=$row->candidate_name;?></a>
                     </td>
                     <td>
@@ -69,9 +72,6 @@ for ($i = 0, $n = count($rows); $i < $n; $i++) {
                     </td>
                     <td>
                         <?=$row->candidate_occupation;?>
-                    </td>
-                    <td>
-                        <?=$row->candidate_party;?>
                     </td>
                     <td>
                         <?=$row->user_ip;?>
