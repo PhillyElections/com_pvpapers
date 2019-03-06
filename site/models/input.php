@@ -70,15 +70,25 @@ class PvpapersModelInput extends JModel
     public function store($data)
     {
 
-        $pdisplay = $this->getTable('pdisplay');
-        $pdisplay->load($data['display_id']);
+// kludge - we don't pull templates out of display here
+//        $pdisplay = $this->getTable('pdisplay');
+//        $pdisplay->load($data['display_id']);
+//        $pdisplay->load();
+//        $data['p_template_form'] = $pdisplay->p_template_form;
+//        $data['p_template_html'] = $pdisplay->p_template_html;
+//        $data['p_template_css'] = $pdisplay->p_template_css;
+//        $data['p_template_affidavit'] = $pdisplay->p_template_affidavit;
+//        $data['p_template_instructions'] = $pdisplay->p_template_instructions;
+//        $data['p_template_statement'] = $pdisplay->p_template_statement;
+// kludge part 2 -- we just assign templates for now
+        $data['p_template_form'] = 'blank_nomination_paper.pdf';
+        $data['p_template_html'] = 'default.tpl';
+        $data['p_template_css'] = 'default.css';
+        $data['p_template_affidavit'] = '';
+        $data['p_template_instructions'] = '';
+        $data['p_template_statement'] = '';
+
         $data['published'] = 1;
-        $data['p_template_form'] = $pdisplay->p_template_form;
-        $data['p_template_html'] = $pdisplay->p_template_html;
-        $data['p_template_css'] = $pdisplay->p_template_css;
-        $data['p_template_affidavit'] = $pdisplay->p_template_affidavit;
-        $data['p_template_instructions'] = $pdisplay->p_template_instructions;
-        $data['p_template_statement'] = $pdisplay->p_template_statement;
 
         // just in case...
         foreach ($data as $key => $value) {
