@@ -65,41 +65,6 @@ jQuery.noConflict()
         }
     }
 
-    function hideForm() {
-        unrequire('candidate_district')
-        rehide('candidate_district_tr')
-        unrequire('candidate_self_circulating_no')
-        unrequire('candidate_self_circulating_yes')
-        rehide('candidate_circulation_tr')
-    }
-
-    function basicForm() {
-        hideForm();
-    }
-
-    function basicFormPlus() {
-        basicForm()
-        unhide("candidate_district_tr")        
-        require('candidate_district')
-    }
-
-    function deluxeForm() {
-        basicForm()
-        unhide('candidate_circulation_tr')        
-        require('candidate_self_circulating_no')
-        require('candidate_self_circulating_yes')
-    }
-
-    function selectAddressMessage() {
-        if (getElement('sigform_address').val().length <= sigformLimit && getElement('sigform_address_msg2').hasClass('hidden')) {
-            getElement('sigform_address_msg1').addClass('hidden')
-            getElement('sigform_address_msg2').removeClass('hidden')
-        } else if (getElement('sigform_address').val().length > sigformLimit && getElement('sigform_address_msg1').hasClass('hidden')) {
-            getElement('sigform_address_msg2').addClass('hidden')
-            getElement('sigform_address_msg1').removeClass('hidden')
-        }
-    }
-
     // settings and initialization
     $.support.cors = true
 
@@ -118,56 +83,9 @@ jQuery.noConflict()
         getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
     })
 
-    $(D).on('keyup', '#candidate_address, #candidate_address2', function() {
-        if (!getElement('candidate_sigform_tr').hasClass('hidden')) {
-            getElement('sigform_address').val(((getElement('candidate_address').val() + ' ' + getElement('candidate_address2').val()).trim()).replace(/[^A-Za-z0-9 ]/gi, '').replace(/ +/gi, ' '))
-            getElement('sa_current_length').text(getElement('sigform_address').val().length)
-
-            if (!getElement('candidate_sigform_tr').hasClass('hidden') && getElement('sigform_address').val().length > sigformLimit && !getElement('sigform_address').hasClass('required')) {
-                getElement('sigform_address_row, #sigform_address_label_row').fadeIn(FADETIME)
-                getElement('sigform_address').addClass('required')
-//                getElement('sigform_address').addClass('required')
-                getElement('current_length').text(getElement('sigform_address').val().length)
-            }
-            selectAddressMessage()
-        }
-    })
-
-    $(D).on('keyup', '#sigform_address', function() {
-        getElement('sa_current_length').text(getElement('sigform_address').val().length)
-        selectAddressMessage()
-    })
-
     $(D).on('change', 'input[name=candidate_self_circulating]', function() {
         getElement('candidate_self_circulating_no, #candidate_self_circulating_yes').removeClass('required')
         getElement('candidate_self_circulating_no_msg, #candidate_self_circulating_yes_msg').removeClass('invalid')
-    })
-
-    $(D).on('change', '#display_id', function() {
-        var office=$(this).find('option:selected').text()
-        console.log(office)
-        switch (office) {
-            // these get the basic form
-            case "Mayor":
-            case "City Commissioner":
-            case "Register of Wills":
-            case "Sheriff":
-            case "City Council At-Large":
-            case "City Controller":
-            case "District Attorney":
-                basicForm();
-            break;
-            // this adds district
-            case "District City Council":
-                basicFormPlus();
-            break;
-            // these add a crapload of stuff...
-            case "Committeeperson":
-            case "Inspector of Election":
-            case "Judge of Election":
-                deluxeForm();
-            break;
-        }
     })
 
     /* see above */
@@ -177,10 +95,6 @@ jQuery.noConflict()
         // set the form validation
         D.formvalidator = null;
         D.formvalidator = new JFormValidator()
-
-        $('#display_id').trigger('change');
-        // start up the address service
-        // addressComplete()
     }
 }))
 var gAllowSubmit = false;
