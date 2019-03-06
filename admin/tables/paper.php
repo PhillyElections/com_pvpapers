@@ -67,11 +67,11 @@ class TablePaper extends JTable
     {
         $error = 0;
 
-        // we need a candidate name
-        if (! $this->display_id) {
-            $this->setError(JText::_('VALIDATION OFFICE REQUIRED'));
-            $error++;
-        }
+        // we do not need a display_id for these
+//        if (! $this->display_id) {
+//            $this->setError(JText::_('VALIDATION OFFICE REQUIRED'));
+//            $error++;
+//        }
 
         // we need a candidate name
         if (! $this->candidate_name) {
