@@ -153,7 +153,7 @@ if (! count($pdisplays) ) {
             <td height="40" class="right">
                 Candidates:
             </td>
-            <td><span class="button">&nbsp;+ Add a candidate...&nbsp;</span></td>
+            <td><span class="button" id="add_candidate">&nbsp;+ Add a candidate...&nbsp;</span></td>
         </tr>
         <tr id="candidate_double_side_tr">
             <td height="40" class="right">
