@@ -60,6 +60,9 @@ jQuery.noConflict()
 
     // element-event based actions
     // split 
+    $(D).on('click', '#add_candidate', function() {
+console.log('let\'s add a candidate')
+    })
 
     $(D).on('change', 'input[name=candidate_self_circulating]', function() {
         getElement('candidate_self_circulating_no, #candidate_self_circulating_yes').removeClass('required')
