@@ -60,18 +60,6 @@ jQuery.noConflict()
 
     // element-event based actions
     // split 
-    $(D).on('keyup', '#candidate_name', function() {
-        var temp = this.value.replace(/[^A-Za-z -]/gi, '').replace(/ +/gi, ' '),
-            $sigformFirstMiddle = getElement('sigform_first_middle')
-            $sigformFirstMiddle.val(temp)
-        getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
-    })
-
-    $(D).on('keyup', '#sigform_first_middle', function() {
-        var temp = this.value.replace(/[^A-Za-z -]/gi, '').replace(/-/gi, ' ').replace(/ +/gi, ' ')
-        this.value=temp
-        getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
-    })
 
     $(D).on('change', 'input[name=candidate_self_circulating]', function() {
         getElement('candidate_self_circulating_no, #candidate_self_circulating_yes').removeClass('required')
