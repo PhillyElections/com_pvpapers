@@ -88,30 +88,9 @@ if (! count($pdisplays) ) {
     <table cellpadding="0" cellspacing="0" border="0" width="100%" class="contentpane">
         <tr>
             <td width="200" height="30" class="right">
-                <label id="office_msg" for="display_id"><?=JText::_('CANDIDATE OFFICE'); ?>:&nbsp;&nbsp;</label> 
+                <label id="party_msg" for="candidate_party"><?=JText::_('CANDIDATE PARTY'); ?>:&nbsp;&nbsp;</label> 
             </td>
-            <td>
-                <table>
-                    <tr>
-                        <td width="200">
-                        <?=
-                        JHTML::_(
-                            'select.genericlist',
-                            $candidate_offices,
-                            'display_id',
-                            'required',
-                            'idx',
-                            'value',
-                            ($row->display_id ? $row->display_id : ''),
-                            'display_id'
-                        ); ?>
-                        </td>
-                        <td width="250">
-                            <label id="party_msg" for="candidate_party"><?=JText::_('CANDIDATE PARTY'); ?>:&nbsp;</label>
-                            <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="23%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
-                        </td>
-                    </tr>
-                </table>
+                <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="60%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_name_tr">
@@ -156,48 +135,6 @@ if (! count($pdisplays) ) {
                 </table>
             </td>
         </tr>
-        <tr id="candidate_district_tr">
-            <td height="40" class="right">
-                <label id="candidate_district_msg" for="candidate_district"><?=JText::_('DISTRICT'); ?>:&nbsp;&nbsp;</label>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td width="200">
-                        <?=
-                        JHTML::_(
-                            'select.genericlist',
-                            $candidate_districts,
-                            'candidate_district',
-                            'required',
-                            'idx',
-                            'value',
-                            ($row->district ? $row->district : ''),
-                            'candidate_district'
-                        ); ?>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr id="candidate_precinct_tr">
-            <td height="40" class="right">
-                <label id="candidate_ward_msg" for="candidate_ward"><?=JText::_('WARD'); ?>:&nbsp;&nbsp;</label>
-            </td>
-            <td>
-                <table>
-                    <tr>
-                        <td width="200">
-                            <input type="text" autocomplete="off" id="candidate_ward" name="candidate_ward" size="5%" value="<?=$row->candidate_ward; ?>" maxlength="2" placeholder="<?=JText::_('CANDIDATE WARD PLACEHOLDER'); ?>" class="inputbox required validate-ward"/> (2 max)
-                        </td>
-                        <td width="200">
-                            <label id="candidate_division_msg" for="candidate_division"><?=JText::_('DIVISION'); ?>:&nbsp;</label>
-                            <input type="text" autocomplete="off" id="candidate_division" name="candidate_division" size="5%" value="<?=$row->candidate_division; ?>" maxlength="2" placeholder="<?=JText::_('CANDIDATE DIVISION PLACEHOLDER'); ?>" class="inputbox required validate-division" /> (2 max)
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
         <tr id="candidate_phone_tr">
             <td height="40" class="right">
                 <label id="candidate_phone_msg" for="candidate_phone"><?=JText::_('PHONE'); ?>:&nbsp;&nbsp;</label> 
@@ -213,55 +150,9 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_sigform_tr">
             <td height="40" class="right">
-                &nbsp;
+                Candidates:
             </td>
-            <td border=1>
-                <table class="sigform">
-                    <tr>
-                        <td colspan=2>
-                            <?=JText::_('SIGFORM REVIEW MESSAGE'); ?>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="40%" value="<?=$row->sigform_first_middle; ?>" maxlength="27" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
-                    </tr>
-                    <tr>
-                        <td>No more than 27 characters.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            <?=
-                            JHTML::_(
-                                'select.checkbox',
-                                'candidate_ballot_name_approved',
-                                'yes',
-                                'required',
-                                false,
-                                'candidate_ballot_name_approved'
-                            ); ?>
-                            <label id="candidate_ballot_name_approved_msg" for="candidate_ballot_name_approved"><?=JText::_('CANDIDATE BALLOT NAME APPROVED MSG'); ?></label>
-                        </td>
-                    </tr>
-                    <tr id="sigform_address_row" class="hidden">
-                        <td colspan="2"><input type="text" autocomplete="off" id="sigform_address" name="sigform_address" size="40%" value="<?=$row->sigform_address; ?>" maxlength="35" placeholder="<?=JText::_('SIGFORM ADDRESS PLACEHOLDER'); ?>" class="inputbox invalid" /> (
-                            <span id="sa_current_length">0</span>)</td>
-                    </tr>
-                    <tr id="sigform_address_label_row" class="hidden">
-                        <td colspan="2"><label id="sigform_address_msg1" for="sigform_address" class="invalid">No more than 35 characters.</label></td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-        <tr id="candidate_circulation_tr">
-            <td height="40" class="right">
-                &nbsp;
-            </td>
-            <td>
-                <input type="radio" name="candidate_self_circulating" id="candidate_self_circulating_no" value="no" class="required">
-                <label for="candidate_self_circulating_no" id="candidate_self_circulating_no_msg"><?=JText::_('CANDIDATE SELF CIRCULATING NO MSG'); ?></label>
-                <input type="radio" name="candidate_self_circulating" id="candidate_self_circulating_yes" value="yes" class="required">
-                <label for="candidate_self_circulating_yes" id="candidate_self_circulating_yes_msg"><?=JText::_('CANDIDATE SELF CIRCULATING YES MSG'); ?></label>
-            </td>
+            <td>Add a candidate <span id="add_candidate">+</span></td>
         </tr>
         <tr id="candidate_double_side_tr">
             <td height="40" class="right">
