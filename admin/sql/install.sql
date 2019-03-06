@@ -12,7 +12,6 @@ DROP TABLE IF EXISTS `#__pv_paper_data`;
 DROP TABLE IF EXISTS `#__pv_paper_displays`;
 DROP TABLE IF EXISTS `#__pv_papers`;
 
-
 --
 -- Table structure for table `#__pv_papers`
 --
