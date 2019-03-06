@@ -52,17 +52,7 @@ jQuery.noConflict()
     }
 
     function setInitialFormState() {
-        // these two actions we don't need to repeat
-        rehide('sigform_address_row')
-        rehide('sigform_address_label_row')
-
-        hideForm()
-        // FORCE COMMITTEPERSON TEMPORARILY
-        // If there are only 2, then we only have one office available
-        if (getElement('display_id option').size() === 2) {
-            getElement('display_id option:last').attr('selected', 'selected')
-            getElement('display_id').trigger('change')
-        }
+        console.log('Curently doing nothing in setInitialFormState()')
     }
 
     // settings and initialization
