@@ -90,6 +90,7 @@ if (! count($pdisplays) ) {
             <td width="200" height="30" class="right">
                 <label id="party_msg" for="candidate_party"><?=JText::_('CANDIDATE PARTY'); ?>:&nbsp;&nbsp;</label> 
             </td>
+            <td>
                 <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="60%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
             </td>
         </tr>
@@ -152,7 +153,7 @@ if (! count($pdisplays) ) {
             <td height="40" class="right">
                 Candidates:
             </td>
-            <td>Add a candidate <span id="add_candidate">+</span></td>
+            <td><button class="button" id="add_candidate">+ Add a candidate.</button></td>
         </tr>
         <tr id="candidate_double_side_tr">
             <td height="40" class="right">
