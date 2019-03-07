@@ -153,11 +153,11 @@ if (! count($pdisplays) ) {
             <td height="40" class="right">
                 Candidates:
             </td>
-            <td><button class="button" id="add_candidate" type="button">&nbsp;+ Add a candidate.&nbsp;</button></td>
+            <td><button class="button" id="add_candidate" type="button">&nbsp;[+] Add a candidate.&nbsp;</button></td>
         </tr>
         <tr id="candidate_row_1">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_1">-</span>
+                <span class="candidate_remove" id="candidate_remove_1">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -187,7 +187,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_2">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_2">-</span>
+                <span class="candidate_remove" id="candidate_remove_2">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -217,7 +217,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_3">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_3">-</span>
+                <span class="candidate_remove" id="candidate_remove_3">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -247,7 +247,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_4">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_4">-</span>
+                <span class="candidate_remove" id="candidate_remove_4">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -277,7 +277,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_5">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_5">-</span>
+                <span class="candidate_remove" id="candidate_remove_5">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -307,7 +307,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_6">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_6">-</span>
+                <span class="candidate_remove" id="candidate_remove_6">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -337,7 +337,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_7">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_7">-</span>
+                <span class="candidate_remove" id="candidate_remove_7">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
