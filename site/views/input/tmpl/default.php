@@ -157,6 +157,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_1">
             <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_1">-</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -179,10 +180,189 @@ if (! count($pdisplays) ) {
                     ($row->district_1 ? $row->district_1 : ''),
                     'candidate_district_1'
                 ); ?>
-
                 <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="15%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
                 <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="15%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
+        </tr>
+        <tr id="candidate_row_2">
+            <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_2">-</span>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_2',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_2 ? $row->display_id_2 : ''),
+                    'display_id_2'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_2',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_2 ? $row->district_2 : ''),
+                    'candidate_district_2'
+                ); ?>
+                <input type="text" autocomplete="off" id="candidate_name_2" name="candidate_name_2" size="15%" value="<?=$row->candidate_name_2; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_2" name="candidate_address_2" size="15%" value="<?=$row->candidate_address_2; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_2" name="candidate_occupation_2" size="15%" value="<?=$row->candidate_occupation_2; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
+        </tr>
+        <tr id="candidate_row_3">
+            <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_3">-</span>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_3',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_3 ? $row->display_id_3 : ''),
+                    'display_id_3'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_3',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_3 ? $row->district_3 : ''),
+                    'candidate_district_3'
+                ); ?>
+                <input type="text" autocomplete="off" id="candidate_name_3" name="candidate_name_3" size="15%" value="<?=$row->candidate_name_3; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_3" name="candidate_address_3" size="15%" value="<?=$row->candidate_address_3; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_3" name="candidate_occupation_3" size="15%" value="<?=$row->candidate_occupation_3; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
+        </tr>
+        <tr id="candidate_row_4">
+            <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_4">-</span>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_4',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_4 ? $row->display_id_4 : ''),
+                    'display_id_4'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_4',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_4 ? $row->district_4 : ''),
+                    'candidate_district_4'
+                ); ?>
+                <input type="text" autocomplete="off" id="candidate_name_4" name="candidate_name_4" size="15%" value="<?=$row->candidate_name_4; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_4" name="candidate_address_4" size="15%" value="<?=$row->candidate_address_4; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_4" name="candidate_occupation_4" size="15%" value="<?=$row->candidate_occupation_4; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
+        </tr>
+        <tr id="candidate_row_5">
+            <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_5">-</span>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_5',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_5 ? $row->display_id_5 : ''),
+                    'display_id_5'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_5',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_5 ? $row->district_5 : ''),
+                    'candidate_district_5'
+                ); ?>
+                <input type="text" autocomplete="off" id="candidate_name_5" name="candidate_name_5" size="15%" value="<?=$row->candidate_name_5; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_5" name="candidate_address_5" size="15%" value="<?=$row->candidate_address_5; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_5" name="candidate_occupation_5" size="15%" value="<?=$row->candidate_occupation_5; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
+        </tr>
+        <tr id="candidate_row_6">
+            <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_6">-</span>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_6',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_6 ? $row->display_id_6 : ''),
+                    'display_id_6'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_6',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_6 ? $row->district_6 : ''),
+                    'candidate_district_6'
+                ); ?>
+                <input type="text" autocomplete="off" id="candidate_name_6" name="candidate_name_6" size="15%" value="<?=$row->candidate_name_6; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_6" name="candidate_address_6" size="15%" value="<?=$row->candidate_address_6; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_6" name="candidate_occupation_6" size="15%" value="<?=$row->candidate_occupation_6; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
+        </tr>
+        <tr id="candidate_row_7">
+            <td colspan="2">
+                <span class="candidate_remove" id="candidate_remove_7">-</span>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_7',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_7 ? $row->display_id_7 : ''),
+                    'display_id_7'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_7',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_7 ? $row->district_7 : ''),
+                    'candidate_district_7'
+                ); ?>
+                <input type="text" autocomplete="off" id="candidate_name_7" name="candidate_name_7" size="15%" value="<?=$row->candidate_name_7; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_7" name="candidate_address_7" size="15%" value="<?=$row->candidate_address_7; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_7" name="candidate_occupation_7" size="15%" value="<?=$row->candidate_occupation_7; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_double_side_tr">
