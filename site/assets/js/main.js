@@ -35,7 +35,7 @@ jQuery.noConflict()
     }
 
     function require(id) {
-        if (!getElement(id).get(0).tagName == "select") {
+        if (typeof getElement(id).get(0).tagName != 'undefined' && !getElement(id).get(0).tagName == "select") {
             getElement(id).addClass('required')
         } else {
             getElement(id).attr('required', 'required')
