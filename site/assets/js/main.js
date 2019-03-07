@@ -42,7 +42,7 @@ jQuery.noConflict()
         }
     }
 
-    function require(id) {
+    function disable(id) {
         getElement(id).attr('disabled','disabled')
     }
 
@@ -71,7 +71,9 @@ jQuery.noConflict()
     function requireRow(segment, district) {
         require("display_id" + segment, segment)
         if (district) {
-            unrequire("candidate_district" + segment, segment)
+            require("candidate_district" + segment, segment)
+        } else {
+            disable("candidate_district" + segment, segment)
         }
         require("candidate_office" + segment, segment)
         require("candidate_name" + segment, segment)
