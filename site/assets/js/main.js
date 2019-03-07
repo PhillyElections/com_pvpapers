@@ -107,7 +107,7 @@ jQuery.noConflict()
         console.log('let\'s add a candidate')
         var base, id, segment
         base='candidate_row'
-        for (i=1;i<8;i++) {
+        for (var i=1;i<8;i++) {
             segment = "_"+i
             id=base+segment
             if (!getElement(id).is(':visible')) {
