@@ -58,14 +58,14 @@ jQuery.noConflict()
     }
 
     function doRow(activeFunction, segment, district) {
-        activeFunction(display_id + segment, segment)
+        activeFunction('display_id' + segment, segment)
         if (district) {
-            activeFunction(candidate_district + segment, segment)
+            activeFunction('candidate_district' + segment, segment)
         }
-        activeFunction(candidate_office + segment, segment)
-        activeFunction(candidate_name + segment, segment)
-        activeFunction(candidate_address + segment, segment)
-        activeFunction(candidate_occupation + segment, segment)
+        activeFunction('candidate_office' + segment, segment)
+        activeFunction('candidate_name' + segment, segment)
+        activeFunction('candidate_address' + segment, segment)
+        activeFunction('candidate_occupation' + segment, segment)
     }
 
     function setInitialFormState() {
