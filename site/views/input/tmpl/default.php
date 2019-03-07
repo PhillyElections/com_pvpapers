@@ -180,7 +180,7 @@ if (! count($pdisplays) ) {
                     'candidate_district_1'
                 ); ?>
 
-                <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="18%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="15%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
                 <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="18%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
