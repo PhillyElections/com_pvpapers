@@ -109,7 +109,7 @@ jQuery.noConflict()
         id=base+segment
         if (!getElement(id).is(':visible')) {
             getElement(id).show()
-            requireRow(id,segment)
+            requireRow(segment)
         }
     })
 
