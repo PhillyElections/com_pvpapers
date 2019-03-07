@@ -35,7 +35,6 @@ jQuery.noConflict()
     }
 
     function require(id) {
-        console.log(id)
         if (!getElement(id).get(0).tagName == "select") {
             getElement(id).addClass('required')            
         } else {
@@ -43,12 +42,30 @@ jQuery.noConflict()
         }
     }
 
-    function unrequire(id) {
-            if (id=='candidate_district') {
+    function require(id) {
+        getElement(id).attr('disabled','disabled')
+    }
+
+    function unrequire(id, segment) {
+            if (id=='candidate_district' + segment) {
+                getElement(id).val('0')
+            }
+            if (id=='display_id' + segment) {
                 getElement(id).val('0')
             }
             getElement(id).removeClass('required')
             getElement(id).removeAttr('required')
+    }
+
+    function doRow(activeFunction, segment, district) {
+        activeFunction(display_id + segment)
+        if (district) {
+            activeFunction(candidate_district + segment)
+        }
+        activeFunction(candidate_office + segment)
+        activeFunction(candidate_name + segment)
+        activeFunction(candidate_address + segment)
+        activeFunction(candidate_occupation + segment)
     }
 
     function setInitialFormState() {
