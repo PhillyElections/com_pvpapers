@@ -118,6 +118,21 @@ jQuery.noConflict()
         }
     })
 
+    $(D).on('click', '#remove_candidate', function() {
+        console.log('let\'s remove a candidate')
+        var base, id, segment
+        base='candidate_row'
+        for (var i=7;i>0;i--) {
+            segment = "_"+i
+            id=base+segment
+            if (!getElement(id).is(':visible')) {
+                unrequireRow(segment)
+                rehide(id)
+                return
+            }
+        }
+    })
+
     $(D).on('change', 'input[name=candidate_self_circulating]', function() {
         getElement('candidate_self_circulating_no, #candidate_self_circulating_yes').removeClass('required')
         getElement('candidate_self_circulating_no_msg, #candidate_self_circulating_yes_msg').removeClass('invalid')
