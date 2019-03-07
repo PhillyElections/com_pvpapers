@@ -24,8 +24,8 @@ jQuery.noConflict()
         return Elements[id]
     }
 
-     // functions
-     function rehide(id) {
+    // functions
+    function rehide(id) {
         getElement(id).hide()
         getElement(id).removeClass('hidden')
     }
@@ -36,25 +36,25 @@ jQuery.noConflict()
 
     function require(id) {
         if (!getElement(id).get(0).tagName == "select") {
-            getElement(id).addClass('required')            
+            getElement(id).addClass('required')
         } else {
-            getElement(id).attr('required','required')
+            getElement(id).attr('required', 'required')
         }
     }
 
     function disable(id) {
-        getElement(id).attr('disabled','disabled')
+        getElement(id).attr('disabled', 'disabled')
     }
 
     function unrequire(id, segment) {
-            if (id=='candidate_district' + segment) {
-                getElement(id).val('0')
-            }
-            if (id=='display_id' + segment) {
-                getElement(id).val('0')
-            }
-            getElement(id).removeClass('required')
-            getElement(id).removeAttr('required')
+        if (id == 'candidate_district' + segment) {
+            getElement(id).val('0')
+        }
+        if (id == 'display_id' + segment) {
+            getElement(id).val('0')
+        }
+        getElement(id).removeClass('required')
+        getElement(id).removeAttr('required')
     }
 
     function unrequireRow(segment, district) {
@@ -82,19 +82,19 @@ jQuery.noConflict()
     }
 
     function setInitialFormState() {
-        unrequireRow('_7',true)
+        unrequireRow('_7', true)
         rehide('candidate_row_7')
-        unrequireRow('_6',true)
+        unrequireRow('_6', true)
         rehide('candidate_row_6')
-        unrequireRow('_5',true)
+        unrequireRow('_5', true)
         rehide('candidate_row_5')
-        unrequireRow('_4',true)
+        unrequireRow('_4', true)
         rehide('candidate_row_4')
-        unrequireRow('_3',true)
+        unrequireRow('_3', true)
         rehide('candidate_row_3')
-        unrequireRow('_2',true)
+        unrequireRow('_2', true)
         rehide('candidate_row_2')
-        unrequireRow('_1',true)
+        unrequireRow('_1', true)
         rehide('candidate_row_1')
     }
 
@@ -106,10 +106,10 @@ jQuery.noConflict()
     $(D).on('click', '#add_candidate', function() {
         console.log('let\'s add a candidate')
         var base, id, segment
-        base='candidate_row'
-        for (var i=1;i<8;i++) {
-            segment = "_"+i
-            id=base+segment
+        base = 'candidate_row'
+        for (var i = 1; i < 8; i++) {
+            segment = "_" + i
+            id = base + segment
             if (!getElement(id).is(':visible')) {
                 getElement(id).show()
                 requireRow(segment)
@@ -121,12 +121,12 @@ jQuery.noConflict()
     $(D).on('click', '#remove_candidate', function() {
         console.log('let\'s remove a candidate')
         var base, id, segment
-        base='candidate_row'
-        for (var i=7;i>0;i--) {
-            segment = "_"+i
-            id=base+segment
+        base = 'candidate_row'
+        for (var i = 7; i > 0; i--) {
+            segment = "_" + i
+            id = base + segment
             console.log(id)
-            if (!getElement(id).is(':visible')) {
+            if (getElement(id).is(':visible')) {
                 unrequireRow(segment, true)
                 rehide(id)
                 return
