@@ -149,11 +149,41 @@ if (! count($pdisplays) ) {
 
             </td>
         </tr>
-        <tr id="candidate_sigform_tr">
+        <tr id="candidate_header">
             <td height="40" class="right">
                 Candidates:
             </td>
             <td><button class="button" id="add_candidate" type="button">&nbsp;+ Add a candidate.&nbsp;</button></td>
+        </tr>
+        <tr id="candidate_row_1">
+            <td colspan="2">
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_offices,
+                    'display_id_1',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->display_id_1 ? $row->display_id_1 : ''),
+                    'display_id_1'
+                ); ?>
+                <?=
+                JHTML::_(
+                    'select.genericlist',
+                    $candidate_districts,
+                    'candidate_district_1',
+                    'required',
+                    'idx',
+                    'value',
+                    ($row->district_1 ? $row->district_1 : ''),
+                    'candidate_district_1'
+                ); ?>
+
+                <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="20%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="20%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="20%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+            </td>
         </tr>
         <tr id="candidate_double_side_tr">
             <td height="40" class="right">
