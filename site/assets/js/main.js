@@ -127,7 +127,7 @@ jQuery.noConflict()
             id=base+segment
             if (!getElement(id).is(':visible')) {
                 unrequireRow(segment)
-                rehide(id)
+                rehide(id, true)
                 return
             }
         }
