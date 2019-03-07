@@ -125,9 +125,10 @@ jQuery.noConflict()
         for (var i=7;i>0;i--) {
             segment = "_"+i
             id=base+segment
+            console.log(id)
             if (!getElement(id).is(':visible')) {
-                unrequireRow(segment)
-                rehide(id, true)
+                unrequireRow(segment, true)
+                rehide(id)
                 return
             }
         }
