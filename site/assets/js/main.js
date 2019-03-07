@@ -58,23 +58,30 @@ jQuery.noConflict()
     }
 
     function doRow(activeFunction, segment, district) {
-        activeFunction(display_id + segment)
+        activeFunction(display_id + segment, segment)
         if (district) {
-            activeFunction(candidate_district + segment)
+            activeFunction(candidate_district + segment, segment)
         }
-        activeFunction(candidate_office + segment)
-        activeFunction(candidate_name + segment)
-        activeFunction(candidate_address + segment)
-        activeFunction(candidate_occupation + segment)
+        activeFunction(candidate_office + segment, segment)
+        activeFunction(candidate_name + segment, segment)
+        activeFunction(candidate_address + segment, segment)
+        activeFunction(candidate_occupation + segment, segment)
     }
 
     function setInitialFormState() {
+        doRow('unrequire','candidate_row_7',true)
         rehide('candidate_row_7')
+        doRow('unrequire','candidate_row_6',true)
         rehide('candidate_row_6')
+        doRow('unrequire','candidate_row_5',true)
         rehide('candidate_row_5')
+        doRow('unrequire','candidate_row_4',true)
         rehide('candidate_row_4')
+        doRow('unrequire','candidate_row_3',true)
         rehide('candidate_row_3')
+        doRow('unrequire','candidate_row_2',true)
         rehide('candidate_row_2')
+        doRow('unrequire','candidate_row_1',true)
         rehide('candidate_row_1')
     }
 
