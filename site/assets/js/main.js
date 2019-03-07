@@ -52,7 +52,13 @@ jQuery.noConflict()
     }
 
     function setInitialFormState() {
-        console.log('Curently doing nothing in setInitialFormState()')
+        rehide('candidate_row_7')
+        rehide('candidate_row_6')
+        rehide('candidate_row_5')
+        rehide('candidate_row_4')
+        rehide('candidate_row_3')
+        rehide('candidate_row_2')
+        rehide('candidate_row_1')
     }
 
     // settings and initialization
@@ -61,7 +67,7 @@ jQuery.noConflict()
     // element-event based actions
     // split 
     $(D).on('click', '#add_candidate', function() {
-console.log('let\'s add a candidate')
+        console.log('let\'s add a candidate')
     })
 
     $(D).on('change', 'input[name=candidate_self_circulating]', function() {
