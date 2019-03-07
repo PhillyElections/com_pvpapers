@@ -107,11 +107,14 @@ jQuery.noConflict()
         console.log('let\'s add a candidate')
         var base, id, segment
         base='candidate_row'
-        segment = "_1"
-        id=base+segment
-        if (!getElement(id).is(':visible')) {
-            getElement(id).show()
-            requireRow(segment)
+        for (i=1;i<8;i++) {
+            segment = "_"+i
+            id=base+segment
+            if (!getElement(id).is(':visible')) {
+                getElement(id).show()
+                requireRow(segment)
+                return
+            }
         }
     })
 
