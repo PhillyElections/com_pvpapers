@@ -118,6 +118,12 @@ jQuery.noConflict()
         }
     })
 
+    $(D).on('keyup', '#candidate_party', function() {
+        if ( this.value.toLowerCase() == 'democrat' || this.value.toLowerCase() == 'republican' ) {
+            alert("Democratic and Republican candidates must fill out Nomination Petitions not Nomination Papers.")
+        }
+    })
+
     $(D).on('click', '#remove_candidate', function() {
         console.log('let\'s remove a candidate')
         var base, id, segment
