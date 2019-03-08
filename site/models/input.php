@@ -189,14 +189,14 @@ class PvpapersModelInput extends JModel
         }
     }
 
-    protected function getOfficeName($office_id) {
+    protected function getOfficeName($display_id) {
         if (!$this->_data) {
             $this->getData();
         }
         $data = $this->_data;
         foreach ($data as $key=>$row) {
-            if ($row['office_id'] == $office_id) {
-                dd($office_id, $row);
+            if ($row->display_id == $display_id) {
+                dd($display_id, $row);
             }
         }
     }
