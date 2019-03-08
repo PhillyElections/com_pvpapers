@@ -47,7 +47,7 @@ jQuery.noConflict()
     }
 
     function enable(id) {
-        getElement(id).attr('disabled', '')
+        getElement(id).removeAttr('disabled')
     }
 
     function unrequire(id, segment) {
