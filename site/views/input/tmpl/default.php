@@ -157,7 +157,6 @@ if (! count($pdisplays) ) {
         </tr>
         <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_1">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -187,7 +186,6 @@ if (! count($pdisplays) ) {
         </tr>
         <tr class="hidden" id="candidate_row_2">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_2">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -217,7 +215,6 @@ if (! count($pdisplays) ) {
         </tr>
         <tr class="hidden" id="candidate_row_3">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_3">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -247,7 +244,6 @@ if (! count($pdisplays) ) {
         </tr>
         <tr class="hidden" id="candidate_row_4">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_4">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -277,7 +273,6 @@ if (! count($pdisplays) ) {
         </tr>
         <tr class="hidden" id="candidate_row_5">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_5">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -301,13 +296,12 @@ if (! count($pdisplays) ) {
                     'candidate_district_5'
                 ); ?>
                 <input type="text" autocomplete="off" id="candidate_name_5" name="candidate_name_5" size="15%" value="<?=$row->candidate_name_5; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
-                <input type="text" autocomplete="off" id="candidate_address_5" name="candidate_address_5" size="15%" value="<?=$row->candidate_address_5; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_address_5" name="candidate_address_5" size="20%" value="<?=$row->candidate_address_5; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_5" name="candidate_occupation_5" size="15%" value="<?=$row->candidate_occupation_5; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr class="hidden" id="candidate_row_6">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_6">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -337,7 +331,6 @@ if (! count($pdisplays) ) {
         </tr>
         <tr class="hidden" id="candidate_row_7">
             <td colspan="2">
-                <span class="candidate_remove" id="candidate_remove_7">[-]</span>
                 <?=
                 JHTML::_(
                     'select.genericlist',
