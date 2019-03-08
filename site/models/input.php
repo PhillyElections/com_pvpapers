@@ -182,7 +182,7 @@ class PvpapersModelInput extends JModel
         foreach ($cid as $id) {
             $rows = $this->_getList(' SELECT * FROM `#__pv_papers` WHERE `id`=' . $this->_db->quote($id) . ' AND `hash`=' . $this->_db->quote($hash));
             if (count($rows)) {
-                $row = JTable::getInstance('Nomination', 'Table');
+                $row = JTable::getInstance('Paper', 'Table');
                 $row->load($id);
                 $row->publish($id, 0);
             }
