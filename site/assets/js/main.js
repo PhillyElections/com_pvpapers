@@ -162,7 +162,7 @@ jQuery.noConflict()
             break;
             // this adds district
             case "District City Council":
-                console.log(this.id.substring(this.id.length-3,2))
+                console.log(this.id.substring(2,2))
             break;
             // these add a crapload of stuff...
             case "Committeeperson":
