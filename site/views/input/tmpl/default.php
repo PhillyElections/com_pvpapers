@@ -155,7 +155,7 @@ if (! count($pdisplays) ) {
             </td>
             <td><button class="button" id="add_candidate" type="button">&nbsp;[+] Add a candidate.&nbsp;</button> <button class="button" id="remove_candidate" type="button">&nbsp;[-] Remove a candidate.&nbsp;</button></td>
         </tr>
-        <tr id="candidate_row_1">
+        <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_1">[-]</span>
                 <?=
@@ -185,7 +185,7 @@ if (! count($pdisplays) ) {
                 <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
-        <tr id="candidate_row_2">
+        <tr class="hidden" id="candidate_row_2">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_2">[-]</span>
                 <?=
@@ -215,7 +215,7 @@ if (! count($pdisplays) ) {
                 <input type="text" autocomplete="off" id="candidate_occupation_2" name="candidate_occupation_2" size="15%" value="<?=$row->candidate_occupation_2; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
-        <tr id="candidate_row_3">
+        <tr class="hidden" id="candidate_row_3">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_3">[-]</span>
                 <?=
@@ -245,7 +245,7 @@ if (! count($pdisplays) ) {
                 <input type="text" autocomplete="off" id="candidate_occupation_3" name="candidate_occupation_3" size="15%" value="<?=$row->candidate_occupation_3; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
-        <tr id="candidate_row_4">
+        <tr class="hidden" id="candidate_row_4">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_4">[-]</span>
                 <?=
@@ -275,7 +275,7 @@ if (! count($pdisplays) ) {
                 <input type="text" autocomplete="off" id="candidate_occupation_4" name="candidate_occupation_4" size="15%" value="<?=$row->candidate_occupation_4; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
-        <tr id="candidate_row_5">
+        <tr class="hidden" id="candidate_row_5">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_5">[-]</span>
                 <?=
@@ -305,7 +305,7 @@ if (! count($pdisplays) ) {
                 <input type="text" autocomplete="off" id="candidate_occupation_5" name="candidate_occupation_5" size="15%" value="<?=$row->candidate_occupation_5; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
-        <tr id="candidate_row_6">
+        <tr class="hidden" id="candidate_row_6">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_6">[-]</span>
                 <?=
@@ -335,7 +335,7 @@ if (! count($pdisplays) ) {
                 <input type="text" autocomplete="off" id="candidate_occupation_6" name="candidate_occupation_6" size="15%" value="<?=$row->candidate_occupation_6; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
-        <tr id="candidate_row_7">
+        <tr class="hidden" id="candidate_row_7">
             <td colspan="2">
                 <span class="candidate_remove" id="candidate_remove_7">[-]</span>
                 <?=
