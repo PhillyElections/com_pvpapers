@@ -46,6 +46,10 @@ jQuery.noConflict()
         getElement(id).attr('disabled', 'disabled')
     }
 
+    function enable(id) {
+        getElement(id).attr('disabled', '')
+    }
+
     function unrequire(id, segment) {
         if (id == 'candidate_district' + segment) {
             getElement(id).val('0')
@@ -59,9 +63,7 @@ jQuery.noConflict()
 
     function unrequireRow(segment, district) {
         unrequire("display_id" + segment, segment)
-        if (district) {
-            unrequire("candidate_district" + segment, segment)
-        }
+        unrequire("candidate_district" + segment, segment)
         unrequire("candidate_office" + segment, segment)
         unrequire("candidate_name" + segment, segment)
         unrequire("candidate_address" + segment, segment)
