@@ -194,7 +194,9 @@ class PvpapersModelInput extends JModel
             $this->getData();
         }
         $data = $this->_data;
+                d($display_id, $data);
         foreach ($data as $key=>$row) {
+            dd($key, $row);
             if ($row->display_id == $display_id) {
                 dd($display_id, $row);
             }
