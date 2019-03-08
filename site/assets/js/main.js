@@ -150,6 +150,8 @@ jQuery.noConflict()
     $(D).on('change', '#display_id_1,#display_id_2,#display_id_3,#display_id_4,#display_id_5,#display_id_6,#display_id_7', function() {
         var office=$(this).find('option:selected').text(), segment=this.id.substring(this.id.length-2,this.id.length)
         console.log(office)
+        unrequire("candidate_district"+segment)
+        disable("candidate_district"+segment)
         switch (office) {
             // these get the basic form
             case "Mayor":
