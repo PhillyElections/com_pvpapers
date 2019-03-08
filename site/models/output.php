@@ -482,6 +482,41 @@ class PvpapersModelOutput extends JModel
         'CO33'=>array('value'=>'&nbsp;','case'=>'u',),
         'CO34'=>array('value'=>'&nbsp;','case'=>'u',),
         'CO35'=>array('value'=>'&nbsp;','case'=>'u',),
+        'CANDIDATE_ADDRESS1' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT1' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME1' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION1' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE1' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_ADDRESS2' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT2' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME2' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION2' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE2' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_ADDRESS3' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT3' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME3' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION3' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE3' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_ADDRESS4' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT4' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME4' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION4' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE4' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_ADDRESS5' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT5' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME5' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION5' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE5' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_ADDRESS6' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT6' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME6' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION6' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE6' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_ADDRESS7' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_DISTRICT7' => array('value' => '&nbsp;', 'case' => '',),
+        'CANDIDATE_NAME7' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OCCUPATION7' => array('value' => '&nbsp;', 'case' => 'u',),
+        'CANDIDATE_OFFICE7' => array('value' => '&nbsp;', 'case' => 'u',),
     );
 
     /**
@@ -939,6 +974,42 @@ class PvpapersModelOutput extends JModel
         $this->_values['O14']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][13];
         $this->_values['O15']['value'] = $this->_values['CANDIDATE_OFFICE']['value'][14];
 
+        $extra_data = json_decode($data->extra_data);
+        $this->_values['CANDIDATE_ADDRESS1']['value'] = $extra_data['CANDIDATE_ADDRESS1'] ? $extra_data['CANDIDATE_ADDRESS1'] : "";
+        $this->_values['CANDIDATE_DISTRICT1']['value'] = $extra_data['CANDIDATE_DISTRICT1'] ? $extra_data['CANDIDATE_DISTRICT1'] : "";
+        $this->_values['CANDIDATE_NAME1']['value'] = $extra_data['CANDIDATE_NAME1'] ? $extra_data['CANDIDATE_NAME1'] : "";
+        $this->_values['CANDIDATE_OCCUPATION1']['value'] = $extra_data['CANDIDATE_OCCUPATION1'] ? $extra_data['CANDIDATE_OCCUPATION1'] : "";
+        $this->_values['CANDIDATE_OFFICE1']['value'] = $extra_data['CANDIDATE_OFFICE1'] ? $extra_data['CANDIDATE_OFFICE1'] : "";
+        $this->_values['CANDIDATE_ADDRESS2']['value'] = $extra_data['CANDIDATE_ADDRESS2'] ? $extra_data['CANDIDATE_ADDRESS2'] : "";
+        $this->_values['CANDIDATE_DISTRICT2']['value'] = $extra_data['CANDIDATE_DISTRICT2'] ? $extra_data['CANDIDATE_DISTRICT2'] : "";
+        $this->_values['CANDIDATE_NAME2']['value'] = $extra_data['CANDIDATE_NAME2'] ? $extra_data['CANDIDATE_NAME2'] : "";
+        $this->_values['CANDIDATE_OCCUPATION2']['value'] = $extra_data['CANDIDATE_OCCUPATION2'] ? $extra_data['CANDIDATE_OCCUPATION2'] : "";
+        $this->_values['CANDIDATE_OFFICE2']['value'] = $extra_data['CANDIDATE_OFFICE2'] ? $extra_data['CANDIDATE_OFFICE2'] : "";
+        $this->_values['CANDIDATE_ADDRESS3']['value'] = $extra_data['CANDIDATE_ADDRESS3'] ? $extra_data['CANDIDATE_ADDRESS3'] : "";
+        $this->_values['CANDIDATE_DISTRICT3']['value'] = $extra_data['CANDIDATE_DISTRICT3'] ? $extra_data['CANDIDATE_DISTRICT3'] : "";
+        $this->_values['CANDIDATE_NAME3']['value'] = $extra_data['CANDIDATE_NAME3'] ? $extra_data['CANDIDATE_NAME3'] : "";
+        $this->_values['CANDIDATE_OCCUPATION3']['value'] = $extra_data['CANDIDATE_OCCUPATION3'] ? $extra_data['CANDIDATE_OCCUPATION3'] : "";
+        $this->_values['CANDIDATE_OFFICE3']['value'] = $extra_data['CANDIDATE_OFFICE3'] ? $extra_data['CANDIDATE_OFFICE3'] : "";
+        $this->_values['CANDIDATE_ADDRESS4']['value'] = $extra_data['CANDIDATE_ADDRESS4'] ? $extra_data['CANDIDATE_ADDRESS4'] : "";
+        $this->_values['CANDIDATE_DISTRICT4']['value'] = $extra_data['CANDIDATE_DISTRICT4'] ? $extra_data['CANDIDATE_DISTRICT4'] : "";
+        $this->_values['CANDIDATE_NAME4']['value'] = $extra_data['CANDIDATE_NAME4'] ? $extra_data['CANDIDATE_NAME4'] : "";
+        $this->_values['CANDIDATE_OCCUPATION4']['value'] = $extra_data['CANDIDATE_OCCUPATION4'] ? $extra_data['CANDIDATE_OCCUPATION4'] : "";
+        $this->_values['CANDIDATE_OFFICE4']['value'] = $extra_data['CANDIDATE_OFFICE4'] ? $extra_data['CANDIDATE_OFFICE4'] : "";
+        $this->_values['CANDIDATE_ADDRESS5']['value'] = $extra_data['CANDIDATE_ADDRESS5'] ? $extra_data['CANDIDATE_ADDRESS5'] : "";
+        $this->_values['CANDIDATE_DISTRICT5']['value'] = $extra_data['CANDIDATE_DISTRICT5'] ? $extra_data['CANDIDATE_DISTRICT5'] : "";
+        $this->_values['CANDIDATE_NAME5']['value'] = $extra_data['CANDIDATE_NAME5'] ? $extra_data['CANDIDATE_NAME5'] : "";
+        $this->_values['CANDIDATE_OCCUPATION5']['value'] = $extra_data['CANDIDATE_OCCUPATION5'] ? $extra_data['CANDIDATE_OCCUPATION5'] : "";
+        $this->_values['CANDIDATE_OFFICE5']['value'] = $extra_data['CANDIDATE_OFFICE5'] ? $extra_data['CANDIDATE_OFFICE5'] : "";
+        $this->_values['CANDIDATE_ADDRESS6']['value'] = $extra_data['CANDIDATE_ADDRESS6'] ? $extra_data['CANDIDATE_ADDRESS6'] : "";
+        $this->_values['CANDIDATE_DISTRICT6']['value'] = $extra_data['CANDIDATE_DISTRICT6'] ? $extra_data['CANDIDATE_DISTRICT6'] : "";
+        $this->_values['CANDIDATE_NAME6']['value'] = $extra_data['CANDIDATE_NAME6'] ? $extra_data['CANDIDATE_NAME6'] : "";
+        $this->_values['CANDIDATE_OCCUPATION6']['value'] = $extra_data['CANDIDATE_OCCUPATION6'] ? $extra_data['CANDIDATE_OCCUPATION6'] : "";
+        $this->_values['CANDIDATE_OFFICE6']['value'] = $extra_data['CANDIDATE_OFFICE6'] ? $extra_data['CANDIDATE_OFFICE6'] : "";
+        $this->_values['CANDIDATE_ADDRESS7']['value'] = $extra_data['CANDIDATE_ADDRESS7'] ? $extra_data['CANDIDATE_ADDRESS7'] : "";
+        $this->_values['CANDIDATE_DISTRICT7']['value'] = $extra_data['CANDIDATE_DISTRICT7'] ? $extra_data['CANDIDATE_DISTRICT7'] : "";
+        $this->_values['CANDIDATE_NAME7']['value'] = $extra_data['CANDIDATE_NAME7'] ? $extra_data['CANDIDATE_NAME7'] : "";
+        $this->_values['CANDIDATE_OCCUPATION7']['value'] = $extra_data['CANDIDATE_OCCUPATION7'] ? $extra_data['CANDIDATE_OCCUPATION7'] : "";
+        $this->_values['CANDIDATE_OFFICE7']['value'] = $extra_data['CANDIDATE_OFFICE7'] ? $extra_data['CANDIDATE_OFFICE7'] : "";
         return $this->_values;
     }
 
