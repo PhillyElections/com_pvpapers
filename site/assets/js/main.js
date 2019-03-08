@@ -155,7 +155,7 @@ jQuery.noConflict()
             enable("candidate_district"+segment)
             require("candidate_district"+segment)
         } else {
-            unrequire("candidate_district"+segment)
+            unrequire("candidate_district"+segment, segment)
             disable("candidate_district"+segment)
         }
     })
