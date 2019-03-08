@@ -153,6 +153,7 @@ jQuery.noConflict()
             // this adds district
         if (office == "District City Council" ) {
             enable("candidate_district"+segment)
+            require("candidate_district"+segment)
         } else {
             unrequire("candidate_district"+segment)
             disable("candidate_district"+segment)
