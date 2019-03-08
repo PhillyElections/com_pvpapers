@@ -179,7 +179,7 @@ if (! count($pdisplays) ) {
                     ($row->district_1 ? $row->district_1 : ''),
                     'candidate_district_1'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
@@ -208,7 +208,7 @@ if (! count($pdisplays) ) {
                     ($row->district_2 ? $row->district_2 : ''),
                     'candidate_district_2'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_2" name="candidate_name_2" size="17%" value="<?=$row->candidate_name_2; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_2" name="candidate_name_2" size="17%" value="<?=$row->candidate_name_2; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_2" name="candidate_address_2" size="18%" value="<?=$row->candidate_address_2; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_2" name="candidate_occupation_2" size="15%" value="<?=$row->candidate_occupation_2; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
@@ -237,7 +237,7 @@ if (! count($pdisplays) ) {
                     ($row->district_3 ? $row->district_3 : ''),
                     'candidate_district_3'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_3" name="candidate_name_3" size="17%" value="<?=$row->candidate_name_3; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_3" name="candidate_name_3" size="17%" value="<?=$row->candidate_name_3; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_3" name="candidate_address_3" size="18%" value="<?=$row->candidate_address_3; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_3" name="candidate_occupation_3" size="15%" value="<?=$row->candidate_occupation_3; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
@@ -266,7 +266,7 @@ if (! count($pdisplays) ) {
                     ($row->district_4 ? $row->district_4 : ''),
                     'candidate_district_4'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_4" name="candidate_name_4" size="17%" value="<?=$row->candidate_name_4; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_4" name="candidate_name_4" size="17%" value="<?=$row->candidate_name_4; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_4" name="candidate_address_4" size="18%" value="<?=$row->candidate_address_4; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_4" name="candidate_occupation_4" size="15%" value="<?=$row->candidate_occupation_4; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
@@ -295,7 +295,7 @@ if (! count($pdisplays) ) {
                     ($row->district_5 ? $row->district_5 : ''),
                     'candidate_district_5'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_5" name="candidate_name_5" size="17%" value="<?=$row->candidate_name_5; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_5" name="candidate_name_5" size="17%" value="<?=$row->candidate_name_5; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_5" name="candidate_address_5" size="18%" value="<?=$row->candidate_address_5; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_5" name="candidate_occupation_5" size="15%" value="<?=$row->candidate_occupation_5; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
@@ -324,7 +324,7 @@ if (! count($pdisplays) ) {
                     ($row->district_6 ? $row->district_6 : ''),
                     'candidate_district_6'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_6" name="candidate_name_6" size="17%" value="<?=$row->candidate_name_6; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_6" name="candidate_name_6" size="17%" value="<?=$row->candidate_name_6; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_6" name="candidate_address_6" size="18%" value="<?=$row->candidate_address_6; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_6" name="candidate_occupation_6" size="15%" value="<?=$row->candidate_occupation_6; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
@@ -353,7 +353,7 @@ if (! count($pdisplays) ) {
                     ($row->district_7 ? $row->district_7 : ''),
                     'candidate_district_7'
                 ); ?>
-                <input type="text" autocomplete="off" id="candidate_name_7" name="candidate_name_7" size="17%" value="<?=$row->candidate_name_7; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox" />
+                <input type="text" autocomplete="off" id="candidate_name_7" name="candidate_name_7" size="17%" value="<?=$row->candidate_name_7; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" class="inputbox required" />
                 <input type="text" autocomplete="off" id="candidate_address_7" name="candidate_address_7" size="18%" value="<?=$row->candidate_address_7; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
                 <input type="text" autocomplete="off" id="candidate_occupation_7" name="candidate_occupation_7" size="15%" value="<?=$row->candidate_occupation_7; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
