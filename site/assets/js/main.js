@@ -145,6 +145,31 @@ jQuery.noConflict()
         getElement('candidate_self_circulating_no_msg, #candidate_self_circulating_yes_msg').removeClass('invalid')
     })
 
+    $(D).on('change', '#display_id_1,#display_id_2,#display_id_3,#display_id_4,#display_id_5,#display_id_6,#display_id_7,', function() {
+        var office=$(this).find('option:selected').text()
+        console.log(office)
+        switch (office) {
+            // these get the basic form
+            case "Mayor":
+            case "City Commissioner":
+            case "Register of Wills":
+            case "Sheriff":
+            case "City Council At-Large":
+            case "City Controller":
+            case "District Attorney":
+            break;
+            // this adds district
+            case "District City Council":
+                console.log(this)
+            break;
+            // these add a crapload of stuff...
+            case "Committeeperson":
+            case "Inspector of Election":
+            case "Judge of Election":
+            break;
+        }
+    })
+
     /* see above */
     function initialize() {
         // set optional elements correct visibility
