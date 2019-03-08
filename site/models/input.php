@@ -85,6 +85,12 @@ class PvpapersModelInput extends JModel
 
         $data['published'] = 1;
         $data['candidate_office1'] = $this->getOfficeName($data['display_id_1']);
+        $data['candidate_office2'] = $this->getOfficeName($data['display_id_2']);
+        $data['candidate_office3'] = $this->getOfficeName($data['display_id_3']);
+        $data['candidate_office4'] = $this->getOfficeName($data['display_id_4']);
+        $data['candidate_office5'] = $this->getOfficeName($data['display_id_5']);
+        $data['candidate_office6'] = $this->getOfficeName($data['display_id_6']);
+        $data['candidate_office7'] = $this->getOfficeName($data['display_id_7']);
         // just in case...
         foreach ($data as $key => $value) {
             $data[$key] = JString::trim($value);
@@ -196,7 +202,7 @@ class PvpapersModelInput extends JModel
         $data = $this->_data;
         foreach ($data as $key=>$row) {
             if ($row->id == $display_id) {
-                dd($display_id, $row);
+                return $row->office_name;
             }
         }
     }
