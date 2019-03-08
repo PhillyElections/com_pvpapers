@@ -148,7 +148,7 @@ jQuery.noConflict()
     })
 
     $(D).on('change', '#display_id_1,#display_id_2,#display_id_3,#display_id_4,#display_id_5,#display_id_6,#display_id_7', function() {
-        var office=$(this).find('option:selected').text()
+        var office=$(this).find('option:selected').text(), segment=this.id.substring(this.id.length-2,this.id.length)
         console.log(office)
         switch (office) {
             // these get the basic form
@@ -162,7 +162,7 @@ jQuery.noConflict()
             break;
             // this adds district
             case "District City Council":
-                console.log(this.id.substring(this.id.length-2,this.id.length))
+                enable(candiate_district+segment)
             break;
             // these add a crapload of stuff...
             case "Committeeperson":
