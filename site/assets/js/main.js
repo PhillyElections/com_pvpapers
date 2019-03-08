@@ -147,7 +147,7 @@ jQuery.noConflict()
         getElement('candidate_self_circulating_no_msg, #candidate_self_circulating_yes_msg').removeClass('invalid')
     })
 
-    $(D).on('change', '#display_id_1,#display_id_2,#display_id_3,#display_id_4,#display_id_5,#display_id_6,#display_id_7,', function() {
+    $(D).on('change', '#display_id_1,#display_id_2,#display_id_3,#display_id_4,#display_id_5,#display_id_6,#display_id_7', function() {
         var office=$(this).find('option:selected').text()
         console.log(office)
         switch (office) {
