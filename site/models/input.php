@@ -84,13 +84,13 @@ class PvpapersModelInput extends JModel
         $data['p_template_statement'] = $pdisplay->p_template_statement;
 
         $data['published'] = 1;
-        $data['candidate_office1'] = $this->getOfficeName($data['display_id_1']);
-        $data['candidate_office2'] = $this->getOfficeName($data['display_id_2']);
-        $data['candidate_office3'] = $this->getOfficeName($data['display_id_3']);
-        $data['candidate_office4'] = $this->getOfficeName($data['display_id_4']);
-        $data['candidate_office5'] = $this->getOfficeName($data['display_id_5']);
-        $data['candidate_office6'] = $this->getOfficeName($data['display_id_6']);
-        $data['candidate_office7'] = $this->getOfficeName($data['display_id_7']);
+        $data['candidate_office_1'] = $this->getOfficeName($data['display_id_1']);
+        $data['candidate_office_2'] = $this->getOfficeName($data['display_id_2']);
+        $data['candidate_office_3'] = $this->getOfficeName($data['display_id_3']);
+        $data['candidate_office_4'] = $this->getOfficeName($data['display_id_4']);
+        $data['candidate_office_5'] = $this->getOfficeName($data['display_id_5']);
+        $data['candidate_office_6'] = $this->getOfficeName($data['display_id_6']);
+        $data['candidate_office_7'] = $this->getOfficeName($data['display_id_7']);
         // just in case...
         foreach ($data as $key => $value) {
             $data[$key] = JString::trim($value);
