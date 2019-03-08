@@ -84,7 +84,7 @@ class PvpapersModelInput extends JModel
         $data['p_template_statement'] = $pdisplay->p_template_statement;
 
         $data['published'] = 1;
-
+        $data['candidate_office1'] = $this->getOfficeName($data['display_id_1']);
         // just in case...
         foreach ($data as $key => $value) {
             $data[$key] = JString::trim($value);
@@ -185,6 +185,18 @@ class PvpapersModelInput extends JModel
                 $row = JTable::getInstance('Paper', 'Table');
                 $row->load($id);
                 $row->publish($id, 0);
+            }
+        }
+    }
+
+    protected function getOfficeName($office_id) {
+        if (!$this->_data) {
+            $this->getData();
+        }
+        $data = $this->_data;
+        foreach ($data as $key=>$row) {
+            if ($row['office_id'] == $office_id) {
+                dd($office_id, $row);
             }
         }
     }
