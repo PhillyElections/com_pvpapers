@@ -178,7 +178,7 @@ if (! count($pdisplays) ) {
                         <td class="seventeen center">Name</td>
                         <td class="seventeen center">Address</td>
                         <td class="fifteen center">Occupation</td>
-                        <td class="auto">%nbsp;</td>
+                        <td class="auto">&nbsp;</td>
                     </tr>
                 </table>
             </div>
