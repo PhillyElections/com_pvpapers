@@ -171,7 +171,7 @@ if (! count($pdisplays) ) {
         <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
                 <span class="center">
-                    <div class="center">Office</div>
+                    <span class="center">Office</span><br>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -185,7 +185,7 @@ if (! count($pdisplays) ) {
                 ); ?>
                 </span>
                 <span class="center">
-                    <div class="center">District</div>
+                    <span class="center">District</span><br>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -199,15 +199,15 @@ if (! count($pdisplays) ) {
                 ); ?>
                 </span>
                 <span class="center">
-                    <div class="center">Name</div>
+                    <span class="center">Name</span><br>
                     <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME GRID PLACEHOLDER'); ?>" class="inputbox required" />
                 </span>
                 <span class="center">
-                    <div class="center">Address</div>
+                    <span class="center">Address</span><br>
                     <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS GRID PLACEHOLDER'); ?>" />
                 </span>
                 <span class="center">
-                    <div class="center">Occupation</div>
+                    <span class="center">Occupation</span><br>
                     <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION GRID PLACEHOLDER'); ?>" />
                 </span>
             </td>
