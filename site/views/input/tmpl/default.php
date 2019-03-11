@@ -174,7 +174,7 @@ if (! count($pdisplays) ) {
                 <table class="candidate-header">
                     <tr>
                         <td class="twenty-two center">Office</td>
-                        <td class="sixteen center">District</td>
+                        <td class="fifteen center">District</td>
                         <td class="seventeen center">Name</td>
                         <td class="seventeen center">Address</td>
                         <td class="fifteen center">Occupation</td>
