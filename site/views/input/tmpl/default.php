@@ -199,15 +199,15 @@ if (! count($pdisplays) ) {
                 ); ?>
                 </span>
                 <span class="center">
-                    <div class="center">District</div>
+                    <div class="center">Name</div>
                     <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME GRID PLACEHOLDER'); ?>" class="inputbox required" />
                 </span>
                 <span class="center">
-                    <div class="center">District</div>
+                    <div class="center">Address</div>
                     <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS GRID PLACEHOLDER'); ?>" />
                 </span>
                 <span class="center">
-                    <div class="center">District</div>
+                    <div class="center">Occupation</div>
                     <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION GRID PLACEHOLDER'); ?>" />
                 </span>
             </td>
