@@ -96,8 +96,8 @@ jQuery.noConflict()
         rehide('candidate_row_3')
         unrequireRow('_2', true)
         rehide('candidate_row_2')
-        unrequireRow('_1', true)
         rehide('candidate_row_1')
+        unhide('candidate_row_1')
     }
 
     // settings and initialization
@@ -109,7 +109,7 @@ jQuery.noConflict()
         console.log('let\'s add a candidate')
         var base, id, segment
         base = 'candidate_row'
-        for (var i = 1; i < 8; i++) {
+        for (var i = 2; i < 8; i++) {
             segment = "_" + i
             id = base + segment
             if (!getElement(id).is(':visible')) {
@@ -130,7 +130,7 @@ jQuery.noConflict()
         console.log('let\'s remove a candidate')
         var base, id, segment
         base = 'candidate_row'
-        for (var i = 7; i > 0; i--) {
+        for (var i = 7; i > 1; i--) {
             segment = "_" + i
             id = base + segment
             console.log(id)
