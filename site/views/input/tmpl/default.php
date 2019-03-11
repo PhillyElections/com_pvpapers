@@ -157,13 +157,13 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_0">
             <td colspan="2">
-                <table class="header">
+                <table class="candidate-header">
                     <tr>
-                        <td class="header">Office</td>
-                        <td class="header">District</td>
-                        <td class="header">Name</td>
-                        <td class="header">Address</td>
-                        <td class="header">Occupation</td>
+                        <td class="candidate-header">Office</td>
+                        <td class="candidate-header">District</td>
+                        <td class="candidate-header">Name</td>
+                        <td class="candidate-header">Address</td>
+                        <td class="candidate-header">Occupation</td>
                     </tr>
                 </table>
             </td>
