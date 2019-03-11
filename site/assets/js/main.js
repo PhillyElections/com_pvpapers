@@ -96,10 +96,6 @@ jQuery.noConflict()
         rehide('candidate_row_3')
         unrequireRow('_2', true)
         rehide('candidate_row_2')
-        rehide('candidate_row_1')
-        unrequireRow('_2', true)
-        unhide('candidate_row_1')
-        requireRow("_1")
     }
 
     // settings and initialization

@@ -155,7 +155,7 @@ if (! count($pdisplays) ) {
             </td>
             <td><button class="button" id="add_candidate" type="button">&nbsp;[+] Add a candidate.&nbsp;</button> <button class="button" id="remove_candidate" type="button">&nbsp;[-] Remove a candidate.&nbsp;</button></td>
         </tr>
-        <tr class="hidden" id="candidate_row_1">
+        <tr id="candidate_row_1">
             <td colspan="2">
             <div>
                 <table class="candidate-header">
@@ -185,7 +185,7 @@ if (! count($pdisplays) ) {
                     'select.genericlist',
                     $candidate_districts,
                     'candidate_district_1',
-                    'required',
+                    'disabled',
                     'idx',
                     'value',
                     ($row->district_1 ? $row->district_1 : ''),
