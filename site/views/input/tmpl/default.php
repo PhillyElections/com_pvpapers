@@ -200,15 +200,15 @@ if (! count($pdisplays) ) {
                 </span>
                 <span class="center">
                     <span class="center">Name</span><br>
-                    <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME GRID PLACEHOLDER'); ?>" class="inputbox required" />
+                    <span><input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME GRID PLACEHOLDER'); ?>" class="inputbox required" /></span>
                 </span>
                 <span class="center">
                     <span class="center">Address</span><br>
-                    <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS GRID PLACEHOLDER'); ?>" />
+                    <span><input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS GRID PLACEHOLDER'); ?>" /></span>
                 </span>
                 <span class="center">
                     <span class="center">Occupation</span><br>
-                    <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION GRID PLACEHOLDER'); ?>" />
+                    <span><input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION GRID PLACEHOLDER'); ?>" /></span>
                 </span>
             </td>
         </tr>
