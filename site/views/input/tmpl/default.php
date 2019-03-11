@@ -157,7 +157,7 @@ if (! count($pdisplays) ) {
         </tr>
         <tr id="candidate_row_0">
             <td colspan="2">
-                <table class="grid-header">
+                <table class="header">
                     <tr>
                         <td class="header">Office</td>
                         <td class="header">District</td>
