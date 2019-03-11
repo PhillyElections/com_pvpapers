@@ -159,19 +159,28 @@ if (! count($pdisplays) ) {
             <td colspan="2">
                 <table class="candidate-header">
                     <tr>
-                        <td class="candidate-header center">Office</td>
-                        <td class="candidate-header center">District</td>
-                        <td class="candidate-header center">Name</td>
-                        <td class="candidate-header center">Address</td>
-                        <td class="candidate-header center">Occupation</td>
+                        <td class="twenty center">Office</td>
+                        <td class="fifteen center">District</td>
+                        <td class="ninteen center">Name</td>
+                        <td class="twnety center">Address</td>
+                        <td class="seventeen center">Occupation</td>
                     </tr>
                 </table>
             </td>
         </tr>
         <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
-                <span class="center">
-                    <span class="center">Office</span><br>
+            <div>
+                <table class="candidate-header">
+                    <tr>
+                        <td class="twenty center">Office</td>
+                        <td class="fifteen center">District</td>
+                        <td class="ninteen center">Name</td>
+                        <td class="twnety center">Address</td>
+                        <td class="seventeen center">Occupation</td>
+                    </tr>
+                </table>
+            </div>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -183,9 +192,6 @@ if (! count($pdisplays) ) {
                     ($row->display_id_1 ? $row->display_id_1 : ''),
                     'display_id_1'
                 ); ?>
-                </span>
-                <span class="center">
-                    <span class="center">District</span><br>
                 <?=
                 JHTML::_(
                     'select.genericlist',
@@ -197,19 +203,9 @@ if (! count($pdisplays) ) {
                     ($row->district_1 ? $row->district_1 : ''),
                     'candidate_district_1'
                 ); ?>
-                </span>
-                <span class="center">
-                    <span class="center">Name</span><br>
-                    <span><input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME GRID PLACEHOLDER'); ?>" class="inputbox required" /></span>
-                </span>
-                <span class="center">
-                    <span class="center">Address</span><br>
-                    <span><input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS GRID PLACEHOLDER'); ?>" /></span>
-                </span>
-                <span class="center">
-                    <span class="center">Occupation</span><br>
-                    <span><input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION GRID PLACEHOLDER'); ?>" /></span>
-                </span>
+                <input type="text" autocomplete="off" id="candidate_name_1" name="candidate_name_1" size="17%" value="<?=$row->candidate_name_1; ?>" maxlength="27" placeholder="<?=JText::_('CANDIDATE NAME GRID PLACEHOLDER'); ?>" class="inputbox required" />
+                <input type="text" autocomplete="off" id="candidate_address_1" name="candidate_address_1" size="18%" value="<?=$row->candidate_address_1; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE ADDRESS GRID PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation_1" name="candidate_occupation_1" size="15%" value="<?=$row->candidate_occupation_1; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION GRID PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr class="hidden" id="candidate_row_2">
