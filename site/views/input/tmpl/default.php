@@ -158,11 +158,15 @@ if (! count($pdisplays) ) {
         <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
                 <div>
-                    <div class="left width20">Office</div>
-                    <div class="left width20">District</div>
-                    <div class="left width20">Name</div>
-                    <div class="left width20">Address</div>
-                    <div class="left width20">Occupation</div>
+                    <table>
+                        <tr>
+                            <td>Office</td>
+                            <td>District</td>
+                            <td>Name</td>
+                            <td>Address</td>
+                            <td>Occupation</td>
+                        </tr>
+                    </table>
                 </div>
                 <?=
                 JHTML::_(
