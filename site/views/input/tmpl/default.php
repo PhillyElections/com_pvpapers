@@ -158,13 +158,13 @@ if (! count($pdisplays) ) {
         <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
                 <div>
-                    <table>
+                    <table class="grid-header">
                         <tr>
-                            <td>Office</td>
-                            <td>District</td>
-                            <td>Name</td>
-                            <td>Address</td>
-                            <td>Occupation</td>
+                            <td class="header">Office</td>
+                            <td class="header">District</td>
+                            <td class="header">Name</td>
+                            <td class="header">Address</td>
+                            <td class="header">Occupation</td>
                         </tr>
                     </table>
                 </div>
