@@ -26,3 +26,22 @@ table.sigform {
 	border-radius: 3px!important;
 	box-shadow: 1px 1px 1px #eee;
 }
+
+.candidate_remove {
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.left {
+	float: left;
+}
+
+td.candidate-header {
+	width: 20%;
+}
+table.candidate-header {
+	width: 100%;
+}
+.center {
+	text-align:center;
+}
