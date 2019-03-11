@@ -155,19 +155,6 @@ if (! count($pdisplays) ) {
             </td>
             <td><button class="button" id="add_candidate" type="button">&nbsp;[+] Add a candidate.&nbsp;</button> <button class="button" id="remove_candidate" type="button">&nbsp;[-] Remove a candidate.&nbsp;</button></td>
         </tr>
-        <tr id="candidate_row_0">
-            <td colspan="2">
-                <table class="candidate-header">
-                    <tr>
-                        <td class="twenty center">Office</td>
-                        <td class="fifteen center">District</td>
-                        <td class="ninteen center">Name</td>
-                        <td class="twnety center">Address</td>
-                        <td class="seventeen center">Occupation</td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
         <tr class="hidden" id="candidate_row_1">
             <td colspan="2">
             <div>

@@ -36,8 +36,8 @@ table.sigform {
 	float: left;
 }
 
-td.candidate-header {
-	width: 20%;
+.candidate-header td {
+	font-weight: bold;
 }
 table.candidate-header {
 	width: 100%;
