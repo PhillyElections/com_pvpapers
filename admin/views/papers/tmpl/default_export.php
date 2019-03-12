@@ -31,7 +31,7 @@ fputcsv($output,
     )
 );
 
-$subheader = array('NAME', 'OFFICE', 'DISTRICT', 'ADDRESS', 'OCCUPATION');
+$subheader = array('-','-','NAME', 'OFFICE', 'DISTRICT', 'ADDRESS', 'OCCUPATION','-','-',);
 $field_1_default = 'candidate_name_';
 $field_2_default = 'candidate_office_';
 $field_3_default = 'candidate_district_';
@@ -63,19 +63,22 @@ for ($i = 0, $n = count($this->items); $i < $n; $i++) {
             $field3 = $field_3_default . $ii;
             $field4 = $field_4_default . $ii;
             $field5 = $field_5_default . $ii;
+                fputcsv($output,
+                    $subheader
+                );
 
             if ($extra_data->$field1) {
                 fputcsv($output,
                     array(
-                        '',
+                        '-',
+                        '-',
                         $extra_data->$field1,
                         $extra_data->$field2,
                         $extra_data->$field3,
                         $extra_data->$field4,
                         $extra_data->$field5,
-                        '',
-                        '',
-                        '',
+                        '-',
+                        '-',
                     )
                 );
             }
