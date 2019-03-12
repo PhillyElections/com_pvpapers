@@ -27,9 +27,16 @@ ob_end_flush();
 JResponse::sendHeaders();
 $output = fopen('php://output', 'w');
 fputcsv($output,
-    array('ID', 'PARTY', 'OFFICE', 'DISTRICT', 'WARD', 'DIVISION', 'NAME', 'OCCUPATION', 'SIGFORM FIRST', 'SIGFORM LAST', 'ADDRESS', 'APT/UNIT', 'SIGFORM ADDRESS', 'ZIP', 'PHONE', 'IP', 'CREATED',
+    array('ID', 'PARTY', 'CREATOR', 'ADDRESS', 'APT/UNIT', 'ZIP', 'PHONE', 'IP', 'CREATED',
     )
 );
+
+$subheader = array('NAME', 'OFFICE', 'DISTRICT', 'ADDRESS', 'OCCUPATION');
+$field_1_default = 'candidate_name_';
+$field_2_default = 'candidate_office_';
+$field_3_default = 'candidate_district_';
+$field_4_default = 'candidate_address_';
+$field_5_default = 'candidate_occupation_';
 
 $k = 0;
 for ($i = 0, $n = count($this->items); $i < $n; $i++) {
@@ -39,22 +46,40 @@ for ($i = 0, $n = count($this->items); $i < $n; $i++) {
             array(
                 $row->id,
                 $row->candidate_party,
-                $row->candidate_district,
-                $row->candidate_ward,
-                $row->candidate_division,
                 $row->candidate_name,
-                $row->candidate_occupation,
-                $row->sigform_first_middle,
-                $row->sigform_last,
                 $row->candidate_address,
                 $row->candidate_address2,
-                $row->sigform_address,
                 $row->candidate_zip,
                 $row->candidate_phone,
                 $row->user_ip,
                 $row->created,
             )
         );
+
+        $extra_data = json_decode($row->extra_data);
+        for ($ii = 1, $ii < 8, $ii++) {
+            if ($extra_data->$field1) {
+                $field1 = $field_1_default . $ii;
+                $field2 = $field_2_default . $ii;
+                $field3 = $field_3_default . $ii;
+                $field4 = $field_4_default . $ii;
+                $field5 = $field_5_default . $ii;
+
+                fputcsv($output,
+                    array(
+                        '',
+                        $extra_data->$field1,
+                        $extra_data->$field2,
+                        $extra_data->$field3,
+                        $extra_data->$field4,
+                        $extra_data->$field5,
+                        '',
+                        '',
+                        '',
+                    )
+                );
+            }
+        }
     }
     $k = 1 - $k;
 }
