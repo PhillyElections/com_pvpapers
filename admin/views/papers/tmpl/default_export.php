@@ -57,7 +57,7 @@ for ($i = 0, $n = count($this->items); $i < $n; $i++) {
         );
 
         $extra_data = json_decode($row->extra_data);
-        for ($ii = 1, $ii < 8, $ii++) {
+        for ($ii = 1; $ii < 8; $ii++) {
             if ($extra_data->$field1) {
                 $field1 = $field_1_default . $ii;
                 $field2 = $field_2_default . $ii;
