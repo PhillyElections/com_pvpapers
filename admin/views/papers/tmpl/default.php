@@ -10,16 +10,16 @@ $rows = $this->papers;
         <table class="adminlist">
             <thead>
                 <tr>
-                    <th width="1px">
+                    <th width="1%">
                         <?=JText::_('ID');?>
                     </th>
-                    <th width="1px">
+                    <th width="1%">
                         <input type="checkbox" name="toggle" value="" onclick="checkAll(<?=count($rows);?>);" />
                     </th>
-                    <th width="1px">
+                    <th width="1%">
                         P
                     </th>
-                    <th width="10%">
+                    <th width="17%">
                         <?=JText::_('CANDIDATE PARTY');?>
                     </th>
                     <th width="15%">
@@ -28,10 +28,10 @@ $rows = $this->papers;
                     <th width="15%">
                         <?=JText::_('CANDIDATE ADDRESS');?>
                     </th>
-                    <th width="10%">
+                    <th width="15%">
                         <?=JText::_('CANDIDATE OCCUPATION');?>
                     </th>
-                    <th width="10%">
+                    <th width="15%">
                         <?=JText::_('USER_IP');?>
                     </th>
                     <th width="10%">
