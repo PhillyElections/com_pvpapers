@@ -58,13 +58,13 @@ for ($i = 0, $n = count($this->items); $i < $n; $i++) {
 
         $extra_data = json_decode($row->extra_data);
         for ($ii = 1; $ii < 8; $ii++) {
-            if ($extra_data->$field1) {
-                $field1 = $field_1_default . $ii;
-                $field2 = $field_2_default . $ii;
-                $field3 = $field_3_default . $ii;
-                $field4 = $field_4_default . $ii;
-                $field5 = $field_5_default . $ii;
+            $field1 = $field_1_default . $ii;
+            $field2 = $field_2_default . $ii;
+            $field3 = $field_3_default . $ii;
+            $field4 = $field_4_default . $ii;
+            $field5 = $field_5_default . $ii;
 
+            if ($extra_data->$field1) {
                 fputcsv($output,
                     array(
                         '',
