@@ -15,23 +15,7 @@ jQuery.noConflict()
         FADETIME = 250,
         Elements = {},
         Data,
-        Services = {
-            geocoder: {
-                url: function(input) {
-                    const encInput = encodeURIComponent(input)
-                    return '//api.phila.gov/ais/v1/search/{encInput}'.replace('{encInput}', encInput)
-                },
-                params: {
-                    gatekeeperKey: GATEKEEPER_KEY
-                }
-            },
-            address_completer: {
-                url: function(input) {
-                    const encInput = encodeURIComponent(input)
-                    return '//apis.philadelphiavotes.com/autocomplete/{encInput}'.replace('{encInput}', encInput)
-                }
-            }
-        }
+        sigformLimit = 35
 
     function getElement(id) {
         if (typeof Elements[id] == 'undefined') {
@@ -40,72 +24,8 @@ jQuery.noConflict()
         return Elements[id]
     }
 
-    function getHome(input) {
-        console.log('getHome(input)', input)
-        var deferred = $.Deferred(),
-            service = Services.geocoder
-        $.getJSON(service.url(input), service.params).done(function(response) {
-            console.log(response)
-            if (response.features) {
-                deferred.resolve({
-                    coordinates: [response.features[0].geometry.coordinates[1], response.features[0].geometry.coordinates[0]],
-                    data: response.features[0].properties,
-                    name: input
-                })
-            } else {
-                deferred.reject()
-            }
-        })
-        return deferred.promise()
-    }
-
-    // begin ajax functions
-    function onHomeAddress() {
-        // independant services
-        getElement('candidate_ward').val(Data.precinct.padStart(4, '0').substring(0, 2))
-        getElement('candidate_division').val(Data.precinct.padStart(4, '0').substring(2, 4))
-        getElement('sigform_address').val(Data.label)
-        getElement('candidate_zip').val(Data.zip)
-        getElement('sigform_address').trigger('keyup')
-    }
-
-    // functions
-    function addressComplete() {
-        if (!getElement('candidate_address')) return false
-        getElement('candidate_address').autocomplete({
-            minLength: 3,
-            source: function(request, callback) {
-
-                var service = Services.address_completer,
-                    space = request.term.indexOf(' ')
-                // let's not run until we've entered a street number
-                // and the first letter of the street
-                if (space > 0 && space < request.term.length - 1) {
-                    $.getJSON(service.url(request.term), service.params, function(response) {
-                        if (response.status == 'success') {
-                            var addresses = $.map(response.data, function(datum) {
-                                return {
-                                    label: datum.address,
-                                    value: datum.address,
-                                    precinct: datum.precinct,
-                                    zip: datum.zip
-                                }
-                            })
-                            callback(addresses)
-                        } else {
-                            callback([])
-                        }
-                    })
-                }
-            },
-            select: function(evt, ui) {
-                Data = ui.item
-                onHomeAddress()
-            }
-        })
-    }
-
-    function rehide(id) {
+     // functions
+     function rehide(id) {
         getElement(id).hide()
         getElement(id).removeClass('hidden')
     }
@@ -146,40 +66,15 @@ jQuery.noConflict()
     }
 
     function hideForm() {
-
-//        rehide('candidate_name_tr')
-//        rehide('candidate_occupation_tr')
-//        unrequire('candidate_address')
-//        rehide('candidate_address_tr')
-//        unrequire('candidate_zip')
-//        rehide('candidate_address2_tr')
         unrequire('candidate_district')
         rehide('candidate_district_tr')
-//        unrequire('candidate_ward')
-//        unrequire('candidate_division')
-//        rehide('candidate_precinct_tr')
-//        rehide('candidate_phone_tr')
-//        unrequire('candidate_ballot_name_approved')
-//        rehide('candidate_sigform_tr')
         unrequire('candidate_self_circulating_no')
         unrequire('candidate_self_circulating_yes')
         rehide('candidate_circulation_tr')
-//        rehide('candidate_double_side_tr')
-//        rehide('candidate_instructions_tr')
-//        rehide('candidate_recaptcha_tr')
-//        rehide('candidate_submit_tr')        
     }
 
     function basicForm() {
         hideForm();
-/*        unhide('sigform_address_row')
-        unhide('sigform_address_label_row')*/
-//        unhide('candidate_name_tr')
-//        unhide('candidate_occupation_tr')
-//        unhide('candidate_double_side_tr')
-//        unhide('candidate_instructions_tr')
-//        unhide('candidate_recaptcha_tr')
-//        unhide('candidate_submit_tr')
     }
 
     function basicFormPlus() {
@@ -190,29 +85,16 @@ jQuery.noConflict()
 
     function deluxeForm() {
         basicForm()
-//        unhide('candidate_address_tr')
-//        require('candidate_address')
-//        unhide('candidate_address2_tr')
-//        require('candidate_zip')
-//        unhide('candidate_precinct_tr')
-//        require('candidate_ward')
-//        require('candidate_division')
-//        unhide('candidate_phone_tr')
-//        unhide('candidate_sigform_tr')
-        //        rehide('sigform_address_row')
-        //        rehide('sigform_address_label_row')
-//        require('candidate_ballot_name_approved')
-
         unhide('candidate_circulation_tr')        
         require('candidate_self_circulating_no')
         require('candidate_self_circulating_yes')
     }
 
     function selectAddressMessage() {
-        if (getElement('sigform_address').val().length < 36 && getElement('sigform_address_msg2').hasClass('hidden')) {
+        if (getElement('sigform_address').val().length <= sigformLimit && getElement('sigform_address_msg2').hasClass('hidden')) {
             getElement('sigform_address_msg1').addClass('hidden')
             getElement('sigform_address_msg2').removeClass('hidden')
-        } else if (getElement('sigform_address').val().length > 35 && getElement('sigform_address_msg1').hasClass('hidden')) {
+        } else if (getElement('sigform_address').val().length > sigformLimit && getElement('sigform_address_msg1').hasClass('hidden')) {
             getElement('sigform_address_msg2').addClass('hidden')
             getElement('sigform_address_msg1').removeClass('hidden')
         }
@@ -224,48 +106,16 @@ jQuery.noConflict()
     // element-event based actions
     // split 
     $(D).on('keyup', '#candidate_name', function() {
-        var parts = (this.value.replace(/[^A-Za-z -]/gi, '').replace(/ +/gi, ' ')).split(' '),
-            $sigformFirstMiddle = getElement('sigform_first_middle'),
-            $sigformLast = getElement('sigform_last')
-
-        switch (parts.length) {
-            case 1:
-                $sigformFirstMiddle.val(parts[0])
-                $sigformLast.val('')
-                break
-            case 2:
-                $sigformFirstMiddle.val(parts[0])
-                $sigformLast.val(parts[1].replace(/-/gi, ' ').replace(/ +/gi, ' '))
-                break
-            case 3:
-                $sigformFirstMiddle.val(parts[0] + ' ' + parts[1])
-                $sigformLast.val(parts[2].replace(/-/gi, ' ').replace(/ +/gi, ' '))
-                break
-            case 4:
-                $sigformFirstMiddle.val(parts[0] + ' ' + parts[1])
-                $sigformLast.val((parts[2] + ' ' + parts[3]).replace(/-/gi, ' ').replace(/ +/gi, ' '))
-                break
-        }
-
+        var temp = this.value.replace(/[^A-Za-z -]/gi, '').replace(/ +/gi, ' '),
+            $sigformFirstMiddle = getElement('sigform_first_middle')
+            $sigformFirstMiddle.val(temp)
         getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
-        getElement('l_current_length').text(getElement('sigform_last').val().length)
-    })
-
-    $(D).on('blur', '#candidate_address', function() {
-        // var address = getHome(this.value)
-        // $.when(address, function() {})
     })
 
     $(D).on('keyup', '#sigform_first_middle', function() {
-        var temp = (this.value.replace(/[^A-Za-z -]/gi, '').replace(/-/gi, ' ').replace(/ +/gi, ' '))
+        var temp = this.value.replace(/[^A-Za-z -]/gi, '').replace(/-/gi, ' ').replace(/ +/gi, ' ')
         this.value=temp
         getElement('fm_current_length').text(getElement('sigform_first_middle').val().length)
-    })
-
-    $(D).on('keyup', '#sigform_last', function() {
-        var temp = (this.value.replace(/[^A-Za-z -]/gi, '').replace(/-/gi, ' ').replace(/ +/gi, ' '))
-        this.value=temp
-        getElement('l_current_length').text(getElement('sigform_last').val().length)
     })
 
     $(D).on('keyup', '#candidate_address, #candidate_address2', function() {
@@ -273,10 +123,10 @@ jQuery.noConflict()
             getElement('sigform_address').val(((getElement('candidate_address').val() + ' ' + getElement('candidate_address2').val()).trim()).replace(/[^A-Za-z0-9 ]/gi, '').replace(/ +/gi, ' '))
             getElement('sa_current_length').text(getElement('sigform_address').val().length)
 
-            if (!getElement('candidate_sigform_tr').hasClass('hidden') && getElement('sigform_address').val().length > 35 && !getElement('sigform_address').hasClass('required')) {
+            if (!getElement('candidate_sigform_tr').hasClass('hidden') && getElement('sigform_address').val().length > sigformLimit && !getElement('sigform_address').hasClass('required')) {
                 getElement('sigform_address_row, #sigform_address_label_row').fadeIn(FADETIME)
                 getElement('sigform_address').addClass('required')
-                getElement('sigform_address').addClass('required')
+//                getElement('sigform_address').addClass('required')
                 getElement('current_length').text(getElement('sigform_address').val().length)
             }
             selectAddressMessage()

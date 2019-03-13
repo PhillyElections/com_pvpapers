@@ -108,7 +108,7 @@ if (! count($pdisplays) ) {
                         </td>
                         <td width="250">
                             <label id="party_msg" for="candidate_party"><?=JText::_('CANDIDATE PARTY'); ?>:&nbsp;</label>
-                            <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="23%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
+                            <input type="text" autocomplete="off" id="candidate_party" name="candidate_party" size="23%" value="<?=$row->candidate_party; ?>" class="inputbox required" maxlength="35" placeholder="<?=JText::_('CANDIDATE PARTY PLACEHOLDER'); ?>" />
                         </td>
                     </tr>
                 </table>
@@ -119,7 +119,7 @@ if (! count($pdisplays) ) {
                 <label id="candidate_name_msg" for="candidate_name"><?=JText::_('CANDIDATE NAME'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
-                <input type="text" autocomplete="off" id="candidate_name" name="candidate_name" size="60%" value="<?=$row->candidate_name; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_name" name="candidate_name" size="60%" value="<?=$row->candidate_name; ?>" class="inputbox required" maxlength="50" placeholder="<?=JText::_('CANDIDATE NAME PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_occupation_tr">
@@ -127,15 +127,15 @@ if (! count($pdisplays) ) {
                 <label id="candidate_occupation_msg" for="candidate_occupation"><?=JText::_('CANDIDATE OCCUPATION'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
-                <input type="text" autocomplete="off" id="candidate_occupation" name="candidate_occupation" size="60%" value="<?=$row->candidate_occupation; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_occupation" name="candidate_occupation" size="60%" value="<?=$row->candidate_occupation; ?>" class="inputbox required" maxlength="33" placeholder="<?=JText::_('CANDIDATE OCCUPATION PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_address_tr">
-            <td height="40" class="right">
+            <td height="35" class="right">
                 <label id="candidate_address_msg" for="candidate_address"><?=JText::_('CANDIDATE ADDRESS'); ?>:&nbsp;&nbsp;</label>
             </td>
             <td>
-                <input type="text" autocomplete="off" id="candidate_address" name="candidate_address" size="60%" value="<?=$row->candidate_address; ?>" class="inputbox required" maxlength="60" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
+                <input type="text" autocomplete="off" id="candidate_address" name="candidate_address" size="60%" value="<?=$row->candidate_address; ?>" class="inputbox required" maxlength="50" placeholder="<?=JText::_('CANDIDATE ADDRESS PLACEHOLDER'); ?>" />
             </td>
         </tr>
         <tr id="candidate_address2_tr">
@@ -223,11 +223,10 @@ if (! count($pdisplays) ) {
                         </td>
                     </tr>
                     <tr>
-                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="25%" value="<?=$row->sigform_first_middle; ?>" maxlength="15" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
-                        <td><input type="text" autocomplete="off" id="sigform_last" name="sigform_last" size="25%" value="<?=$row->sigform_last; ?>" maxlength="19" placeholder="<?=JText::_('SIGFORM LAST PLACEHOLDER'); ?>" /> (<span id="l_current_length">0</span>)</td>
+                        <td><input type="text" autocomplete="off" id="sigform_first_middle" name="sigform_first_middle" size="40%" value="<?=$row->sigform_first_middle; ?>" maxlength="27" placeholder="<?=JText::_('SIGFORM FIRST MIDDLE PLACEHOLDER'); ?>" /> (<span id="fm_current_length">0</span>)</td>
                     </tr>
                     <tr>
-                        <td><?=JText::_('SIGFORM FIRST MIDDLE LABEL'); ?></td><td><?=JText::_('SIGFORM LAST LABEL'); ?></td>
+                        <td>No more than 27 characters.</td>
                     </tr>
                     <tr>
                         <td colspan="2">
@@ -248,7 +247,7 @@ if (! count($pdisplays) ) {
                             <span id="sa_current_length">0</span>)</td>
                     </tr>
                     <tr id="sigform_address_label_row" class="hidden">
-                        <td colspan="2"><label id="sigform_address_msg1" for="sigform_address" class="invalid"><?=JText::_('SIGFORM ADDRESS MSG1'); ?></label><label id="sigform_address_msg2" class="hidden"><?=JText::_('SIGFORM ADDRESS MSG2'); ?></label></td>
+                        <td colspan="2"><label id="sigform_address_msg1" for="sigform_address" class="invalid">No more than 35 characters.</label></td>
                     </tr>
                 </table>
             </td>
